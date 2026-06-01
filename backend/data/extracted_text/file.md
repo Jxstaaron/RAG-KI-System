@@ -1,92 +1,75 @@
-## Plantagenwirtschaft in den Tropen – Produktion für den Weltmarkt
+## Anbauflächen in den Tropen – knapp und begehrt
 
-## Bananenanbau in Kolumbien - wer profitiert?
+## Landgrabbing als Beitrag zur Ernährungssicherheit?
 
-Ein Großteil der Agrarprodukte, die in den Tropen für den Export produziert werden, stammt von Plantagen – z.B. Kaffee, Kakao, Zucker, Ananas oder Palmöl.
+Der Erwerb großer landwirtschaftlicher Flächen hat in den letzten Jahren extrem an Bedeutung gewonnen. Die Weltbank schätzt, dass bis 2030 im Rahmen großmaßstäblicher Landkäufe jährlich sechs Millionen Hektar Agrarflächen umgenutzt oder neu erschlossen werden (zum Vergleich: Agrarfläche Deutschlands: 17 Millionen Hektar).
 
-Was kennzeichnet die Plantagenwirtschaft? Welche Chancen und Risiken birgt sie für Hersteller und Konsumenten? Kann Bio-Anbau eine Lösung für Probleme sein, die mit der Plantagenwirtschaft verbunden sind? Am Beispiel des Bananenanbaus in Kolumbien sollen hier die wichtigsten Strukturen und Prozesse der Plantagenwirtschaft aufgezeigt werden.
+Wo wird in großem Maßstab mit Land gehandelt? Wer profitiert von diesen Landkäufen? Unter welchen Bedingungen kommen die Verträge zustande? Welche Folgen haben die Landverkäufe für die lokale Bevölkerung?
 
-- Lokalisieren Sie Kolumbien und pr
-  üfen Sie, wo die klimatischen Bedingungen f
-  ür den Bananenanbau geeignet sind
-  (M3, M4, Atlas).
-- Erläutern Sie die Verteilung der wichtigsten Bananenproduzenten und der wichtigsten Bananen exportierenden Länder. Beziehen Sie dabei die Zusammensetzung des Bananenpreises mit ein (M2, M5).
-- Stellen Sie die Merkmale der Plantagenwirtschaft stichwortartig zusammen. Überprüfen Sie, welche dieser Merkmale auf den Bananenanbau in Kolumbien zutreffen (M1, M2, M6, M8).
-- Erläutern Sie am Beispiel des Bananenanbaus die ökologischen Probleme, die mit dem Anbau in Monokulturen verbunden sind (M4, M7).
-- Recherchieren Sie, ob/wo in Ihrer N\u00e4he Bio-Bananen zu kaufen sind. Diskutieren Sie, ob Bio-Anbau die \u00f6kologischen Folgen des Anbaus in Monokulturen abmildern kann (M10).
-- 6. Diskutieren Sie, ob die Ausweitung des Öko-Anbaus von Bananen zu einer nachhaltigeren Produktion führt.
-- 7. Führen Sie eine Umfrage durch, in der Sie herausfinden, ob Ihre Mitschülerinnen und Mitschüler/ Lehrer/ Eltern... bereit wären, mehr Geld für ökologisch angebaute Bananen auszugeben. Diskutieren Sie die Ergebnisse.
-- → Bio-Anbau, Cash Crop, Kationenaustauschkapazität, Monokultur, Nachhaltigkeit, Plantage
+- 1. Beschreiben Sie die globale Verteilung der Landkäufe (M5).
+- 2. Erläutern Sie in eigenen Worten, was Landgrabbing bedeutet und was die Motive dafür sind. (M1–M3)
+- Recherchieren die Ernährungslage und den Beschäftigtenanteil in der Landwirtschaft der "Hotspots großflächiger Landakquisitionen". Erläutern Sie mögliche Folgen für die einheimische Bevölkerung (Atlas, Internet).
+- 4. Oft ist die Menschenrechtslage in den von Landgrabbing betroffenen Ländern angespannt. Recherchieren Sie den "Governance Score", einen von der Weltbank herausgegebenen Index für gute Regierungsführung, in den betroffenen Ländern (Internet).
+- Diskutieren Sie, welche Voraussetzungen erfüllt sein müssen, damit großflächige Landkäufe eine nachhaltige Verbesserung für die lokale Bevölkerung darstellen können.
+- Oft führen Landverkäufe zu Protesten der einheimischen Bevölkerung. Stellen Sie in einer Mindmap dar, wie Landgrabbing zu Armut und Hunger in der lokalen Bevölkerung führen kann (M2 – M7).
+- ② 7. Recherchieren Sie anhand eines konkreten Beispiels die Bedingungen und Folgen eines Land-Deals (Internet).
+  - → Landgrabbing, Landakquisition
 
-Die Plantagenwirtschaft hat ihre Anfänge im Kolonialzeitalter, vor allem im 17. und 18. Jahrhundert, als die Kolonialmächte mithilfe afrikanischer Sklaven z. B. den Tabak-, Zuckerrohr- oder Kaffeeanbau für die europäischen Märkte betrieben.
+![](_page_0_Picture_16.jpeg)
 
-Einige der Merkmale der kolonialen Plantagenwirtschaft treffen auch heute noch zu: So ist der Anbau arbeitsintensiv (heute mithilfe oft schlecht bezahlter, einheimischer Plantagenarbeiter) und erfolgt auf sehr großen Flächen. Auch werden damals wie heute Cash Crops nicht für die Ernährung der lokalen Bevölkerung angebaut, sondern marktorientiert – meist für den Weltmarkt. Damals wie heute stand die Plantagenwirtschaft in Flächenkonkurrenz zum Anbau von Lebensmitteln für den Eigenbedarf. Viele Plantagen sind heute im Besitz oder unter der Verwaltung multinationaler Konzerne, deren Hauptquartiere nur teilweise in den Herstellerländern liegen. Die Konzerne stellen Maschinen, Hochleistungssaatgut und Agrochemikalien. Verarbeitung, Transport und Vertrieb sind ebenfalls oft in der Hand weniger großer, multinationaler Konzerne. So fließt ein großer Teil der Gewinne ins Ausland ab.
+M1 Die internationale Gemeinschaft fordert die brasilianische Regierung auf, aktiv gegen Entwaldung und (vorsätzlich) gelegte Brände vorzugehen. Sie unterstellen einen Zusammenhang zwischen der Pro-Business-Politik Jair Bolsonaros, die illegale Landnahme begünstigt, und der anhaltenden Zerstörung dieses Habitats.
 
-![](_page_0_Figure_16.jpeg)
+| Akteursgruppen                                                                                                                         | Zweck                                                                                                   |
+|----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------|
+| Industriestaaten (Energiekon-<br>zerne, Investmentfonds etc.)                                                                          | Produktion von Agrar-<br>rohstoffen (Futtermittel,<br>Agrartreibstoffe), Land als<br>Spekulationsobjekt |
+| Bevölkerungsreiche Staaten mit<br>hohem Bevölkerungswachstum<br>(Indien, China, Vereinigte Arabi-<br>sche Emirate, Ägypten)            | Produktion von Nahrungs-<br>mitteln, Futterpflanzen und<br>Agrarrohstoffen für eigenen<br>Bedarf        |
+| Staaten mit sehr begrenzten<br>Land- bzw. Wasserressourcen,<br>aber hoher Kapitalverfüg-<br>barkeit (Kuwait, Katar, Saudi-<br>Arabien) | Verringerung der Abhän-<br>gigkeit vom Weltmarkt bei<br>Lebensmittelproduktion                          |
+| Nationale Unternehmen in Ziel-<br>ländern (häufig in Kooperation<br>mit ausländischen Investoren)                                      | Gewinnmaximierung                                                                                       |
 
-![](_page_0_Figure_17.jpeg)
+M2 Investoren/Akteursgruppen bei Landgrabbing-Verträgen
 
-M2\* Preiszusammensetzung einer Banane
+Modernes Landgrabbing ist das Ergreifen der Kontrolle über relativ große Landflächen und andere natürliche Ressourcen durch eine Reihe von Mechanismen und Formen, die große Kapitalsummen beinhalten. Die Ressourcennutzung wird dabei oft von einer lokalen [Nutzung] hin zu einer Nutzung getrieben, die auf das Extrahieren von Profiten und Ressourcen – sei es national oder international – ausgerichtet ist. Es ist eine Antwort des Kapitals auf das Zusammentreffen der Nahrungs-, Energie- und Finanzkrise, auf dominante Klimaschutzmaßnahmen und auf den Ressourcenbedarf der neuen globalen Zentren. [...] Die Lösung dieser Krisen, die von vielen globalen (politischen und wirtschaftlichen) Kräften propagiert wird, besteht in der Aneignung von vermeintlich leerem, unzureichend genutztem, verfügbarem Land, um ihm einen effizienten, "klimafreundlichen" und produktiven Nutzen zu geben. Dies wird als Win-Win-Lösung dargestellt, die Gewinne für Unternehmen bringt und es nationalen Regierungen ermöglicht, Steuern und Beschäftigungsmöglichkeiten für ihre [Bürgerinnen und Bürger] zu schaffen. Diese "Lösungen" haben die aktuelle Jagd nach Land bzw. Landgrabbing mit verursacht und legitimiert. Das anvisierte Land [ist jedoch nicht leer oder unzureichend genutzt,
 
-![](_page_0_Figure_19.jpeg)
+bas anvisierte Land [ist jedoch nicht leer oder unzureichend genutzt, sondern] wird in der Regel bereits von Bäuerinnen und Bauern bzw. traditionellen [Fischerinnen und Fischern sowie Waldbewohnerrinnen und Waldbewohnern] genutzt. Die Eigentumssysteme dieser Gemeinschaften basieren oft auf traditionellen Landnutzungsrechten, [die beim Verkauf missachtet werden].
 
-M3 Klimadiagramm von El Carno (Kolumbien)
+Quelle: FIAN (Hg.): Landgrabbing und Menschenrechte – Die Rolle von EU-Akteuren im Ausland. www.fian.de, 06/2019, Zugriff: 20.10.2020, S. 5ff.
 
-Nach Angaben der Food and Agriculture Organization der Vereinten Nationen gehört die Banane zu den acht wichtigsten Lebensmitteln weltweit. Sie wird in 135 Ländern angebaut, vor allem von Kleinbauern, die sie zur Selbstversorgung und zum Verkauf auf lokalen Märkten nutzen. Gleichzeitig sind Bananen ein wichtiges Exportprodukt. Deutschland z. B. hat einen Pro-Kopf-Verbrauch von 10,5 kg pro Jahr. Bananen brauchen für optimales Wachstum warmes, vollhumides Klima mit Temperaturen über 20°C und gleichmäßig verteilten Niederschlägen nicht unter 100 – 200 mm pro Monat. Bananen werden vegetativ vermehrt. Vom Einpflanzen des Schösslings bis zur Ernte dauert es circa 7 – 9 Monate.
+M3 Landgrabbing
 
-In tropischen Gebieten können Bananen das ganze Jahr über geerntet werden. Dabei wird eine Bananenplantage nicht auf einmal abgeerntet, vielmehr müssen die einzelnen Bananenbüschel sorgfältig auf ihre Reife überprüft werden. Nach der Ernte werden die Bananenstauden umgehauen und als Dünger verwendet. Eine Bananenpflanzung kann mehr als 20 Jahre genutzt werden.
+## Die für Landakquisitionen relevanten Worldwide Governance Indicators der Weltbank sind:
 
-Der Anbau von Bananen ist sehr arbeitsintensiv. Die Schösslinge müssen mehrmals umgepflanzt und zurückgeschnitten werden. Es sind regelmäßige Düngergaben wichtig. Darüber hinaus erfordert der Bananenanbau umfassende Schädlings- und Unkrautbekämpfungsmaßnahmen.
+- Voice and Accountability (Mitspracherecht und Verantwortlichkeit)
+- Rule of Law (Rechtsstaatlichkeit / Rechtssicherheit)
+- Control of Corruption
+   (Kontrolle und Bekämpfung von Korruption)
+- M4 Indikatoren für gerechte Landnutzung
 
-M4 Bananenanbau als Cash Crop
+schueler.diercke.de 100800-147, -149, -27
 
-![](_page_0_Picture_25.jpeg)
+![](_page_0_Figure_30.jpeg)
 
-- WDR Quarks & Co Banane
-- Resource Trade Earth (engl.)
+Die vom Ausschuss für Welternährungssicherung der Vereinten Nationen (CFS) einstimmig beschlossenen "Freiwilligen Leitlinien für die verantwortungsvolle Verwaltung von Boden- und Landnutzungsrechten, Fischgründen und Wäldern" sind ein historischer Meilenstein in der internationalen Entwicklungspolitik.
 
-![](_page_1_Figure_2.jpeg)
+Sie sind das erste globale völkerrechtliche Instrument, das den sicheren und gerechten Zugang zu natürlichen Ressourcen regelt und sich dabei auch mit der Gestaltung von Landinvestitionen – dem so genannten "Landgrabbing" – befasst. Ziel ist es, die Menschen in Entwicklungsländern gezielt zu stärken, damit sie aus eigener Kraft ihre Existenz sichern können.[...]
 
-M5\* Bananenproduktion und -handel
+Sichere Zugangsrechte zu Land und anderen produktiven Ressourcen sind für die Menschen in ländlichen Gebieten überlebenswichtig. Sie sind ein Schlüsselfaktor zur Umsetzung des Menschenrechts auf Nahrung. Immer mehr ausländische Investoren kaufen Land in Entwicklungs- und Schwellenländern. Private Investitionen sind für die Ernährungssicherheit wichtig, sie dürfen aber nicht die Menschenrechte und Landrechte der lokalen Bevölkerung verletzen.
 
-Trotz erheblicher Effizienzsteigerungen ist der Bananenanbau sehr arbeitsintensiv. Die Arbeit ist körperlich extrem anstrengend. Die Arbeiterinnen und Arbeiter kommen mit giftigen und krebserregenden Agrochemikalien in Berührung. Einige Arbeitgeber haben bereits reagiert und es gibt positive Ansätze zur Verbesserung der Situation. So statten sie z.B. ihre Arbeiter mit Schutzkleidung aus und sorgen dafür, dass Sprühflugzeuge außerhalb der Arbeitszeit fliegen. Nationale Gesetze haben dazu geführt, dass Kinderarbeit von den Plantagen verschwunden ist und vor allem in Kolumbien, wo die Gewerkschaften eine wichtige Rolle spielen, meist ein Mindestlohn gezahlt wird. Dennoch reichen die Löhne oft zur Existenzsicherung nicht aus.
+Aktuellen Zahlen zufolge sind seit dem Jahr 2000 in Entwicklungsländern über 83 Millionen Hektar landwirtschaftlicher Fläche im Rahmen von Investitionen verkauft oder verpachtet worden. Im Zuge dieser Landtransfers gibt es besorgniserregende Berichte über Zwangsräumungen und Vertreibungen von Kleinbauern ohne formelle Landtitel. Die "Freiwilligen Leitlinien" sind das erste internationale, unter Einbeziehung einer Vielzahl von Akteuren abgestimmte völkerrechtliche Instrument für politisch sensible Fragen des Zugangs zu Land, Fischgründen und Wäldern.
 
-![](_page_1_Figure_5.jpeg)
+Quelle: BMEL (Hg.): Die Freiwilligen Leitlinien zu Landnutzungsrechten. www.bmel.de, 19.07.2019, Zugriff: 20.10.2020
 
-In Mio. US-\$
+## M6 Bekenntnis zu Landnutzungsrechten
 
-2 463
+![](_page_0_Figure_37.jpeg)
 
-1 312
+Seit einigen Jahren ist zu hören, der Landraub – auch Landgrabbing genannt – sei mehr oder weniger zum Erliegen gekommen. [...] So hat die globale Dokumentationsplattform Land Matrix zwischen 2017 und 2020 zwar knapp 500 neue Fälle von Landnahmen verzeichnet. Das ist eine Erhöhung der dort dokumentierten Fälle in den letzten drei Jahren um 40 Prozent. Jedoch ist die Gesamtfläche der dokumentierten Landdeals minimal um 2,6 Prozent auf 50 Millionen Hektar gestiegen. [...]
 
-915
+Ein wichtiger Grund, der Landgrabbing weniger sichtbar macht, ist ein deutlich verändertes Spektrum von Akteuren. [...] Heute mischen der Versicherungsgigant Münchner Rück, die Entwicklungsbank DEG oder die Ärztepensionskasse aus Westfalen (ÄVWL) bei den globalen Landgeschäften mit. [...] Und durch Vermischung staatlicher und privater Geldgeber, wie bei BMZ- oder KfW-Finanzierungen öffentlich-privater Entwicklungsfonds werden menschenrechtliche Verpflichtungen der Staaten zudem massiv untergraben. [...]
 
-Kaffee Schnittblumen Bananen Zucker Süßwaren
+Zu Beginn der Diskussionen um Landgrabbing zeigte auch Deutschland noch klare Kante. [...] Heute begrüßt man im Rahmen einer veränderten Entwicklungsdebatte fast alle Investitionen. Davon werden Jobs erhofft, Technologietransfer oder verbesserte Infrastruktur. [...] Zugleich ist die internationale Entwicklungszusammenarbeit auch selbst Landinvestor geworden. [...]
 
-Quelis WTO 2020
+Eine Landpolitik auf Basis der Menschenrechte stellt hingegen arme ländliche Gruppen in ihr Zentrum. Sie steht auf drei Säulen: Erstens Anerkennung von legitimen Landrechten der lokalen Bevölkerung. Wichtig ist dabei die Bevorzugung marginalisierter Gruppen. Zweitens – und gerade im Kontext von 13 Jahren Landgrabbing – Rückgabe von Land, dort wo es zu illegitimen Landnahmen gekommen ist. Und drittens Umverteilung von Land in Kontexten hoher Landkonzentration und Landlosigkeit. [...] Menschenrechtlich gesehen ist die Regulierung dieser in Landgeschäften engagierten mächtigen Finanzakteure sehr schwierig. [...] Das Menschenrecht auf Nahrung muss dafür die grundlegende Norm sein. Die daraus abgeleiteten UN-Landleitlinien von 2012 sowie die 2018 von der UN-Vollversammlung verabschiedete Erklärung zu den Rechten von Bäuerinnen und Bauern sind wichtige Referenzen, auf die Politik sich beziehen kann.
 
-27759EX © Westermann
+Quelle: Herre, Roman: Kein Ende in Sicht: die globale Jagd nach Land. www.welthungerhilfe.de, 04/2020, Zugriff: 20.10.2020
 
-M8 Wichtige landwirtschaftliche Exportprodukte Kolumbiens
-
-Der Anbau in Monokulturen ist ein wichtiges Element der Plantagenwirtschaft. Er ermöglicht durch die Industrialisierung des Anbaus eine Produktivitätssteigerung. Pro Hektar und pro Arbeiter können mehr Bananen geerntet werden.
-
-Bananenplantagen bieten für Pflanzenschädlinge (Insekten, Pilze und Fadenwürmer) paradiesische Verhältnisse. Weil dicht an dicht, über Jahre hinweg immer die gleichen Früchte angebaut werden, können sich die Schädlinge leicht vermehren. Um dies zu verhindern, sind massive Gaben von Agrochemikalien (Herbiziden, Insektiziden, Fungiziden, Nematiziden) nötig. Circa 30 Prozent des Preises, den die Bananenproduzenten erhalten, werden für Pflanzenschutzmaßnahmen ausgegeben.
-
-Die Pestizide sind in hohem Maße gesundheitsschädlich für die Arbeiter, die sie ausbringen. Sie können Krebserkrankungen, Nervenschäden, Sterilität und Deformationen bei Neugeborenen auslösen. Die starken Niederschläge waschen die Gifte schnell aus, wodurch Böden, Grundwasser und Wasserläufe belastet werden. Beim Einsatz von Sprühflugzeugen wird ein Teil der Pflanzengifte verweht und auch angrenzende Siedlungen, Gärten und Waldflächen sowie die Menschen, die sich dort aufhalten, werden besprüht.
-
-Bananen sind schnellwüchsige Pflanzen und entziehen dem Boden viele Nährstoffe. Dadurch und durch die hohe Rate an Auswaschung und die geringe Kationenaustauschkapazität tropischer Böden sind hohe Mineraldüngergaben nötig.
-
-M7 Monokulturen im Bananenanbau
-
-![](_page_1_Picture_13.jpeg)
-
-M9 Bananentransport per Seilbahn
-
-- kein Einsatz von Pestiziden
-- Mischkultur mit anderen Pflanzen
-- Gründüngung, kein leicht löslicher Mineraldünger
-- I mechanische Methoden der Unkrautbekämpfung
-- Öko-Zertifizierung (dadurch höhere Preise erforderlich)
-
-M10 (Anbau-)bedingungen von Bio-Bananen
+M7 Landgrabbing existiert immer noch

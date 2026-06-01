@@ -1,0 +1,63 @@
+{
+  "model": "paraphrase-multilingual-MiniLM-L12-v2",
+  "source": "backend/data/chunks/file.json",
+  "count": 5,
+  "dimensions": 384,
+  "chunks": [
+    {
+      "id": 1,
+      "source": "backend/data/chunks/file.json",
+      "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "heading": "Landgrabbing als Beitrag zur Ernährungssicherheit?",
+      "text": "Der Erwerb großer landwirtschaftlicher Flächen hat in den letzten Jahren extrem an Bedeutung gewonnen. Die Weltbank schätzt, dass bis 2030 im Rahmen großmaßstäblicher Landkäufe jährlich sechs Millionen Hektar Agrarflächen umgenutzt oder neu erschlossen werden (zum Vergleich: Agrarfläche Deutschlands: 17 Millionen Hektar).\n\nWo wird in großem Maßstab mit Land gehandelt? Wer profitiert von diesen Landkäufen? Unter welchen Bedingungen kommen die Verträge zustande? Welche Folgen haben die Landverkäufe für die lokale Bevölkerung?\n\n- 1. Beschreiben Sie die globale Verteilung der Landkäufe ().\n- 2. Erläutern Sie in eigenen Worten, was Landgrabbing bedeutet und was die Motive dafür sind. (–)\n- Recherchieren die Ernährungslage und den Beschäftigtenanteil in der Landwirtschaft der \"Hotspots großflächiger Landakquisitionen\". Erläutern Sie mögliche Folgen für die einheimische Bevölkerung (Atlas, Internet).\n- 4. Oft ist die Menschenrechtslage in den von Landgrabbing betroffenen Ländern angespannt. Recherchieren Sie den \"Governance Score\", einen von der Weltbank herausgegebenen Index für gute Regierungsführung, in den betroffenen Ländern (Internet).\n- Diskutieren Sie, welche Voraussetzungen erfüllt sein müssen, damit großflächige Landkäufe eine nachhaltige Verbesserung für die lokale Bevölkerung darstellen können.\n- Oft führen Landverkäufe zu Protesten der einheimischen Bevölkerung. Stellen Sie in einer Mindmap dar, wie Landgrabbing zu Armut und Hunger in der lokalen Bevölkerung führen kann ( – ).\n- 2 7. Recherchieren Sie anhand eines konkreten Beispiels die Bedingungen und Folgen eines Land-Deals (Internet).\n- → Landgrabbing, Landakquisition\n\nDie internationale Gemeinschaft fordert die brasilianische Regierung auf, aktiv gegen Entwaldung und (vorsätzlich) gelegte Brände vorzugehen. Sie unterstellen einen Zusammenhang zwischen der Pro-Business-Politik Jair Bolsonaros, die illegale Landnahme begünstigt, und der anhaltenden Zerstörung dieses Habitats.",
+      "token_count": 317,
+      "word_count": 247,
+      "block_start": 2,
+      "block_end": 5
+    },
+    {
+      "id": 2,
+      "source": "backend/data/chunks/file.json",
+      "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "heading": "Landgrabbing als Beitrag zur Ernährungssicherheit?",
+      "text": "| Akteursgruppen | Zweck | |----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | Industriestaaten (Energiekon-<br>zerne, Investmentfonds etc.) | Produktion von Agrar-<br>rohstoffen (Futtermittel,<br>Agrartreibstoffe), Land als<br>Spekulationsobjekt | | Bevölkerungsreiche Staaten mit<br>hohem Bevölkerungswachstum<br>(Indien, China, Vereinigte Arabi-<br>sche Emirate, Ägypten) | Produktion von Nahrungs-<br>mitteln, Futterpflanzen und<br>Agrarrohstoffen für eigenen<br>Bedarf | | Staaten mit sehr begrenzten<br>Land- bzw. Wasserressourcen,<br>aber hoher Kapitalverfüg-<br>barkeit (Kuwait, Katar, Saudi-<br>Arabien) | Verringerung der Abhän-<br>gigkeit vom Weltmarkt bei<br>Lebensmittelproduktion | | Nationale Unternehmen in Ziel-<br>ländern (häufig in Kooperation<br>mit ausländischen Investoren) | Gewinnmaximierung |",
+      "token_count": 417,
+      "word_count": 91,
+      "block_start": 6,
+      "block_end": 6
+    },
+    {
+      "id": 3,
+      "source": "backend/data/chunks/file.json",
+      "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "heading": "Investoren/Akteursgruppen bei Landgrabbing-Verträgen",
+      "text": "Modernes Landgrabbing ist das Ergreifen der Kontrolle über relativ große Landflächen und andere natürliche Ressourcen durch eine Reihe von Mechanismen und Formen, die große Kapitalsummen beinhalten. Die Ressourcennutzung wird dabei oft von einer lokalen [Nutzung] hin zu einer Nutzung getrieben, die auf das Extrahieren von Profiten und Ressourcen – sei es national oder international – ausgerichtet ist. Es ist eine Antwort des Kapitals auf das Zusammentreffen der Nahrungs-, Energie- und Finanzkrise, auf dominante Klimaschutzmaßnahmen und auf den Ressourcenbedarf der neuen globalen Zentren. [...] Die Lösung dieser Krisen, die von vielen globalen (politischen und wirtschaftlichen) Kräften propagiert wird, besteht in der Aneignung von vermeintlich leerem, unzureichend genutztem, verfügbarem Land, um ihm einen effizienten, \"klimafreundlichen\" und produktiven Nutzen zu geben. Dies wird als Win-Win-Lösung dargestellt, die Gewinne für Unternehmen bringt und es nationalen Regierungen ermöglicht, Steuern und Beschäftigungsmöglichkeiten für ihre [Bürgerinnen und Bürger] zu schaffen. Diese \"Lösungen\" haben die aktuelle Jagd nach Land bzw. Landgrabbing mit verursacht und legitimiert. Das anvisierte Land [ist jedoch nicht leer oder unzureichend genutzt,\n\nbas anvisierte Land [ist jedoch nicht leer oder unzureichend genutzt, sondern] wird in der Regel bereits von Bäuerinnen und Bauern bzw. traditionellen [Fischerinnen und Fischern sowie Waldbewohnerrinnen und Waldbewohnern] genutzt. Die Eigentumssysteme dieser Gemeinschaften basieren oft auf traditionellen Landnutzungsrechten, [die beim Verkauf missachtet werden].\n\nQuelle: FIAN (Hg.): Landgrabbing und Menschenrechte – Die Rolle von EU-Akteuren im Ausland. www.fian.de, 06/2019, Zugriff: 20.10.2020, S. 5ff.\n\n- Voice and Accountability (Mitspracherecht und Verantwortlichkeit)\n- Rule of Law (Rechtsstaatlichkeit / Rechtssicherheit)\n- Control of Corruption (Kontrolle und Bekämpfung von Korruption)\n- Indikatoren für gerechte Landnutzung\n\nschueler.diercke.de 100800-147, -149, -27\n\nDie vom Ausschuss für Welternährungssicherung der Vereinten Nationen (CFS) einstimmig beschlossenen \"Freiwilligen Leitlinien für die verantwortungsvolle Verwaltung von Boden- und Landnutzungsrechten, Fischgründen und Wäldern\" sind ein historischer Meilenstein in der internationalen Entwicklungspolitik.\n\nSie sind das erste globale völkerrechtliche Instrument, das den sicheren und gerechten Zugang zu natürlichen Ressourcen regelt und sich dabei auch mit der Gestaltung von Landinvestitionen – dem so genannten \"Landgrabbing\" – befasst. Ziel ist es, die Menschen in Entwicklungsländern gezielt zu stärken, damit sie aus eigener Kraft ihre Existenz sichern können.[...]",
+      "token_count": 457,
+      "word_count": 346,
+      "block_start": 8,
+      "block_end": 16
+    },
+    {
+      "id": 4,
+      "source": "backend/data/chunks/file.json",
+      "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "heading": "Die für Landakquisitionen relevanten Worldwide Governance Indicators der Weltbank sind:",
+      "text": "Sichere Zugangsrechte zu Land und anderen produktiven Ressourcen sind für die Menschen in ländlichen Gebieten überlebenswichtig. Sie sind ein Schlüsselfaktor zur Umsetzung des Menschenrechts auf Nahrung. Immer mehr ausländische Investoren kaufen Land in Entwicklungs- und Schwellenländern. Private Investitionen sind für die Ernährungssicherheit wichtig, sie dürfen aber nicht die Menschenrechte und Landrechte der lokalen Bevölkerung verletzen.\n\nAktuellen Zahlen zufolge sind seit dem Jahr 2000 in Entwicklungsländern über 83 Millionen Hektar landwirtschaftlicher Fläche im Rahmen von Investitionen verkauft oder verpachtet worden. Im Zuge dieser Landtransfers gibt es besorgniserregende Berichte über Zwangsräumungen und Vertreibungen von Kleinbauern ohne formelle Landtitel. Die \"Freiwilligen Leitlinien\" sind das erste internationale, unter Einbeziehung einer Vielzahl von Akteuren abgestimmte völkerrechtliche Instrument für politisch sensible Fragen des Zugangs zu Land, Fischgründen und Wäldern.\n\nQuelle: BMEL (Hg.): Die Freiwilligen Leitlinien zu Landnutzungsrechten. www.bmel.de, 19.07.2019, Zugriff: 20.10.2020\n\nSeit einigen Jahren ist zu hören, der Landraub – auch Landgrabbing genannt – sei mehr oder weniger zum Erliegen gekommen. [...] So hat die globale Dokumentationsplattform Land Matrix zwischen 2017 und 2020 zwar knapp 500 neue Fälle von Landnahmen verzeichnet. Das ist eine Erhöhung der dort dokumentierten Fälle in den letzten drei Jahren um 40 Prozent. Jedoch ist die Gesamtfläche der dokumentierten Landdeals minimal um 2,6 Prozent auf 50 Millionen Hektar gestiegen. [...]\n\nEin wichtiger Grund, der Landgrabbing weniger sichtbar macht, ist ein deutlich verändertes Spektrum von Akteuren. [...] Heute mischen der Versicherungsgigant Münchner Rück, die Entwicklungsbank DEG oder die Ärztepensionskasse aus Westfalen (ÄVWL) bei den globalen Landgeschäften mit. [...] Und durch Vermischung staatlicher und privater Geldgeber, wie bei BMZ- oder KfW-Finanzierungen öffentlich-privater Entwicklungsfonds werden menschenrechtliche Verpflichtungen der Staaten zudem massiv untergraben. [...]\n\nZu Beginn der Diskussionen um Landgrabbing zeigte auch Deutschland noch klare Kante. [...] Heute begrüßt man im Rahmen einer veränderten Entwicklungsdebatte fast alle Investitionen. Davon werden Jobs erhofft, Technologietransfer oder verbesserte Infrastruktur. [...] Zugleich ist die internationale Entwicklungszusammenarbeit auch selbst Landinvestor geworden. [...]",
+      "token_count": 403,
+      "word_count": 310,
+      "block_start": 17,
+      "block_end": 23
+    },
+    {
+      "id": 5,
+      "source": "backend/data/chunks/file.json",
+      "embedding_model": "paraphrase-multilingual-MiniLM-L12-v2",
+      "heading": "Bekenntnis zu Landnutzungsrechten",
+      "text": "Eine Landpolitik auf Basis der Menschenrechte stellt hingegen arme ländliche Gruppen in ihr Zentrum. Sie steht auf drei Säulen: Erstens Anerkennung von legitimen Landrechten der lokalen Bevölkerung. Wichtig ist dabei die Bevorzugung marginalisierter Gruppen. Zweitens – und gerade im Kontext von 13 Jahren Landgrabbing – Rückgabe von Land, dort wo es zu illegitimen Landnahmen gekommen ist. Und drittens Umverteilung von Land in Kontexten hoher Landkonzentration und Landlosigkeit. [...] Menschenrechtlich gesehen ist die Regulierung dieser in Landgeschäften engagierten mächtigen Finanzakteure sehr schwierig. [...] Das Menschenrecht auf Nahrung muss dafür die grundlegende Norm sein. Die daraus abgeleiteten UN-Landleitlinien von 2012 sowie die 2018 von der UN-Vollversammlung verabschiedete Erklärung zu den Rechten von Bäuerinnen und Bauern sind wichtige Referenzen, auf die Politik sich beziehen kann.\n\nQuelle: Herre, Roman: Kein Ende in Sicht: die globale Jagd nach Land. www.welthungerhilfe.de, 04/2020, Zugriff: 20.10.2020",
+      "token_count": 179,
+      "word_count": 141,
+      "block_start": 24,
+      "block_end": 25
+    }
+  ]
+}

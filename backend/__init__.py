@@ -1,1 +1,1 @@
-
+"""RAG project backend package."""
