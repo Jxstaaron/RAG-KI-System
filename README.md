@@ -1,24 +1,56 @@
 # RAG-KI-System
 
-The command line entry point is:
+This project is now split into a reusable RAG backend plus a web app:
+
+```text
+backend/main.py       FastAPI API for upload, generate, and download
+backend/pipeline/     PDF extraction, cleaning, chunking, embeddings, retrieval, generation
+frontend/             Next.js + TailwindCSS user interface
+rag_pipeline.py       CLI entry point for pipeline testing
+```
+
+## Run the Web App
+
+Start Ollama first:
+
+```bash
+ollama run llama3.2
+```
+
+Start the FastAPI backend:
+
+```bash
+uvicorn backend.main:app --reload --port 8000
+```
+
+Start the frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open:
+
+```text
+http://localhost:3000
+```
+
+## User Flow
+
+1. Drag and drop a PDF onto the upload area.
+2. The backend saves it to `backend/data/pdfs/file.pdf`.
+3. The pipeline extracts, cleans, structures, chunks, and embeds the PDF.
+4. Select one mode: `Cheatsheet`, `Summary`, `Quiz`, `Flashcards`, or `Explanation`.
+5. Click `Generate`.
+6. The output appears in the center panel.
+7. Click `Download PDF` to download the generated material.
+
+## CLI Pipeline
 
 ```bash
 python rag_pipeline.py run
-```
-
-The implementation is split by responsibility under `backend/pipeline/`:
-
-```text
-config.py           paths and default models
-io.py               text/json file helpers
-extraction.py       PDF extraction
-text_processing.py  cleaning and structuring
-chunking.py         chunk creation and markdown preview
-embeddings.py       embedding model loading and vector export
-retrieval.py        vector similarity search
-generation.py       prompt building and LLM/Ollama calls
-stages.py           pipeline stage wrappers
-cli.py              command line interface
 ```
 
 Available stages:
