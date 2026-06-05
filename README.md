@@ -35,6 +35,49 @@ frontend/             Webseite mit Next.js und TailwindCSS
 rag_pipeline.py       Startdatei für Tests über das Terminal
 ```
 
+## Voraussetzungen Auf Einem Neuen Rechner
+
+Damit das Projekt auf einem neuen Rechner läuft, braucht man:
+
+- Python 3.10 oder 3.11
+- Node.js
+- Ollama
+- Git, falls man das Projekt aus GitHub klont
+
+Python 3.13 sollte man eher vermeiden, weil manche KI-/OCR-Bibliotheken damit
+Probleme machen können.
+
+Danach erstellt man im Projektordner eine Python-Umgebung:
+
+```bash
+python -m venv .venv
+```
+
+Aktivieren auf macOS oder Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Aktivieren auf Windows PowerShell:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Dann installiert man die Python-Abhängigkeiten:
+
+```bash
+pip install -r requirements.txt
+```
+
+Für das Frontend installiert man die Node-Abhängigkeiten:
+
+```bash
+cd frontend
+npm install
+```
+
 ## Web-App Starten
 
 Zuerst muss Ollama mit dem lokalen Modell laufen:
@@ -163,5 +206,16 @@ python rag_pipeline.py generate "Erstelle einen Spickzettel" --mode cheatsheet -
 - Das Projekt braucht Python-Abhängigkeiten aus `requirements.txt`.
 - Das Frontend braucht Node.js und die Pakete aus `frontend/package.json`.
 - Ollama muss laufen, damit lokal Antworten generiert werden können.
+- Das Modell für Ollama muss vorhanden sein. Am einfachsten startet man einmal:
+  `ollama run llama3.2`.
+- Beim ersten Start kann `sentence-transformers` das Embedding-Modell
+  herunterladen. Das kann etwas dauern.
+- `marker-pdf` kann je nach Rechner etwas länger installieren, weil es für
+  PDF-Erkennung und OCR benutzt wird.
+- Die Ports `3000` und `8000` müssen frei sein.
+- Wenn ein Port schon benutzt wird, muss man den alten Prozess beenden oder
+  einen anderen Port verwenden.
+- Wenn man von einem anderen Gerät zugreifen will, müssen beide Geräte im
+  gleichen Netzwerk sein. Sonst braucht man z.B. Tailscale.
 - Die Chat-Verläufe werden nur im Browser gespeichert, nicht in einer Datenbank.
 - Generierte Dateien wie Chunks, Embeddings und PDFs liegen im Ordner `backend/data`.
