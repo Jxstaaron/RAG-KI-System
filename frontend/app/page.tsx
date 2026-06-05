@@ -1,6 +1,7 @@
 "use client";
 
 import { DragEvent, useEffect, useMemo, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL ?? "http://127.0.0.1:8000";
 
@@ -136,7 +137,7 @@ export default function Home() {
         <div className="flex w-full flex-col gap-3 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-violetSoft">
-              KI Project RAG
+              KI Projekt RAG
             </p>
             <h1 className="mt-1 text-2xl font-bold tracking-normal text-white md:text-3xl">
               KI-gestützer Lernassistent
@@ -186,7 +187,7 @@ export default function Home() {
           </div>
 
           <div className="min-h-0 flex-1 overflow-y-auto">
-            <div className="ml-4 mr-3 flex min-h-full w-[min(980px,calc(100%-2rem))] flex-col gap-4 py-4 lg:ml-[clamp(1rem,5vw,5rem)]">
+            <div className="mx-auto flex min-h-full w-full max-w-5xl flex-col gap-4 px-4 py-4">
               <div className="min-h-0 flex-1 overflow-y-auto">
                 {query.trim() && (
                   <div className="mb-4 max-w-2xl self-start rounded-lg bg-violet px-4 py-3 text-sm leading-6 text-white">
@@ -194,17 +195,48 @@ export default function Home() {
                   </div>
                 )}
 
-                <pre className="min-h-full whitespace-pre-wrap bg-panel px-2 py-3 text-sm leading-7 text-slate-100">
-                  {visibleAnswer || "Generated output will appear here as the assistant response."}
-                </pre>
+              <div className="min-h-full bg-panel px-2 py-3 text-sm leading-7 text-slate-100">
+                {visibleAnswer ? (
+                  <ReactMarkdown
+                    components={{
+                      h1: ({ children }) => (
+                        <h1 className="mb-3 mt-5 text-2xl font-bold text-white">{children}</h1>
+                      ),
+                      h2: ({ children }) => (
+                        <h2 className="mb-2 mt-4 text-xl font-bold text-white">{children}</h2>
+                      ),
+                      h3: ({ children }) => (
+                        <h3 className="mb-2 mt-3 text-lg font-bold text-white">{children}</h3>
+                      ),
+                      p: ({ children }) => <p className="mb-3 text-slate-100">{children}</p>,
+                      strong: ({ children }) => (
+                        <strong className="font-bold text-white">{children}</strong>
+                      ),
+                      ul: ({ children }) => (
+                        <ul className="mb-4 list-disc space-y-1 pl-6">{children}</ul>
+                      ),
+                      ol: ({ children }) => (
+                        <ol className="mb-4 list-decimal space-y-1 pl-6">{children}</ol>
+                      ),
+                      li: ({ children }) => <li className="pl-1">{children}</li>,
+                    }}
+                  >
+                    {visibleAnswer}
+                  </ReactMarkdown>
+                ) : (
+                  <p className="text-slate-400">
+                    Generated output will appear here as the assistant response.
+                  </p>
+                )}
+              </div>
               </div>
 
-              <div className="grid gap-3 lg:grid-cols-[minmax(0,1fr)_150px]">
+              <div className="grid gap-3 lg:grid-cols-[minmax(0,01fr)_150px]">
                 <textarea
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
                   placeholder="Ask about the PDF, or leave empty for the selected mode..."
-                  className="min-h-24 w-full resize-y rounded-md border border-line bg-panel px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500"
+                  className="min-h-24 w-full resize-none rounded-md border border-line bg-panel px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500"
                 />
 
                 <div className="flex flex-col gap-3 self-start">
