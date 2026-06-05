@@ -2,17 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Die App ist dunkel gestaltet und soll sich wie eine feste Anwendung anfühlen. */
 :root {
   color-scheme: dark;
 }
 
+/* Border-box macht Größenberechnungen im Layout berechenbarer. */
 * {
   box-sizing: border-box;
+}
+
+/* Das Browserfenster selbst scrollt nicht; nur die inneren Panels scrollen. */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
 }
 
 body {
   margin: 0;
   min-height: 100vh;
+  /* Hintergrund im Discord-ähnlichen dunklen Stil mit leichtem violetten Akzent. */
   background:
     radial-gradient(circle at 20% 12%, rgba(139, 92, 246, 0.22), transparent 28rem),
     linear-gradient(135deg, #0f1117 0%, #171923 48%, #11131a 100%);
@@ -24,9 +34,11 @@ body {
 button,
 input,
 textarea {
+  /* Formularelemente sollen dieselbe Schrift wie der Rest der App nutzen. */
   font: inherit;
 }
 
+/* Sichtbarer Fokus ist wichtig, wenn man die App mit Tastatur bedient. */
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {

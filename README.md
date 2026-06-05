@@ -1,59 +1,119 @@
 # RAG-KI-System
 
-This project is now split into a reusable RAG backend plus a web app:
+Dieses Projekt ist ein Lernassistent für PDF-Dateien. Man lädt eine PDF hoch und
+das System kann daraus zum Beispiel einen Spickzettel, eine Zusammenfassung, ein
+Quiz oder Karteikarten erstellen. Außerdem gibt es einen eigenen Frage-Modus, in
+dem man mit dem System über die PDF chatten kann.
+
+## Was Bedeutet RAG?
+
+RAG steht für `Retrieval Augmented Generation`.
+
+Ein normales Sprachmodell antwortet nur mit seinem allgemeinen Wissen. Unser
+System macht vorher noch einen extra Schritt:
 
 ```text
-backend/main.py       FastAPI API for upload, generate, and download
-backend/pipeline/     PDF extraction, cleaning, chunking, embeddings, retrieval, generation
-frontend/             Next.js + TailwindCSS user interface
-rag_pipeline.py       CLI entry point for pipeline testing
+PDF
+-> Text extrahieren
+-> Text bereinigen
+-> Text in Abschnitte aufteilen
+-> Embeddings berechnen
+-> passende Abschnitte suchen
+-> Antwort mit LLM erzeugen
 ```
 
-## Run the Web App
+Das Sprachmodell bekommt also nicht einfach nur die Frage, sondern auch die
+passenden Textstellen aus der PDF. Dadurch soll die Antwort besser zur
+hochgeladenen Datei passen.
 
-Start Ollama first:
+## Projektstruktur
+
+```text
+backend/main.py       FastAPI-Backend für Upload, Generierung und Download
+backend/pipeline/     Eigentliche RAG-Pipeline
+frontend/             Webseite mit Next.js und TailwindCSS
+rag_pipeline.py       Startdatei für Tests über das Terminal
+```
+
+## Web-App Starten
+
+Zuerst muss Ollama mit dem lokalen Modell laufen:
 
 ```bash
 ollama run llama3.2
 ```
 
-Start the FastAPI backend:
+Dann startet man das Backend im Projektordner:
 
 ```bash
-uvicorn backend.main:app --reload --port 8000
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-Start the frontend:
+In einem zweiten Terminal startet man das Frontend:
 
 ```bash
 cd frontend
 npm install
-npm run dev
+npm run dev -- --hostname 0.0.0.0
 ```
 
-Open:
+Auf dem gleichen Rechner öffnet man:
 
 ```text
 http://localhost:3000
 ```
 
-## User Flow
+Auf einem anderen Gerät im gleichen Netzwerk benutzt man die Netzwerk-Adresse,
+die Next.js im Terminal anzeigt, zum Beispiel:
 
-1. Drag and drop a PDF onto the upload area.
-2. The backend saves it to `backend/data/pdfs/file.pdf`.
-3. The pipeline extracts, cleans, structures, chunks, and embeds the PDF.
-4. Select one mode: `Cheatsheet`, `Summary`, `Quiz`, `Flashcards`, or `Explanation`.
-5. Click `Generate`.
-6. The output appears in the center panel.
-7. Click `Download PDF` to download the generated material.
+```text
+Frontend: http://192.168.178.33:3000
+Backend:  http://192.168.178.33:8000
+```
 
-## CLI Pipeline
+Zum Testen, ob das Backend erreichbar ist, kann man im Browser öffnen:
+
+```text
+http://192.168.178.33:8000/health
+```
+
+Wenn alles funktioniert, kommt zurück:
+
+```json
+{"ok":true}
+```
+
+## Bedienung Der Webseite
+
+1. Eine PDF unten in die Upload-Leiste ziehen oder anklicken.
+2. Warten, bis die Pipeline fertig ist.
+3. Rechts einen Modus auswählen.
+4. Auf `Generieren` klicken.
+5. Die Antwort erscheint in der Mitte als Chat-Nachricht.
+6. Mit `PDF herunterladen` kann die Antwort als PDF gespeichert werden.
+
+Es gibt diese Modi:
+
+```text
+Spickzettel
+Zusammenfassung
+Quiz
+Karteikarten
+Eigene Frage
+```
+
+Bei `Eigene Frage` kann man selbst Fragen zur PDF stellen. Die Antworten werden
+als Chat angezeigt. Links werden bis zu 10 Chat-Verläufe gespeichert.
+
+## Pipeline Über Das Terminal Testen
+
+Die komplette Pipeline kann man so starten:
 
 ```bash
 python rag_pipeline.py run
 ```
 
-Available stages:
+Einzelne Schritte kann man auch getrennt testen:
 
 ```bash
 python rag_pipeline.py extract backend/data/pdfs/file.pdf
@@ -63,47 +123,45 @@ python rag_pipeline.py chunk backend/data/structured_blocks/file.json
 python rag_pipeline.py embed backend/data/chunks/file.json
 ```
 
-The `embed` stage uses `paraphrase-multilingual-MiniLM-L12-v2` by default, which works well for German text and runs locally. It writes two files:
+Die Embeddings werden standardmäßig mit diesem Modell erstellt:
+
+```text
+paraphrase-multilingual-MiniLM-L12-v2
+```
+
+Das Modell funktioniert gut für deutsche Texte und läuft lokal auf dem Rechner.
+Die Embeddings werden hier gespeichert:
 
 ```text
 backend/data/embeddings/file.npy
 backend/data/embeddings/file_metadata.json
 ```
 
-You can test retrieval from the terminal:
+## Retrieval Testen
+
+Mit Retrieval sucht das System die passendsten Chunks zu einer Frage:
 
 ```bash
 python rag_pipeline.py retrieve "Welche ökologischen Probleme entstehen beim Bananenanbau?"
 ```
 
-Generate an answer with the retrieved chunks:
+Eine Antwort kann man auch direkt über das Terminal erzeugen:
 
 ```bash
 python rag_pipeline.py generate "Erstelle einen Spickzettel zu den ökologischen Problemen beim Bananenanbau" --mode cheatsheet --top-k 3
 ```
 
-By default, generation uses a local Ollama model named `llama3.2`. If your model has a different name, pass it explicitly:
+Standardmäßig wird lokal Ollama mit `llama3.2` benutzt. Wenn das Modell anders
+heißt, kann man den Namen angeben:
 
 ```bash
-python rag_pipeline.py generate "Erstelle einen Spickzettel zu den ökologischen Problemen beim Bananenanbau" --mode cheatsheet --top-k 3 --llm-model llama3
+python rag_pipeline.py generate "Erstelle einen Spickzettel" --mode cheatsheet --llm-model llama3
 ```
 
-Generation also uses `--min-score 0.5` by default. If the retrieved chunks are too unrelated to the question, the command stops instead of giving the model the wrong context.
+## Wichtige Hinweise
 
-You can still use OpenAI instead:
-
-```bash
-export OPENAI_API_KEY=your_api_key_here
-python rag_pipeline.py generate "Erstelle einen Spickzettel zu den ökologischen Problemen beim Bananenanbau" --provider openai --llm-model gpt-4o-mini
-```
-
-Available generation modes:
-
-```text
-cheatsheet
-summary
-quiz
-flashcards
-explanation
-```
-    
+- Das Projekt braucht Python-Abhängigkeiten aus `requirements.txt`.
+- Das Frontend braucht Node.js und die Pakete aus `frontend/package.json`.
+- Ollama muss laufen, damit lokal Antworten generiert werden können.
+- Die Chat-Verläufe werden nur im Browser gespeichert, nicht in einer Datenbank.
+- Generierte Dateien wie Chunks, Embeddings und PDFs liegen im Ordner `backend/data`.
