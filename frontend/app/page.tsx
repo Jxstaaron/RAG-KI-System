@@ -112,6 +112,7 @@ export default function Home() {
   const [apiUrl, setApiUrl] = useState(CONFIGURED_API_URL ?? "http://127.0.0.1:8000");
   const [uploadProgress, setUploadProgress] = useState(0);
   const [uploadStageLabel, setUploadStageLabel] = useState("Bereit");
+  const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
   // fileInputRef erlaubt es, den unsichtbaren Datei-Input über die Upload-Leiste zu öffnen.
   const fileInputRef = useRef<HTMLInputElement>(null);
   // outputScrollRef wird genutzt, um den Chat automatisch nach unten zu scrollen.
@@ -313,6 +314,25 @@ export default function Home() {
         window.clearInterval(timer);
       }
     }, 18);
+  }
+
+  async function copyAssistantMessage(chatMessage: ChatMessage) {
+    // Kopiert nur echte LLM-Antworten, keine Nutzerfragen oder Lade-Nachrichten.
+    if (chatMessage.role !== "assistant" || !chatMessage.content.trim()) return;
+
+    try {
+      await navigator.clipboard.writeText(chatMessage.content);
+      setCopiedMessageId(chatMessage.id);
+      setMessage("Antwort wurde in die Zwischenablage kopiert.");
+      window.setTimeout(() => {
+        setCopiedMessageId((currentId) =>
+          currentId === chatMessage.id ? null : currentId,
+        );
+      }, 1600);
+    } catch {
+      setStatus("error");
+      setMessage("Antwort konnte nicht kopiert werden.");
+    }
   }
 
   async function uploadFile(file: File) {
@@ -576,9 +596,24 @@ export default function Home() {
                                 : "border border-line bg-panelSoft text-slate-100",
                           ].join(" ")}
                         >
-                          {chatMessage.role !== "user" && chatMessage.mode && (
-                            <div className="mb-2 text-xs font-bold uppercase tracking-[0.12em] text-violetSoft">
-                              {modeLabel(chatMessage.mode)}
+                          {chatMessage.role !== "user" && (
+                            <div className="mb-2 flex items-center justify-between gap-3">
+                              {chatMessage.mode ? (
+                                <div className="text-xs font-bold uppercase tracking-[0.12em] text-violetSoft">
+                                  {modeLabel(chatMessage.mode)}
+                                </div>
+                              ) : (
+                                <span />
+                              )}
+                              {chatMessage.role === "assistant" && chatMessage.content.trim() && (
+                                <button
+                                  type="button"
+                                  onClick={() => void copyAssistantMessage(chatMessage)}
+                                  className="rounded border border-line px-2 py-1 text-xs font-bold text-slate-300 transition hover:border-violet hover:text-white"
+                                >
+                                  {copiedMessageId === chatMessage.id ? "Kopiert" : "Kopieren"}
+                                </button>
+                              )}
                             </div>
                           )}
                           {chatMessage.role === "thinking" ? (
