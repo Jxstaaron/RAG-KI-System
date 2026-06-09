@@ -1,4 +1,5 @@
 from __future__ import annotations
+"""Bereinigung und einfache Strukturierung des extrahierten PDF-Texts."""
 
 import re
 import unicodedata
@@ -6,8 +7,9 @@ import warnings
 
 from backend.pipeline.tokenization import count_tokens
 
-
 def is_heading(line: str) -> bool:
+    """Heuristik: Erkennt Überschriften anhand von Markdown oder kurzer Zeile."""
+
     line = line.strip()
     return line.startswith("#") or (
         len(line) < 80 and line[:1].isupper() and not line.endswith(".")
@@ -15,10 +17,14 @@ def is_heading(line: str) -> bool:
 
 
 def is_list_item(line: str) -> bool:
+    """Prüft, ob eine Zeile wie ein Listenpunkt aussieht."""
+
     return bool(re.match(r"^([-*•]|\d+\.)\s+", line.strip()))
 
 
 def fix_encoding(text: str) -> str:
+    """Repariert typische OCR-/Encoding-Probleme bei Umlauten und Sonderzeichen."""
+
     if re.search(r"\\u[0-9a-fA-F]{4}|\\U[0-9a-fA-F]{8}", text):
         try:
             with warnings.catch_warnings():
@@ -48,6 +54,8 @@ def fix_encoding(text: str) -> str:
 
 
 def merge_lines(text: str) -> str:
+    """Fügt umgebrochene Fliesstextzeilen wieder zu Abschnitten zusammen."""
+
     merged: list[str] = []
     for line in text.splitlines():
         line = line.strip()
@@ -61,6 +69,8 @@ def merge_lines(text: str) -> str:
 
 
 def clean_text(text: str) -> str:
+    """Entfernt Störzeichen, Seitenzahlen, Bild-Platzhalter und OCR-Rauschen."""
+
     text = fix_encoding(text)
     text = re.sub(r"!\[\]\(.*?\)", "", text)
     text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)
@@ -80,6 +90,8 @@ def clean_text(text: str) -> str:
 
 
 def structure_text(text: str) -> list[dict]:
+    """Teilt den Text in Blöcke und merkt sich die aktuelle Überschrift."""
+
     blocks = []
     current_heading = None
     for paragraph in re.split(r"\n\s*\n", text):

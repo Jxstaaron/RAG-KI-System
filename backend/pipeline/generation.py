@@ -1,4 +1,5 @@
 from __future__ import annotations
+"""Antwortgenerierung mit Retrieval-Kontext und lokalem/externem LLM."""
 
 import json
 import os
@@ -17,19 +18,25 @@ from backend.pipeline.retrieval import retrieve_chunks
 
 
 def mode_instruction(mode: str) -> str:
+    """Liefert die genaue Arbeitsanweisung für den gewählten Modus."""
+
     instructions = {
         "cheatsheet": (
             "Erstelle einen kompakten Spickzettel mit den wichtigsten Begriffen, "
-            "Zusammenhaengen und Fakten. Nutze kurze Ueberschriften und Stichpunkte."
+            "Zusammenhängen und Fakten. Nutze kurze Überschriften und Stichpunkte."
         ),
-        "summary": "Fasse die wichtigsten Inhalte knapp und verstaendlich zusammen.",
+        "summary": "Fasse die wichtigsten Inhalte knapp und verständlich zusammen.",
         "quiz": (
-            "Erstelle Lernfragen mit kurzen Musterantworten. Mische Verstaendnisfragen "
+            "Erstelle Lernfragen mit kurzen Musterantworten. Mische Verständnisfragen "
             "und Faktenfragen."
         ),
         "flashcards": "Erstelle Karteikarten im Format 'Frage: ...' und 'Antwort: ...'.",
         "explanation": (
-            "Erklaere das Thema einfach und schuelerfreundlich, aber sachlich korrekt."
+            "Erkläre das Thema einfach und schülerfreundlich, aber sachlich korrekt."
+        ),
+        "custom": (
+            "Beantworte die User-Anfrage direkt und verständlich anhand der passenden "
+            "Kontext-Chunks."
         ),
     }
     if mode not in instructions:
@@ -39,6 +46,8 @@ def mode_instruction(mode: str) -> str:
 
 
 def build_prompt(query: str, chunks: list[dict[str, Any]], mode: str) -> str:
+    """Baut den finalen Prompt aus Aufgabe, User-Frage und RAG-Kontext."""
+
     context_parts = []
     for number, chunk in enumerate(chunks, start=1):
         context_parts.append(
@@ -47,22 +56,25 @@ def build_prompt(query: str, chunks: list[dict[str, Any]], mode: str) -> str:
             f"{chunk['text']}"
         )
 
-    context = "\n\n---\n\n".join(context_parts)
+    # Der Prompt verbietet bewusst Allgemeinwissen, damit Antworten nur aus den
+    # gefundenen PDF-Chunks entstehen.
     return (
-        "Du bist ein Lernassistent fuer ein Schulprojekt.\n"
-        "Nutze ausschliesslich die bereitgestellten Kontext-Chunks.\n"
+        "Du bist ein Lernassistent für ein Schulprojekt.\n"
+        "Nutze ausschließlich die bereitgestellten Kontext-Chunks.\n"
         "Wenn die Chunks nicht genug Informationen enthalten, sage das klar.\n"
         "Erfinde keine Fakten und antworte auf Deutsch.\n"
-        "Nutze kein Allgemeinwissen ausserhalb der Chunks.\n"
-        "Erwaehne nur Begriffe, Ursachen, Folgen und Beispiele, die in den Chunks vorkommen.\n"
-        "Wenn ein moeglicher Punkt nicht direkt aus den Chunks belegbar ist, lasse ihn weg.\n\n"
+        "Nutze kein Allgemeinwissen außerhalb der Chunks.\n"
+        "Erwähne nur Begriffe, Ursachen, Folgen und Beispiele, die in den Chunks vorkommen.\n"
+        "Wenn ein möglicher Punkt nicht direkt aus den Chunks belegbar ist, lasse ihn weg.\n\n"
         f"Aufgabe:\n{mode_instruction(mode)}\n\n"
         f"User-Anfrage:\n{query}\n\n"
-        f"Kontext-Chunks:\n{context}\n"
+        f"Kontext-Chunks:\n{chr(10).join(context_parts)}\n"
     )
 
 
 def call_openai(prompt: str, model_name: str = DEFAULT_LLM_MODEL) -> str:
+    """Optionaler OpenAI-Provider, falls ein API-Key gesetzt ist."""
+
     api_key = os.environ.get("OPENAI_API_KEY")
     if not api_key:
         raise SystemExit(
@@ -95,6 +107,8 @@ def call_ollama(
     model_name: str = DEFAULT_OLLAMA_MODEL,
     base_url: str = DEFAULT_OLLAMA_URL,
 ) -> str:
+    """Ruft ein lokal laufendes Ollama-Modell über dessen HTTP-API auf."""
+
     payload = json.dumps(
         {
             "model": model_name,
@@ -125,6 +139,8 @@ def call_ollama(
 
 
 def call_llm(prompt: str, provider: str, model_name: str, ollama_url: str) -> str:
+    """Wählt anhand des Provider-Namens das passende LLM-Backend."""
+
     if provider == "ollama":
         return call_ollama(prompt, model_name, ollama_url)
     if provider == "openai":
@@ -144,16 +160,52 @@ def generate_answer(
     ollama_url: str = DEFAULT_OLLAMA_URL,
     output: str | Path | None = None,
 ) -> str:
+    """Generiert eine Antwort auf Basis der passendsten Chunks."""
+
     chunks = retrieve_chunks(query, embeddings_path, top_k=top_k, model_name=embedding_model)
     chunks = [chunk for chunk in chunks if chunk.get("score", 0.0) >= min_score]
     if not chunks:
+        # Bei zu geringer Ähnlichkeit wird keine Antwort erfunden.
         answer = (
             "Die gespeicherten Chunks enthalten nicht genug passende Informationen "
-            f"fuer diese Anfrage. Hoechster Treffer liegt unter min_score={min_score}."
+            f"für diese Anfrage. Hoechster Treffer liegt unter min_score={min_score}."
         )
     else:
         model = llm_model or (DEFAULT_OLLAMA_MODEL if provider == "ollama" else DEFAULT_LLM_MODEL)
         answer = call_llm(build_prompt(query, chunks, mode), provider, model, ollama_url)
+
+    if output:
+        write_text(output, answer)
+        print(f"Saved generated answer to: {output}")
+    else:
+        print(answer)
+    return answer
+
+
+def generate_from_chunks(
+    query: str,
+    chunks: list[dict[str, Any]],
+    mode: str = "cheatsheet",
+    provider: str = "ollama",
+    llm_model: str | None = None,
+    ollama_url: str = DEFAULT_OLLAMA_URL,
+    output: str | Path | None = None,
+) -> str:
+    """Generiert eine Antwort aus allen Chunks, z.B. für Zusammenfassung/Quiz."""
+
+    selected = [
+        {
+            **chunk,
+            "score": 1.0,
+            "text": chunk.get("text_with_context") or chunk["text"],
+        }
+        for chunk in chunks
+    ]
+    if not selected:
+        answer = "Es wurden keine Chunks gefunden. Bitte lade zuerst ein PDF hoch."
+    else:
+        model = llm_model or (DEFAULT_OLLAMA_MODEL if provider == "ollama" else DEFAULT_LLM_MODEL)
+        answer = call_llm(build_prompt(query, selected, mode), provider, model, ollama_url)
 
     if output:
         write_text(output, answer)

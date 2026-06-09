@@ -1,4 +1,5 @@
 from __future__ import annotations
+"""Retrieval: Findet zu einer Frage die ähnlichsten gespeicherten Chunks."""
 
 from pathlib import Path
 from typing import Any
@@ -14,6 +15,8 @@ def retrieve_chunks(
     top_k: int = 5,
     model_name: str | None = None,
 ) -> list[dict[str, Any]]:
+    """Berechnet Query-Embedding und sortiert Chunks nach Ähnlichkeit."""
+
     import numpy as np
 
     embeddings_path = Path(embeddings_path)
@@ -24,6 +27,8 @@ def retrieve_chunks(
     model = load_embedding_model(model_name, local_files_only=True)
     vectors = np.load(embeddings_path)
     query_vector = model.encode(query, normalize_embeddings=True)
+    # Da die Embeddings normalisiert sind, entspricht das Dot-Product der
+    # Kosinus-Ähnlichkeit.
     scores = vectors @ query_vector
 
     results = []
@@ -34,6 +39,8 @@ def retrieve_chunks(
 
 
 def print_results(results: list[dict[str, Any]]) -> None:
+    """Gibt Retrieval-Ergebnisse lesbar in der Konsole aus."""
+
     for result in results:
         print(f"\nScore: {result['score']:.4f}")
         print(f"Chunk: {result['id']}")

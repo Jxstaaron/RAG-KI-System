@@ -1,8 +1,8 @@
 # Chunk 1
-Heading: Landgrabbing als Beitrag zur Ernährungssicherheit?
-Tokens: 317
-Words: 247
-Blocks: 2-5
+Heading: Juso-Chef Türmer fordert staatliche Begrenzung der Spritpreise
+Tokens: 454
+Words: 380
+Blocks: 2-10
 
 ## Context before
 
@@ -10,131 +10,1031 @@ Blocks: 2-5
 
 ## Text
 
-Der Erwerb großer landwirtschaftlicher Flächen hat in den letzten Jahren extrem an Bedeutung gewonnen. Die Weltbank schätzt, dass bis 2030 im Rahmen großmaßstäblicher Landkäufe jährlich sechs Millionen Hektar Agrarflächen umgenutzt oder neu erschlossen werden (zum Vergleich: Agrarfläche Deutschlands: 17 Millionen Hektar).
+Vorbild Ungarn: Juso-Chef Philipp Türmer spricht sich für einen Spritpreisdeckel in Deutschland aus und wirft Tankstellenbetreibern Abzocke vor. Unionspolitiker äußern sich skeptisch.
 
-Wo wird in großem Maßstab mit Land gehandelt? Wer profitiert von diesen Landkäufen? Unter welchen Bedingungen kommen die Verträge zustande? Welche Folgen haben die Landverkäufe für die lokale Bevölkerung?
+Berlin. Juso-Chef Philipp Türmer fordert angesichts der stark gestiegenen Benzinpreise einen staatlichen Deckel für Spritpreise. "Wir brauchen jetzt einen Spritpreisdeckel, der die Abzocke an der Tankstelle beendet. So begrenzen wir die haltlosen Gewinne der Konzerne und entlasten die Bürgerinnen und Bürger", sagte Türmer dem Handelsblatt.
 
-- 1. Beschreiben Sie die globale Verteilung der Landkäufe ().
-- 2. Erläutern Sie in eigenen Worten, was Landgrabbing bedeutet und was die Motive dafür sind. (–)
-- Recherchieren die Ernährungslage und den Beschäftigtenanteil in der Landwirtschaft der "Hotspots großflächiger Landakquisitionen". Erläutern Sie mögliche Folgen für die einheimische Bevölkerung (Atlas, Internet).
-- 4. Oft ist die Menschenrechtslage in den von Landgrabbing betroffenen Ländern angespannt. Recherchieren Sie den "Governance Score", einen von der Weltbank herausgegebenen Index für gute Regierungsführung, in den betroffenen Ländern (Internet).
-- Diskutieren Sie, welche Voraussetzungen erfüllt sein müssen, damit großflächige Landkäufe eine nachhaltige Verbesserung für die lokale Bevölkerung darstellen können.
-- Oft führen Landverkäufe zu Protesten der einheimischen Bevölkerung. Stellen Sie in einer Mindmap dar, wie Landgrabbing zu Armut und Hunger in der lokalen Bevölkerung führen kann ( – ).
-- 2 7. Recherchieren Sie anhand eines konkreten Beispiels die Bedingungen und Folgen eines Land-Deals (Internet).
-- → Landgrabbing, Landakquisition
+In Deutschland sind die Spritpreise nach Ausbruch des Irankriegs stark gestiegen. So kostete ein Liter Superbenzin der Sorte E10 am Montag im bundesweiten Tagesdurchschnitt mehr als zwei Euro, wie aus Zahlen des ADAC hervorgeht. Damit war die günstigste gängige Benzinsorte so teuer wie seit Mai 2022 nicht mehr. Diesel stieg auf 2,171 Euro pro Liter.
 
-Die internationale Gemeinschaft fordert die brasilianische Regierung auf, aktiv gegen Entwaldung und (vorsätzlich) gelegte Brände vorzugehen. Sie unterstellen einen Zusammenhang zwischen der Pro-Business-Politik Jair Bolsonaros, die illegale Landnahme begünstigt, und der anhaltenden Zerstörung dieses Habitats.
+Fast zwei Euro pro Liter Benzin am Wochenende, 20 Cent mehr als noch vor kurzer Zeit, das sei "völlig absurd", sagte Türmer. Während viele Arbeitnehmer jeden Euro zweimal umdrehen müssten, nutzten Ölkonzerne die Eskalation im Iran "schamlos" für Spekulation und Extraprofite. "Das ist nichts anderes als Abzocke auf dem Rücken der Menschen", sagte der Juso-Chef.
+
+Konzerne dürften Krisen nicht als Vorwand missbrauchen, um bei Sprit, Gas und Öl ihre Gewinne auf Kosten der Bürger nach oben zu treiben. "Dem müssen wir umgehend einen Riegel vorschieben. Selbst inÖsterreich ist inzwischen klar: Der Staat darf bei explodierenden Spritpreisen nicht tatenlos zusehen", sagte Türmer.
+
+Österreichs Bundeskanzler Christian Stocker (ÖVP) hatte gefordert, die Treibstoffsteuern vorübergehend zu senken. In Ungarn greift der Staat bereits gegen die Teuerung von Kfz-Treibstoffen infolge des Irankriegs ein. Seit Dienstag ist der Preis von Benzin (95 Oktan) auf 595 Forint (1,51 Euro) pro Liter gedeckelt, der von Diesel auf 615 Forint. Auch Kroatien hat eine Obergrenze für Spritpreise eingezogen.
+
+In der SPD ist Türmer mit seiner Forderung bislang weitgehend allein. Seine Parteifreunde verweisen eher auf das Bundeskartellamt oder fordern wie Jochen Ott, designierter SPD-Spitzenkandidat für die Landtagswahl in Nordrhein-Westfalen im nächsten Jahr, eine Übergewinnsteuer.
+
+"Der Preisanstieg bei Benzin und Gas ist schlicht inakzeptabel. Deshalb erwarte ich von der Wirtschaftsministerin noch in dieser Woche klare Maßnahmen gegen mögliche Abzocke der Mineralölkonzerne", sagte Ott. Wenn der Ölpreis falle, müsse das auch schnell an der Zapfsäule ankommen. "Und wir müssen in Zukunft krisenbedingte Übergewinne besteuern können. Dafür brauchen wir jetzt die rechtlichen Möglichkeiten."
 
 ## Context after
 
-| Akteursgruppen | Zweck | |----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | Industriestaaten (Energiekon-<br>zerne, Investmentfonds etc.) | Produktion von Agrar-<br>rohstoffen (Futtermittel,<br>Agrartreibstoffe), Land als<br>Spekulationsobjekt | | Bevölkerungsreiche Staaten mit<br>hohem Bevölkerungswachstum<br>(Indien, China, Vereinigte Arabi-<br>sche Emirate, Ägypten) | Produktion von Nahrungs-<br>mitteln, Futterpflanzen und<br>Agrarrohstoffen für eigenen<br>Bedarf | | Staaten mit sehr begrenzten<br>Land- bzw. Wasserressourcen,<br>aber hoher Kapitalverfüg-<br>barkeit (Kuwait, Katar, Saudi-<br>Arabien)
+Auch Niedersachsens Ministerpräsident Olaf Lies (SPD) sagte, Bürger und Unternehmen dürften "nicht die Zeche zahlen für Übergewinne Einzelner". Lies sieht aber vor allem das Kartellamt in der Verantwortung, das prüfen müsse, ob die hohen Preise gerechtfertigt sind. Falls ja, müsse entschlossen dagegen vorgegangen werden, forderte Lies. "Ich warne aber davor,
 
 
 ---
 
 # Chunk 2
-Heading: Landgrabbing als Beitrag zur Ernährungssicherheit?
-Tokens: 417
-Words: 91
-Blocks: 6-6
+Heading: **Ungarn zieht Preisobergrenze ein**
+Tokens: 492
+Words: 369
+Blocks: 11-24
 
 ## Context before
 
-anhand eines konkreten Beispiels die Bedingungen und Folgen eines Land-Deals (Internet). - → Landgrabbing, Landakquisition Die internationale Gemeinschaft fordert die brasilianische Regierung auf, aktiv gegen Entwaldung und (vorsätzlich) gelegte Brände vorzugehen. Sie unterstellen einen Zusammenhang zwischen der Pro-Business-Politik Jair Bolsonaros, die illegale Landnahme begünstigt, und der anhaltenden Zerstörung dieses Habitats.
+ist schlicht inakzeptabel. Deshalb erwarte ich von der Wirtschaftsministerin noch in dieser Woche klare Maßnahmen gegen mögliche Abzocke der Mineralölkonzerne", sagte Ott. Wenn der Ölpreis falle, müsse das auch schnell an der Zapfsäule ankommen. "Und wir müssen in Zukunft krisenbedingte Übergewinne besteuern können. Dafür brauchen wir jetzt die rechtlichen Möglichkeiten."
 
 ## Text
 
-| Akteursgruppen | Zweck | |----------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------| | Industriestaaten (Energiekon-<br>zerne, Investmentfonds etc.) | Produktion von Agrar-<br>rohstoffen (Futtermittel,<br>Agrartreibstoffe), Land als<br>Spekulationsobjekt | | Bevölkerungsreiche Staaten mit<br>hohem Bevölkerungswachstum<br>(Indien, China, Vereinigte Arabi-<br>sche Emirate, Ägypten) | Produktion von Nahrungs-<br>mitteln, Futterpflanzen und<br>Agrarrohstoffen für eigenen<br>Bedarf | | Staaten mit sehr begrenzten<br>Land- bzw. Wasserressourcen,<br>aber hoher Kapitalverfüg-<br>barkeit (Kuwait, Katar, Saudi-<br>Arabien) | Verringerung der Abhän-<br>gigkeit vom Weltmarkt bei<br>Lebensmittelproduktion | | Nationale Unternehmen in Ziel-<br>ländern (häufig in Kooperation<br>mit ausländischen Investoren) | Gewinnmaximierung |
+Auch Niedersachsens Ministerpräsident Olaf Lies (SPD) sagte, Bürger und Unternehmen dürften "nicht die Zeche zahlen für Übergewinne Einzelner". Lies sieht aber vor allem das Kartellamt in der Verantwortung, das prüfen müsse, ob die hohen Preise gerechtfertigt sind. Falls ja, müsse entschlossen dagegen vorgegangen werden, forderte Lies. "Ich warne aber davor, jetzt in einem Schnellschuss gegen jede Bewegung sofort anzusubventionieren."
+
+In der Union sieht man harte Schritte wie Preisobergrenzen skeptisch. So sagte CDU-Wirtschaftspolitiker Sepp Müller: "Das Kartellamt verfügt bereits über scharfe Instrumente, um gegen Preistreiber vorzugehen." Die Koalition beobachte die Marktentwicklung sehr genau. "In der kommenden Woche werden wir die Chefs der Mineralölkonzerne befragen und die möglichen Maßnahmen intern beraten", sagte Müller.
+
+Auch die Bundesregierung lehnt staatliche Eingriffe bislang ab. Hinter vorgehaltener Hand fragen sich jedoch manche, wie lange diese Linie durchzuhalten ist, sollten die Spritpreise dauerhaft so hoch bleiben wie derzeit. Der Tankstellen-Interessenverband rechnet damit, dass die Spritpreise in Deutschland weiter steigen werden. Bis zu "2,50 Euro und mehr" pro Liter seien möglich, sagte ein Sprecher des Verbands.
+
+2022 hatte die damalige Ampelkoalition nach den infolge des Ukrainekriegs stark gestiegenen Spritpreisen einen Tankrabatt eingeführt. Damals senkte die Bundesregierung die Preise, indem sie für drei Monate die Energiesteuern auf Benzin senkte.
+
+Laut einer Simulation der RWTH Aachen würde ein neuer Tankrabatt zwar zu einer finanziellen Entlastung der Haushalte führen. Allerdings würden Haushalte mit höheren Einkommen absolut deutlich stärker profitieren. Der Grund: Sie verbrauchen im Durchschnitt mehr Kraftstoff.
+
+Während Gutverdiener rund 20 Euro im Monat sparen würden, läge die Entlastung bei unteren Einkommen im Durchschnitt nur bei etwa sechs Euro. "Die gestiegenen Preise an der Zapfsäule stellen für viele private Haushalte eine spürbare Belastung dar. Ein Tankrabatt
+
+zur Entlastung wäre jedoch sowohl aus ökonomischer als auch aus sozialpolitischer Sicht der falsche Ansatz", sagte Aaron Praktiknjo von der RWTH Aachen.
+
+Wörter: 681 Autor/-in: Martin Greive Julian Olk Medienkanal: ONLINE Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 807.013 Unique Users (UUpD) <sup>2</sup> : 271.000
+
+Weblink: **https://www.handelsblatt.com/politik/deutschland/benzin-juso-chef-tuermer-fordert-staatliche-begrenzung-der-spritpreise/100207192.html**
+
+<sup>1</sup> von PMG gewichtet 10-2024
+
+**Abbildung:** Juso-Chef Philipp Türmer: Will die Benzinpreise in Deutschland deckeln.
+
+**Fotograf/-in:** Sebastian Willnow/dpa
 
 ## Context after
 
-Modernes Landgrabbing ist das Ergreifen der Kontrolle über relativ große Landflächen und andere natürliche Ressourcen durch eine Reihe von Mechanismen und Formen, die große Kapitalsummen beinhalten. Die Ressourcennutzung wird dabei oft von einer lokalen [Nutzung] hin zu einer Nutzung getrieben, die auf das Extrahieren von Profiten und Ressourcen – sei
+<sup>2</sup>gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+ Chefs der Mineralölkonzerne BP und Shell sollten Union und SPD die hohen Spritpreise erklären. Das Ergebnis: ungenügend. Unionsfraktionsvize Müller meint: »Hört auf, euch die Taschen vollzumachen.« Die Spritpreise springen seit Beginn des Irankriegs in die Höhe. Woran das genau liegt, sollten
 
 
 ---
 
 # Chunk 3
-Heading: Investoren/Akteursgruppen bei Landgrabbing-Verträgen
-Tokens: 457
-Words: 346
-Blocks: 8-16
+Heading: Mediengattung: Online News Medientyp: ONLINEMEDIEN
+Tokens: 468
+Words: 382
+Blocks: 25-35
 
 ## Context before
 
-Staaten mit<br>hohem Bevölkerungswachstum<br>(Indien, China, Vereinigte Arabi-<br>sche Emirate, Ägypten) | Produktion von Nahrungs-<br>mitteln, Futterpflanzen und<br>Agrarrohstoffen für eigenen<br>Bedarf | | Staaten mit sehr begrenzten<br>Land- bzw. Wasserressourcen,<br>aber hoher Kapitalverfüg-<br>barkeit (Kuwait, Katar, Saudi-<br>Arabien) | Verringerung der Abhän-<br>gigkeit vom Weltmarkt bei<br>Lebensmittelproduktion | | Nationale Unternehmen in Ziel-<br>ländern (häufig in Kooperation<br>mit ausländischen Investoren) | Gewinnmaximierung |
+Ansatz", sagte Aaron Praktiknjo von der RWTH Aachen. Wörter: 681 Autor/-in: Martin Greive Julian Olk Medienkanal: ONLINE Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 807.013 Unique Users (UUpD) <sup>2</sup> : 271.000 Weblink: **https://www.handelsblatt.com/politik/deutschland/benzin-juso-chef-tuermer-fordert-staatliche-begrenzung-der-spritpreise/100207192.html** <sup>1</sup> von PMG gewichtet 10-2024 **Abbildung:** Juso-Chef Philipp Türmer: Will die Benzinpreise in Deutschland deckeln. **Fotograf/-in:** Sebastian Willnow/dpa
 
 ## Text
 
-Modernes Landgrabbing ist das Ergreifen der Kontrolle über relativ große Landflächen und andere natürliche Ressourcen durch eine Reihe von Mechanismen und Formen, die große Kapitalsummen beinhalten. Die Ressourcennutzung wird dabei oft von einer lokalen [Nutzung] hin zu einer Nutzung getrieben, die auf das Extrahieren von Profiten und Ressourcen – sei es national oder international – ausgerichtet ist. Es ist eine Antwort des Kapitals auf das Zusammentreffen der Nahrungs-, Energie- und Finanzkrise, auf dominante Klimaschutzmaßnahmen und auf den Ressourcenbedarf der neuen globalen Zentren. [...] Die Lösung dieser Krisen, die von vielen globalen (politischen und wirtschaftlichen) Kräften propagiert wird, besteht in der Aneignung von vermeintlich leerem, unzureichend genutztem, verfügbarem Land, um ihm einen effizienten, "klimafreundlichen" und produktiven Nutzen zu geben. Dies wird als Win-Win-Lösung dargestellt, die Gewinne für Unternehmen bringt und es nationalen Regierungen ermöglicht, Steuern und Beschäftigungsmöglichkeiten für ihre [Bürgerinnen und Bürger] zu schaffen. Diese "Lösungen" haben die aktuelle Jagd nach Land bzw. Landgrabbing mit verursacht und legitimiert. Das anvisierte Land [ist jedoch nicht leer oder unzureichend genutzt,
+<sup>2</sup>gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
 
-bas anvisierte Land [ist jedoch nicht leer oder unzureichend genutzt, sondern] wird in der Regel bereits von Bäuerinnen und Bauern bzw. traditionellen [Fischerinnen und Fischern sowie Waldbewohnerrinnen und Waldbewohnern] genutzt. Die Eigentumssysteme dieser Gemeinschaften basieren oft auf traditionellen Landnutzungsrechten, [die beim Verkauf missachtet werden].
+Chefs der Mineralölkonzerne BP und Shell sollten Union und SPD die hohen Spritpreise erklären. Das Ergebnis: ungenügend. Unionsfraktionsvize Müller meint: »Hört auf, euch die Taschen vollzumachen.«
 
-Quelle: FIAN (Hg.): Landgrabbing und Menschenrechte – Die Rolle von EU-Akteuren im Ausland. www.fian.de, 06/2019, Zugriff: 20.10.2020, S. 5ff.
+Die Spritpreise springen seit Beginn des Irankriegs in die Höhe. Woran das genau liegt, sollten die Mineralölkonzerne nun einer Taskforce der Regierungskoalition aus Union und SPD erklären. Das Ergebnis: ungenügend. Nach der Sitzung haben Politiker der Koalition viel Kritik an der Gestaltung der Spritpreise geübt . Die Mineralölbranche weist den Vorwurf der »Abzocke« jedoch zurück.
 
-- Voice and Accountability (Mitspracherecht und Verantwortlichkeit)
-- Rule of Law (Rechtsstaatlichkeit / Rechtssicherheit)
-- Control of Corruption (Kontrolle und Bekämpfung von Korruption)
-- Indikatoren für gerechte Landnutzung
+Die Koalitionsfraktionen hatten wegen der stark gestiegenen Öl- und Spritpreise infolge des Irankriegs eine Taskforce eingesetzt. SPD-Fraktionsvize Armand Zorn und Unionsfraktionsvize Sepp Müller leiten die Gruppe. An der Sitzung des Gremiums in Berlin nahmen die Deutschland -Chefs der Mineralölkonzerne BP und Shell teil, dazu unter anderem der Präsident des Bundeskartellamts, Andreas Mundt, sowie Vertreter von Branchenverbänden, Verbraucherschützern und des ADAC.
 
-schueler.diercke.de 100800-147, -149, -27
+SPD-Politiker Zorn sagte nach der Sitzung: »Leider wurden unsere Fragen nicht zufriedenstellend beantwortet. Den Mineralölkonzernen ist es nicht gelungen, glaubhaft zu erklären, wie die Preisgestaltung geschieht und vor allem auch, wie die Unterschiede im europäischen Vergleich zu erklären sind.«
 
-Die vom Ausschuss für Welternährungssicherung der Vereinten Nationen (CFS) einstimmig beschlossenen "Freiwilligen Leitlinien für die verantwortungsvolle Verwaltung von Boden- und Landnutzungsrechten, Fischgründen und Wäldern" sind ein historischer Meilenstein in der internationalen Entwicklungspolitik.
+Ähnlich äußerte sich Müller. Der CDU - Politiker sprach von einer »Preistreiberei der Mineralölkonzerne«. Der Vorsitzende der Monopolkommission, Tomaso Duso, hatte gesagt, in Deutschland seien die Spritpreise im europäischen Vergleich besonders stark gestiegen. Berechnungen des Forschungsund Beratungsbüros Energycomment im Auftrag der Umweltschutzorganisation Greenpeace kommen für die ersten beiden Märzwochen auf rund 21 Millionen Euro pro Tag, die die Mineralölkonzerne durch eine Ausweitung der Margen zusätzlich verdient haben sollen. **Mehr dazu lesen Sie hier.**
 
-Sie sind das erste globale völkerrechtliche Instrument, das den sicheren und gerechten Zugang zu natürlichen Ressourcen regelt und sich dabei auch mit der Gestaltung von Landinvestitionen – dem so genannten "Landgrabbing" – befasst. Ziel ist es, die Menschen in Entwicklungsländern gezielt zu stärken, damit sie aus eigener Kraft ihre Existenz sichern können.[...]
+Die SPD-Verkehrspolitikerin Isabel Cademartori sagte, die Vertreter der Mineralölwirtschaft hätten nicht erklären können, warum Preisanstiege am Rohölmarkt sofort an den Endkunden weitergegeben werden, aber Senkungen nicht: »Offen blieb auch die Frage, ob die Konzerne für das Jahr 2026 Rekordgewinne erwarten. So ein Auftreten nach den Belastungen, die deutsche Verbraucher aushalten müssen, ist dreist.«
+
+Die Bundesregierung plant nun ein Maßnahmenpaket. Zum einen sollen nach österreichischem Vorbild Tankstellen künftig nur noch einmal am Tag, um 12 Uhr, die Preise erhöhen dürfen. Preissenkungen sollen jederzeit möglich sein. Die neue Regel soll für mehr Transparenz und weniger kurzfristige Preissprünge an Tankstellen sorgen. Müller sprach von einem Signal an die Mineralölkonzerne: »Hört auf, euch die Taschen vollzumachen.«
 
 ## Context after
 
-Sichere Zugangsrechte zu Land und anderen produktiven Ressourcen sind für die Menschen in ländlichen Gebieten überlebenswichtig. Sie sind ein Schlüsselfaktor zur Umsetzung des Menschenrechts auf Nahrung. Immer mehr ausländische Investoren kaufen Land in Entwicklungs- und Schwellenländern. Private Investitionen sind für die Ernährungssicherheit wichtig, sie dürfen aber nicht die Menschenrechte und
+Die Koalition will auch das Kartellrecht verschärfen. Unternehmen müssten dann darlegen, warum ihre Preissteigerungen gerechtfertigt sind. Dadurch soll es für das Kartellamt deutlich leichter werden, gegen überhöhte Preise vorzugehen. Christian Küchen, Hauptgeschäftsführer des Wirtschaftsverbands Fuels und Energie, wies den Vorwurf der »Abzocke« nach der Taskforce-Sitzung jedoch ausdrücklich zurück. Die Margen
 
 
 ---
 
 # Chunk 4
-Heading: Die für Landakquisitionen relevanten Worldwide Governance Indicators der Weltbank sind:
-Tokens: 403
-Words: 310
-Blocks: 17-23
+Heading: SPD-Verkehrspolitikerin kritisiert »dreistes« Auftreten
+Tokens: 470
+Words: 342
+Blocks: 36-47
 
 ## Context before
 
-das erste globale völkerrechtliche Instrument, das den sicheren und gerechten Zugang zu natürlichen Ressourcen regelt und sich dabei auch mit der Gestaltung von Landinvestitionen – dem so genannten "Landgrabbing" – befasst. Ziel ist es, die Menschen in Entwicklungsländern gezielt zu stärken, damit sie aus eigener Kraft ihre Existenz sichern können.[...]
+nach österreichischem Vorbild Tankstellen künftig nur noch einmal am Tag, um 12 Uhr, die Preise erhöhen dürfen. Preissenkungen sollen jederzeit möglich sein. Die neue Regel soll für mehr Transparenz und weniger kurzfristige Preissprünge an Tankstellen sorgen. Müller sprach von einem Signal an die Mineralölkonzerne: »Hört auf, euch die Taschen vollzumachen.«
 
 ## Text
 
-Sichere Zugangsrechte zu Land und anderen produktiven Ressourcen sind für die Menschen in ländlichen Gebieten überlebenswichtig. Sie sind ein Schlüsselfaktor zur Umsetzung des Menschenrechts auf Nahrung. Immer mehr ausländische Investoren kaufen Land in Entwicklungs- und Schwellenländern. Private Investitionen sind für die Ernährungssicherheit wichtig, sie dürfen aber nicht die Menschenrechte und Landrechte der lokalen Bevölkerung verletzen.
+Die Koalition will auch das Kartellrecht verschärfen. Unternehmen müssten dann darlegen, warum ihre Preissteigerungen gerechtfertigt sind. Dadurch soll es für das Kartellamt deutlich leichter werden, gegen überhöhte Preise vorzugehen.
 
-Aktuellen Zahlen zufolge sind seit dem Jahr 2000 in Entwicklungsländern über 83 Millionen Hektar landwirtschaftlicher Fläche im Rahmen von Investitionen verkauft oder verpachtet worden. Im Zuge dieser Landtransfers gibt es besorgniserregende Berichte über Zwangsräumungen und Vertreibungen von Kleinbauern ohne formelle Landtitel. Die "Freiwilligen Leitlinien" sind das erste internationale, unter Einbeziehung einer Vielzahl von Akteuren abgestimmte völkerrechtliche Instrument für politisch sensible Fragen des Zugangs zu Land, Fischgründen und Wäldern.
+Christian Küchen, Hauptgeschäftsführer des Wirtschaftsverbands Fuels und Energie, wies den Vorwurf der »Abzocke« nach der Taskforce-Sitzung jedoch ausdrücklich zurück. Die Margen hätten sich seit dem Beginn des Irankriegs nicht geändert. Küchen kritisierte die von der Koalition geplante Verschärfung des Kartellrechts.
 
-Quelle: BMEL (Hg.): Die Freiwilligen Leitlinien zu Landnutzungsrechten. www.bmel.de, 19.07.2019, Zugriff: 20.10.2020
+Küchen sprach von einem Paradigmenwechsel: Dieser berge erhebliche Risiken für die Unternehmenserfolge, wenn im Nachgang Preiserhöhungen als nicht rechtmäßig anerkannt würden. Das könne sogar dazu führen, dass Unternehmen aus diesem Markt aussteigen, sagte Küchen. Die Tankstellenpreise in Deutschland richteten sich sehr transparent an den Produktpreisen für Benzin und Diesel aus – diese seien seit Beginn des Irankriegs gestiegen.
 
-Seit einigen Jahren ist zu hören, der Landraub – auch Landgrabbing genannt – sei mehr oder weniger zum Erliegen gekommen. [...] So hat die globale Dokumentationsplattform Land Matrix zwischen 2017 und 2020 zwar knapp 500 neue Fälle von Landnahmen verzeichnet. Das ist eine Erhöhung der dort dokumentierten Fälle in den letzten drei Jahren um 40 Prozent. Jedoch ist die Gesamtfläche der dokumentierten Landdeals minimal um 2,6 Prozent auf 50 Millionen Hektar gestiegen. [...]
+Wenn die Preise am Produktmarkt steigen würden, müssten Unternehmen das Geld erwirtschaften, so Küchen. »Sonst funktioniert Marktwirtschaft nicht. Sonst ist sogar Versorgung gefährdet.« Küchen sprach von grundlegenden Eingriffen in den Markt, die beispiellos seien. Es bestünden erhebliche Risiken für die Unternehmen. Die geplanten Eingriffe können zu weniger Wettbewerb führen.
 
-Ein wichtiger Grund, der Landgrabbing weniger sichtbar macht, ist ein deutlich verändertes Spektrum von Akteuren. [...] Heute mischen der Versicherungsgigant Münchner Rück, die Entwicklungsbank DEG oder die Ärztepensionskasse aus Westfalen (ÄVWL) bei den globalen Landgeschäften mit. [...] Und durch Vermischung staatlicher und privater Geldgeber, wie bei BMZ- oder KfW-Finanzierungen öffentlich-privater Entwicklungsfonds werden menschenrechtliche Verpflichtungen der Staaten zudem massiv untergraben. [...]
+Ein Sprecher des Mineralölkonzerns BP sagte: »Bei den jetzt diskutierten möglichen Maßnahmen und erheblichen Eingriffen in die unternehmerische Entscheidungs- und Gestaltungsfreiheit wird gänzlich unberücksichtigt gelassen, dass mehr als die Hälfte des Kraftstoffpreises auf Steuern und Abgaben entfällt. Die Preisbildung an Tankstellen folgt marktwirtschaftlichen Mechanismen.« Der deutsche Kraftstoffmarkt gehöre zu den transparentesten Märkten Europas.
 
-Zu Beginn der Diskussionen um Landgrabbing zeigte auch Deutschland noch klare Kante. [...] Heute begrüßt man im Rahmen einer veränderten Entwicklungsdebatte fast alle Investitionen. Davon werden Jobs erhofft, Technologietransfer oder verbesserte Infrastruktur. [...] Zugleich ist die internationale Entwicklungszusammenarbeit auch selbst Landinvestor geworden. [...]
+**Der Irankrieg treibt die Preise für Benzin und Diesel in die Höhe. Viele Politi-** **ker wollen nun die Mineralölkonzerne mit einer Übergewinnsteuer zur Kasse bitten. Doch Ökonomen warnen. Mehr dazu lesen Sie hier.**
+
+*ptz/dpa*
+
+Wörter: 678 Autor/-in: Florian Pütz Rubrik: Wirtschaft Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Jahrgang: 2026 Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 5.822.785 Unique Users (UUpD) <sup>2</sup> : 882.000
+
+Weblink: **https://www.spiegel.de/wirtschaft/irankrieg-koalitions-taskforce-geht-mineraloelkonzerne-wegen-sprit-**
+
+**preisen-hart-an-a-58bc618e-aca0-4171-812a-63fd711358d0** <sup>1</sup> von PMG gewichtet 10-2024
+
+2gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
 
 ## Context after
 
-Eine Landpolitik auf Basis der Menschenrechte stellt hingegen arme ländliche Gruppen in ihr Zentrum. Sie steht auf drei Säulen: Erstens Anerkennung von legitimen Landrechten der lokalen Bevölkerung. Wichtig ist dabei die Bevorzugung marginalisierter Gruppen. Zweitens – und gerade im Kontext von 13 Jahren Landgrabbing – Rückgabe von Land, dort wo
+Volker Holtfrerich (3. v. r.), Leiter Shell-Büro Berlin, Enno Harks (2. v. r.), Leiter des BP-Hauptstadtbüros, Patrick Wendeler (r.), Vorstandsvorsitzender BP Europa SE, und andere Vertreter der Mineralölwirtschaft vor dem Treffen mit der Taskforce in Berlin Die Bundesregierung will den Spritpreis mit einem neuen Gesetz dämpfen. Ein Entwurf untersagt Kraftstoffhändlern
 
 
 ---
 
 # Chunk 5
-Heading: Bekenntnis zu Landnutzungsrechten
-Tokens: 179
-Words: 141
-Blocks: 24-25
+Heading: Unionsfraktionsvize Sepp Müller (l.) und SPD-Fraktionsvize Armand Zorn (r.)
+Tokens: 490
+Words: 403
+Blocks: 49-60
 
 ## Context before
 
-Verpflichtungen der Staaten zudem massiv untergraben. [...] Zu Beginn der Diskussionen um Landgrabbing zeigte auch Deutschland noch klare Kante. [...] Heute begrüßt man im Rahmen einer veränderten Entwicklungsdebatte fast alle Investitionen. Davon werden Jobs erhofft, Technologietransfer oder verbesserte Infrastruktur. [...] Zugleich ist die internationale Entwicklungszusammenarbeit auch selbst Landinvestor geworden. [...]
+lesen Sie hier.** *ptz/dpa* Wörter: 678 Autor/-in: Florian Pütz Rubrik: Wirtschaft Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Jahrgang: 2026 Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 5.822.785 Unique Users (UUpD) <sup>2</sup> : 882.000 Weblink: **https://www.spiegel.de/wirtschaft/irankrieg-koalitions-taskforce-geht-mineraloelkonzerne-wegen-sprit-** **preisen-hart-an-a-58bc618e-aca0-4171-812a-63fd711358d0** <sup>1</sup> von PMG gewichtet 10-2024 2gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
 
 ## Text
 
-Eine Landpolitik auf Basis der Menschenrechte stellt hingegen arme ländliche Gruppen in ihr Zentrum. Sie steht auf drei Säulen: Erstens Anerkennung von legitimen Landrechten der lokalen Bevölkerung. Wichtig ist dabei die Bevorzugung marginalisierter Gruppen. Zweitens – und gerade im Kontext von 13 Jahren Landgrabbing – Rückgabe von Land, dort wo es zu illegitimen Landnahmen gekommen ist. Und drittens Umverteilung von Land in Kontexten hoher Landkonzentration und Landlosigkeit. [...] Menschenrechtlich gesehen ist die Regulierung dieser in Landgeschäften engagierten mächtigen Finanzakteure sehr schwierig. [...] Das Menschenrecht auf Nahrung muss dafür die grundlegende Norm sein. Die daraus abgeleiteten UN-Landleitlinien von 2012 sowie die 2018 von der UN-Vollversammlung verabschiedete Erklärung zu den Rechten von Bäuerinnen und Bauern sind wichtige Referenzen, auf die Politik sich beziehen kann.
+Volker Holtfrerich (3. v. r.), Leiter Shell-Büro Berlin, Enno Harks (2. v. r.), Leiter des BP-Hauptstadtbüros, Patrick Wendeler (r.), Vorstandsvorsitzender BP Europa SE, und andere Vertreter der Mineralölwirtschaft vor dem Treffen mit der Taskforce in Berlin
 
-Quelle: Herre, Roman: Kein Ende in Sicht: die globale Jagd nach Land. www.welthungerhilfe.de, 04/2020, Zugriff: 20.10.2020
+Die Bundesregierung will den Spritpreis mit einem neuen Gesetz dämpfen. Ein Entwurf untersagt Kraftstoffhändlern drastische Preiserhöhungen, wenn die Kosten nicht ebenfalls stark steigen. Zudem sollen Tankstellen den Preis nur einmal am Tag erhöhen dürfen
+
+Die Bundesregierung will im Kartellrecht die Beweispflicht bei der Erhöhung der Benzinpreise umkehren. Künftig sollen die Mineralölkonzerne laut einem am Sonntag vorgelegten Gesetzentwurf vorab sachlich begründen, warum sie ihre Preise an den Tankstellen erhöhen wollen, teilte ein Regierungssprecher mit, wie die Nachrichtenagentur Reuters berichtet.
+
+Zudem sollen Tankstellen den Preis nur einmal am Tag – um 12 Uhr – erhöhen dürfen. "Preissenkungen sind jederzeit zulässig", betonte der Sprecher. Auslöser der Änderung ist, dass die Benzinpreise nach Ausbruch des Irankriegs rasant gestiegen sind, Senkungen an den Ölmärkten aber nicht rasch nachvollzogen werden.
+
+Seit dem Angriff der USA und Israels auf Iran Ende Februar sind Spritpreise von über zwei Euro pro Liter keine Seltenheit mehr in Deutschland . Ökonomen rechnen mit einer höheren Inflation in diesem Jahr als bislang gedacht. Denn bisher werden erst etwa 5 Prozent aller Pkw-Fahrten in Deutschland mit Elektroautos unternommen, die im Betrieb meist deutlich billiger sind als Benzinund Dieselautos.
+
+In Deutschland seien die Spritpreise besonders stark gestiegen, hatte der Vorsitzende der Monopolkommission, **Tomaso Duso** , gesagt. Das gehe aus Daten der EU-Kommission zu den Kraftstoffpreisen in den 27 Mitgliedstaaten hervor. "Dass die Preisanstiege in Deutschland deutlich stärker ausfallen als im europäischen Durchschnitt, ist ein Hinweis darauf, dass wir strukturelle Probleme im Mineralölmarkt anpacken müssen."
+
+Die Bundesregierung hatte eine Taskforce eingesetzt. Der Gesetzentwurf ging am Sonntag in die Ressortabstimmung, die bis um 20 Uhr lief, ist parallel aber auch dem Bundestag zugeleitet worden. Er soll nach Möglichkeit innerhalb einer Woche beschlossen werden, hieß es laut Reuters in Regierungskreisen.
+
+"Wenn der Wettbewerb nicht mehr fair funktioniert, darf der Staat nicht zuschauen – er muss eingreifen", sagte Unionsfraktionsvize **Sepp Müller** (CDU). Aus der CDU kamen zudem Forderungen nach einer Senkung der Energiesteuer oder einer Aussetzung der CO2-Abgabe. Die SPD plädierte für eine Spritpreisbremse.
+
+Die Änderung des Kartellrechts ist im Bundesrat nicht zustimmungspflichtig. Das Gesetz soll zeitlich befristet gelten. "Nach dem Sommer prüfen wir mit relevanten Stakeholdern die Wirksamkeit und Wirkungen in der Praxis – zum Beispiel etwaige Auswirkungen auf Verkehrsflüsse", teilte der Sprecher weiter mit.
+
+## Context after
+
+Das Kartellrecht soll laut dem Gesetzentwurf in zwei Punkten verschärft werden. Deutliche Preissteigerungen im Kraftstoffgroßhandel sollen im Vergleich zu Wettbewerbern als Missbrauch eingestuft werden. Diese erleichterte Missbrauchsprüfung entspricht den Aufsichtsmöglichkeiten der Kartellbehörden bei den Strom- und Gaspreisen für Endkunden. Marktbeherrschenden oder relativ marktmächtigen Anbietern von Kraftstoffen soll mit der Beweislastumkehr
+
+
+---
+
+# Chunk 6
+Heading: Strategische Ölreserven kommen "bald" auf den Markt
+Tokens: 461
+Words: 348
+Blocks: 62-76
+
+## Context before
+
+der CO2-Abgabe. Die SPD plädierte für eine Spritpreisbremse. Die Änderung des Kartellrechts ist im Bundesrat nicht zustimmungspflichtig. Das Gesetz soll zeitlich befristet gelten. "Nach dem Sommer prüfen wir mit relevanten Stakeholdern die Wirksamkeit und Wirkungen in der Praxis – zum Beispiel etwaige Auswirkungen auf Verkehrsflüsse", teilte der Sprecher weiter mit.
+
+## Text
+
+Das Kartellrecht soll laut dem Gesetzentwurf in zwei Punkten verschärft werden. Deutliche Preissteigerungen im Kraftstoffgroßhandel sollen im Vergleich zu Wettbewerbern als Missbrauch eingestuft werden. Diese erleichterte Missbrauchsprüfung entspricht den Aufsichtsmöglichkeiten der Kartellbehörden bei den Strom- und Gaspreisen für Endkunden. Marktbeherrschenden oder relativ marktmächtigen Anbietern von Kraftstoffen soll mit der Beweislastumkehr untersagt werden, Benzin- oder Dieselpreise zu fordern, die die Kosten in unangemessener Weise überschreiten.
+
+Die schwarz-rote Bundesregierung hatte am Mittwoch zudem angekündigt, dass sich Deutschland an der Freigabe einer Rekordmenge von Öl aus den strategischen Reserven der Internationalen Energieagentur beteiligt. Auch dies soll den jüngsten Preisanstieg dämpfen.
+
+Das Öl soll nach Angaben der Internationalen Energie-Agentur (IEA) "bald" auf die Weltmärkte kommen. Öl werde "sofort" in Asien und Ozeanien und ab Ende März in Amerika und Europa von den IEA-Ländern freigegeben, erklärte die IEA am Sonntag.
+
+Die Spritpreise steigen derweil weiter. Am Samstag verteuerten sich Diesel und E10 im bundesweiten Tagesdurchschnitt leicht, wie der ADAC mitteilt. Ein Liter Diesel kostete demzufolge 2,153 Euro – das waren 0,4 Cent mehr als am Vortag. E10 kostete 2,035 Euro pro Liter, das waren 0,7 Cent mehr als am Vortag.
+
+Beide Preise sind damit zwar den zweiten Tag in Folge gestiegen, aber weiter etwas niedriger als am Dienstag, dem bisher teuersten Tag seit Kriegsbeginn. Vergleicht man dagegen mit dem letzten Tag vor Kriegsbeginn, war Benzin knapp 26 Cent teurer, Diesel knapp 41 Cent.
+
+Die ersten Preisdaten vom Sonntag deuteten auf wenig Bewegung hin. Da die Verwerfungen durch den Irankrieg allerdings bisherige Preismuster durcheinander geworfen haben, sind Prognosen derzeit sehr unsicher.
+
+*nis/Reuters/dpa/AFP*
+
+Autor/-in: Nils-Viktor Sorge Rubrik: Politik/Weltwirtschaft Medienkanal: ONLINE Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 322.924 Unique Users 91.000
+
+Weblink: **https://www.manager-magazin.de/politik/weltwirtschaft/tanken-benzin-und-diesel-teurer-oelkonzerne-sollen-spritpreiserhoehungen-vorab-begruenden-a-3fd9011d-bd5f-4b1f-9ab9-b9cf1a39ac36**
+
+<sup>2</sup>gerundet agof ddf Ø-Tag 2020-05 vom 02.06.2020, Gesamtbevölkerung 16+
+
+Preisrallye: Benzin und Diesel haben an den Tankstellen in Deutschland Rekordpreise erreicht
+
+<sup>1</sup> von PMG gewichtet 05-2020
+
+## Context after
+
+lassen Sie uns liberale Ideale feiern. Nein, wir wollen nicht zynisch werden, es geht hier nicht um einen Nachruf auf die FDP, die gerade in ihrem Stammland Baden-Württemberg kläglich gescheitert ist – ausgerechnet zum Jubiläum eines großen liberalen Denkers. Vor genau 250 Jahren ist "Wohlstand der Nationen" erschienen, das Hauptwerk
+
+
+---
+
+# Chunk 7
+Heading: Die Allmachtsfantasien der Politik
+Tokens: 464
+Words: 362
+Blocks: 78-84
+
+## Context before
+
+Prognosen derzeit sehr unsicher. *nis/Reuters/dpa/AFP* Autor/-in: Nils-Viktor Sorge Rubrik: Politik/Weltwirtschaft Medienkanal: ONLINE Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 322.924 Unique Users 91.000 Weblink: **https://www.manager-magazin.de/politik/weltwirtschaft/tanken-benzin-und-diesel-teurer-oelkonzerne-sollen-spritpreiserhoehungen-vorab-begruenden-a-3fd9011d-bd5f-4b1f-9ab9-b9cf1a39ac36** <sup>2</sup>gerundet agof ddf Ø-Tag 2020-05 vom 02.06.2020, Gesamtbevölkerung 16+ Preisrallye: Benzin und Diesel haben an den Tankstellen in Deutschland Rekordpreise erreicht <sup>1</sup> von PMG gewichtet 05-2020
+
+## Text
+
+lassen Sie uns liberale Ideale feiern. Nein, wir wollen nicht zynisch werden, es geht hier nicht um einen Nachruf auf die FDP, die gerade in ihrem Stammland Baden-Württemberg kläglich gescheitert ist – ausgerechnet zum Jubiläum eines großen liberalen Denkers. Vor genau 250 Jahren ist "Wohlstand der Nationen" erschienen, das Hauptwerk des schottischen Philosophen Adam Smith, der die gewaltigen Kräfte des Marktes feiert. Seine "unsichtbare Hand" steuert die Wirtschaft über Angebot und Nachfrage viel klüger als jeder staatliche Planer – selbst wenn der auf den Namen Habeck hört. Aber Polemik beiseite: Die Marktwirtschaft ist eine Erfolgsgeschichte ohnegleichen. Das Pro-Kopf-Einkommen hat sich seit Smith vervielfacht, die Armut sank dramatisch. Daran zu erinnern, ist nötig, da sich der Staat heute für alles zuständig erklärt. Spätestens seit der Coronapandemie haben Allmachtsfantasien die Politik befallen, Bürokraten maßen sich an, zu wissen, was gut für uns ist. Wettbewerb als permanente Suche nach der besten Lösung? Ach was. Nicht mit den Polit-Technokraten.
+
+- Der Sprit ist zu teuer? Die Politik muss einschreiten!, schreien die Marktverächter. "Übergewinne" sind zu kon!szieren, der Benzinpreis ist zu reglementieren. Wer Smith folgt, ruft nicht nach dem Preisdiktat, sondern nach Wettbewerbshütern, die allen auf die Finger hauen, die sich an uns bereichern.
+- Der Solarstrom auf privaten Dächern ist zu teuer? Der Staat muss mit Subventionen gegenhalten, fordert der verhätschelte öko-industrielle Komplex. Wenn damit Geld vergeudet wird – Pech! Der Steuerzahler hats ja. Die Umverteilung zugunsten der Eigenheimbesitzer darf in dieser verqueren Logik niemals enden. So hat uns das Energiewende-Märchen, wonach Sonne und Wind keine Rechnung schreiben, schon Hunderte Milliarden gekostet.
+- Die Mieten sind zu teuer? Die Politik muss die Preise festsetzen, tönt es von der Linken. Im Zweifel sind Immobilienbesitzer zu enteignen, eine Mietpreisbremse ist Pflicht. Als würde dadurch auch nur eine einzige Wohnung mehr gebaut. Wie war das noch mal bei Adam Smith: Der Preis sinkt, wenn das Angebot steigt – also wenn Investoren einen Anreiz haben, zu bauen: "Es ist nicht die Menschenfreundlichkeit des Metzgers oder Bäckers, die uns unser Abendessen sichert, sondern ihr eigenes Interesse." Oder wie sehen Sie das? Schreiben Sie an leserservice@focus-money.de.
+
+**Jetzt 12 Monate**
+
+**FOCUS MONEY lesen**
+
+**und nur 9 bezahlen –**
+
+**inkl. FOCUS+ Zugang**
+
+## Context after
+
+Mit FOCUS MONEY erhalten Sie exklusive Analysen und Tipps zur Börse, Geldanlagen und Vermögensau!au. Erfahren Sie von versierten Finanzexperten, wie sie kurzfristige Trading-Chancen nutzen und langfristige Investment-Strategien verfolgen. Mein Tipp: Sichern Sie sich FOCUS MONEY und profitieren Sie doppelt: **Lesen Sie 12 Monate zum Preis von 9 für nur 214,50
+
+
+---
+
+# Chunk 8
+Heading: Herzlich Ihr
+Tokens: 428
+Words: 351
+Blocks: 85-92
+
+## Context before
+
+– also wenn Investoren einen Anreiz haben, zu bauen: "Es ist nicht die Menschenfreundlichkeit des Metzgers oder Bäckers, die uns unser Abendessen sichert, sondern ihr eigenes Interesse." Oder wie sehen Sie das? Schreiben Sie an leserservice@focus-money.de. **Jetzt 12 Monate** **FOCUS MONEY lesen** **und nur 9 bezahlen –** **inkl. FOCUS+ Zugang**
+
+## Text
+
+Mit FOCUS MONEY erhalten Sie exklusive Analysen und Tipps zur Börse, Geldanlagen und Vermögensau!au. Erfahren Sie von versierten Finanzexperten, wie sie kurzfristige Trading-Chancen nutzen und langfristige Investment-Strategien verfolgen. Mein Tipp: Sichern Sie sich FOCUS MONEY und profitieren Sie doppelt: **Lesen Sie 12 Monate zum Preis von 9 für nur 214,50 €\* statt 280,50 € +120 € Prämie.** Exklusiv für Sie: Bei der Bestellung eines FOCUS MONEY Printabonnements erhalten Sie ab sofort Zugang zur FOCUS+ App! Nutzen Sie die Gelegenheit, um zusätzlich zu den hochwertigen Inhalten des Printmagazins auch digital auf alle Artikel und E-Paper der FOCUS und FOCUS MONEY Magazinwelt zuzugreifen. Entdecken Sie exklusive Inhalte im angenehmen Lesemodus oder mit Vorlesefunktion.
+
+**www.focus-abo.de/money-editorial**
+
+\*inkl. MwSt. und Versand. Sie haben ein gesetzliches Widerrufsrecht
+
+enn die Benzinpreise steigen, sind die profitgierigen Ölkonzerne schuld, und gegen deren Gier muss man etwas tun. Die aktuelle Bundesregierung ist nicht die erste, die nach dieser Logik entweder nach dem Kartellamt ruft oder gleich das Kartellrecht ändern will. Dass Preise Knappheiten widerspiegeln und vermeintliche oder tatsächliche Gier damit wenig zu tun hat, ist das Eine. Das andere ist die Frage, warum eine spezielle Klausel gegen den Missbrauch einer marktbeherrschenden Stellung in der Kraftstoffwirtschaft im aktuellen Fall irgendeine Wirkung haben sollte. Das allgemeine Kartellrecht kennt die Missbrauchsaufsicht. Sie ließe sich im (eher unwahrscheinlichen) Fall anwenden, dass gegen Ölkonzerne konkrete Verdachtsmomente vorliegen. Deshalb ist eine neue Spezialregel schlicht unnötig. Dass sich das Problem erledigt haben dürfte, bis eine mögliche Gesetzesnovelle beschlossen wäre, kommt hinzu. Insofern ist der Vorschlag populistischer Aktionismus. Ob ihn die Bundesregierung überhaupt weiterverfolgt, bleibt abzuwarten.
+
+m Kampf gegen die hohen Benzinpreise setzt die Bundesregierung nach Aussage von Wirtschaftsministerin Katherina Reiche bekanntlich auf einen "Dreiklang". Zwei der drei von ihr am Mittwoch verkündeten Maßnahmen waren schon umstritten, bevor Reiche sie ankündigte: die Freigabe der Ölreserven und die Regelung nach österreichischem Vorbild, dass Tankstellen die Preise nur einmal täglich erhöhen dürfen. Das dritte Element blieb auch am Donnerstag ziemlich unkonkret: die Anwendung der kartellrechtlichen Missbrauchsaufsicht auf die Kraftstoffwirtschaft. Reiche hatte angekündigt, diese Regel solle zügig ins Gesetz gegen Wettbewerbsbeschränkungen (GWB) eingefügt werden.
+
+## Context after
+
+Reiches Staatssekretär Thomas Steffen zeigte sich am Donnerstag zum Auftakt der Internationalen Kartellkonferenz des Bundeskartellamts in Berlin deutlich zurückhaltender. Sein Ministerium "prüfe", inwieweit eine speziell auf die Kraftstoffwirtschaft zugeschnittene Regel ins GWB eingefügt werden könne. Darüber, wie schnell das gehen könnte, sagte er nichts. Kartellamtschef Andreas Mundt ließ zwar einen
+
+
+---
+
+# Chunk 9
+Heading: Von Werner Mussler
+Tokens: 390
+Words: 328
+Blocks: 93-103
+
+## Context before
+
+die Freigabe der Ölreserven und die Regelung nach österreichischem Vorbild, dass Tankstellen die Preise nur einmal täglich erhöhen dürfen. Das dritte Element blieb auch am Donnerstag ziemlich unkonkret: die Anwendung der kartellrechtlichen Missbrauchsaufsicht auf die Kraftstoffwirtschaft. Reiche hatte angekündigt, diese Regel solle zügig ins Gesetz gegen Wettbewerbsbeschränkungen (GWB) eingefügt werden.
+
+## Text
+
+Reiches Staatssekretär Thomas Steffen zeigte sich am Donnerstag zum Auftakt der Internationalen Kartellkonferenz des Bundeskartellamts in Berlin deutlich zurückhaltender. Sein Ministerium "prüfe", inwieweit eine speziell auf die Kraftstoffwirtschaft zugeschnittene Regel ins GWB eingefügt werden könne. Darüber, wie schnell das gehen könnte, sagte er nichts. Kartellamtschef Andreas Mundt ließ zwar einen positiven Kommentar zum österreichischen Modell veröffentlichen, zu einer etwaigen GWB-Novelle zu diesem speziellen Zweck sagte auch er nichts.
+
+Daniel Zimmer, Kartelljurist aus Bonn und früherer Vorsitzender der Monopolkommission, nennt den Vorschlag eine typische Reaktion der Politik auf gestiegene Benzinpreise. "Es ist sehr wahrscheinlich, dass sich das Problem, dessentwegen die Initiative auf den Weg gebracht wurde, bis zu einem möglichen Abschluss der Gesetzgebung längst erledigt hat", sagte Zimmer der F.A.Z. in Berlin. Er zweifle auch daran, ob eine nur auf die Kraftstoffwirtschaft zugeschnittene Spezialregel sinnvoll sei.
+
+Anders als zu früheren Gelegenheiten stellt die Bundesregierung nicht auf Absprachen als Anlass für ein kartellrechtliches Eingreifen ab. Solche vermuteten "klassischen" Kartelle ließen sich bei gestiegenen Benzinpreisen in der Vergangenheit praktisch nicht feststellen. Allerdings wurde 2011 im Bundeskartellamt die sogenannte Markttransparenzstelle für Kraftstoffe eingerichtet, an die jede Preisänderung zu melden ist.
+
+Die jetzige Initiative stellt auf die Vermutung ab, dass die großen Mineralölkonzerne ihre Marktmacht missbrauchen. Gegen solchen vermuteten Missbrauch steht im GWB die allgemeine Miss-
+
+Regelt es der Markt oder die Politik? Benzinpreise sind das Thema, das bewegt.
+
+Ist eine spezielle Missbrauchsaufsicht für die Kraftstoffwirtschaft sinnvoll? Fachleute sind skeptisch. *Von Werner Mussler, Berlin*
+
+brauchsaufsicht zur Verfügung. Offenbar will die Bundesregierung jetzt die allgemeine Regel in Paragraph 19 GWB um eine Spezialregel für die Kraftstoffwirtschaft ergänzen. Deren Kern bestünde in einer Beweislastumkehr, ähnlich wie bei den verschärften Regeln für Strompreise.
+
+Demnach müssten marktbeherrschende Unternehmen, die "Entgelte oder sonstige Geschäftsbedingungen" fordern, die "ungünstiger sind als diejenigen anderer Versorgungsunternehmen oder von
+
+Unternehmen auf vergleichbaren Märkten", nachweisen, "dass die Abweichung sachlich gerechtfertigt ist". Nicht gerechtfertigt wäre sie beispielsweise dann, wenn eine Preiserhöhung – wie derzeit – in Deutschland deutlich höher ausfällt als anderswo in Europa.
+
+## Context after
+
+Der Düsseldorfer Kartelljurist Rupprecht Podszun, der aktuell der Monopolkommission angehört, nannte diese Überlegungen "fragwürdig". Faktisch handle es sich um die Aufnahme einer weiteren spezifischen Sektorregulierung ins Kartellgesetz, was zusätzliche Fragen aufwerfe, sagte Podszun der F.A.Z. Wie Zimmer erinnerte er daran, dass das GWB mit der allgemeinen Missbrauchsaufsicht im Prinzip das
+
+
+---
+
+# Chunk 10
+Heading: Kartellrecht gegen Benzinpreise?
+Tokens: 413
+Words: 346
+Blocks: 104-109
+
+## Context before
+
+marktbeherrschende Unternehmen, die "Entgelte oder sonstige Geschäftsbedingungen" fordern, die "ungünstiger sind als diejenigen anderer Versorgungsunternehmen oder von Unternehmen auf vergleichbaren Märkten", nachweisen, "dass die Abweichung sachlich gerechtfertigt ist". Nicht gerechtfertigt wäre sie beispielsweise dann, wenn eine Preiserhöhung – wie derzeit – in Deutschland deutlich höher ausfällt als anderswo in Europa.
+
+## Text
+
+Der Düsseldorfer Kartelljurist Rupprecht Podszun, der aktuell der Monopolkommission angehört, nannte diese Überlegungen "fragwürdig". Faktisch handle es sich um die Aufnahme einer weiteren spezifischen Sektorregulierung ins Kartellgesetz, was zusätzliche Fragen aufwerfe, sagte Podszun der F.A.Z. Wie Zimmer erinnerte er daran, dass das GWB mit der allgemeinen Missbrauchsaufsicht im Prinzip das notwendige Instrumentarium zur Verfügung stelle. Ein sektorspezifischer Eingriff müsse theoretisch auf der Raffinerie-Ebene ansetzen, weil dort die Preisaufschläge entstünden. "Das ist sehr komplex. Was wären die Vergleichsmärkte?" Vorstellen könne er sich allenfalls, Raffinerien zu entflechten, die im Besitz mehrerer Mineralölgesellschaften sind.
+
+Das "österreichische Modell" hatte die Monopolkommission im Grundsatz gelobt. "Das bringt wenigstens eine gewisse Dynamik rein", sagte Podszun. Auch Mundt lobte den Vorschlag mit der Begründung, es habe in der Spitze bis zu 50 Preisänderungen an der Tankstelle gegeben. "Nur eine Preisänderung am Tag - das bringt Transparenz." Die Wirtschaftsweise Veronika Grimm kritisierte dagegen in der "Rheinischen Post", im schlimmsten Fall erhöhten die Tankstellen die Preise vorsorglich noch stärker, um die Preissteigerungen der Raffinerien auf jeden Fall weitergeben zu können.
+
+Der Benzinpreis soll in Deutschland nur noch einmal am Tag steigen. In asiatischen Ländern wird die Energie knapp – ein großes Risiko geht von Taiwan aus.
+
+ach anfänglichem Zögern will die Bundesregierung jetzt doch offensiv gegen die im Zuge des Irankriegs stark ge-stiegenen Kraftstoffpreise vorgehen. Zum einen sollen im Einklang mit anderen Ländern Teile der nationalen Ölreserven freigegeben werden. Zum zweiten dürfen Tankstellen so wie aktuell inÖsterreich künftig nur noch einmal am Tag ihre Preise erhöhen, aber jederzeit senken. Zum dritten möchte die Koalition die kartellrechtliche Missbrauchsaufsicht auf die Kraftstoffbranche ausweiten. Diesen "Dreiklang" kündigte die zuständige Bundeswirtschaftsministerin Katherina Reiche (CDU) am Mittwoch in Berlin an.
+
+Wann die Maßnahmen greifen und um welche Beträge sie die Spritpreise verringern könnten, konnte Reiche nicht sagen. Die Neufassung der Gesetze und Verordnungen könnte einige Zeit dauern, entscheidend seien aber die jetzt ausgesandten Signale. "Wenn die Sorge genommen wird vor Knappheit, entspannen sich Preise", sagte sie. "Wir gehen definitiv von einem dämpfenden Effekt aus." Dieser werde im asiatischen Raum aber anders sein als in Amerika oder in Europa.
+
+## Context after
+
+Die Ministerin sicherte der Bevölkerung zu, dass es keinen Gas-, Öl- und Kraftstoffmangel gebe. "Die Energieversorgung in Deutschland ist gesichert. Was wir beobachten, sind erhebliche Preisausschläge und eine Volatilität an den Energiemärkten, wir verzeichnen derzeit aber keine Mengenknappheit." Nur vier Prozent des europäischen Gasverbrauchs stammten vom Persischen Golf, wo derzeit
+
+
+---
+
+# Chunk 11
+Heading: Regierung plant Tankstellenreform
+Tokens: 477
+Words: 397
+Blocks: 110-117
+
+## Context before
+
+Neufassung der Gesetze und Verordnungen könnte einige Zeit dauern, entscheidend seien aber die jetzt ausgesandten Signale. "Wenn die Sorge genommen wird vor Knappheit, entspannen sich Preise", sagte sie. "Wir gehen definitiv von einem dämpfenden Effekt aus." Dieser werde im asiatischen Raum aber anders sein als in Amerika oder in Europa.
+
+## Text
+
+Die Ministerin sicherte der Bevölkerung zu, dass es keinen Gas-, Öl- und Kraftstoffmangel gebe. "Die Energieversorgung in Deutschland ist gesichert. Was wir beobachten, sind erhebliche Preisausschläge und eine Volatilität an den Energiemärkten, wir verzeichnen derzeit aber keine Mengenknappheit." Nur vier Prozent des europäischen Gasverbrauchs stammten vom Persischen Golf, wo derzeit gekämpft wird. Das meiste Gas komme aus Norwegen und den Vereinigten Staaten. Die Gasspeicher seien zu 21 Prozent gefüllt, im milden Wetter werde derzeit sogar wieder eingespeichert.
+
+Beim Öl sei die Lage angespannter, da die Straße von Hormus faktisch gesperrt sei. Die Weltmarktpreise seien um 30 Prozent gestiegen, so Reiche. Am meisten liten asiatische Länder wie Japan, Südkorea oder Indien. Daher habe die Internationale Energieagentur (IEA) ihre Mitgliedstaaten, die größten 32 Industriestaaten, gebeten, Ölreserven von 400 Millionen Fass (zu je 159 Liter) oder 54 Millionen Tonnen freizugeben. Die Bundesrepublik beteilige sich mit geplant 2,4 Millionen Tonnen.
+
+Die Freigabe von 400 Millionen Fass wurde am Mittwochnachmittag verkündet. "Die Herausforderungen, denen wir auf dem Ölmarkt gegenüberstehen, sind in ihrem Ausmaß beispiellos", sagte IEA-Chef Fatih Birol. Die Ölmärkte seien global, daher müsse auch die Reaktion auf größere Störungen global
+
+Ministerin Reiche: Sieht die Energieversorgung in Deutschland gesichert. Foto dpa
+
+sein. Die IEA-Mitglieder verfügen über Notvorräte von über 1,2 Milliarden Fass, hinzu kommen weitere 600 Millionen Fass an Industrievorräten, die aufgrund staatlicher Verpflichtungen gehalten werden. Es ist die bislang sechste und volumenmäßig größte koordinierte Freigabe von Vorräten in der Geschichte der 1974 gegründeten IEA.
+
+Von Hendrik Ankenbrand, Singapur, Christian Geinitz, Berlin, Hendrik Kafsack, Brüssel, Tim Kanning, Tokio, Johannes Pennekamp, Frankfurt, und Niklas Záboj, Paris
+
+Es ist ein deutliches Zeichen an die Märkte. In einigen Teilen der Welt steht die Versorgungslage allerdings auch Spitz auf Knopf. In Südostasien bringt der Ölpreisschock schon Fabriken zum Stillstand. Die thailändische Siam Cement Group, eines der größten Industriekonglomerate des Landes, hat bei einer Chemie produzierenden Tochtergesellschaft zu Wochenmitte die Produktion angehalten, nachdem die Knappheit von Öl und Gas die Lieferkette unterbrochen hatte. Auch andere Chemiekonzerne in der Region haben Probleme, die Fertigung am Laufen zu halten.
+
+Auf den Philippinen, das fast sämtliche seiner Energie importiert, hat die Regierung als Antwort auf die Versorgungskrise eine Vier-Tage-Woche verordnet. Damit soll der Energieverbrauch zwischen zehn und 20 Prozent gesenkt werden. Thailands Regierung hat alle Beamten angewiesen, von zu Hause aus zu arbeiten, und die Privatunternehmen ermutigt, das auch für ihre Angestellten zu ermöglichen.
+
+## Context after
+
+Aus Indien melden Industrieverbände in den Wirtschaftszentren Mumbai, Bangaluru und Chennai akuten Gasmangel. Weil die Regierung die Versorgung der Privathaushalte mit Flüssiggaszylindern priorisiert hat, gehen in vielen Gegenden Restaurants die Behälter aus, woraufhin die Küche kalt bleibt. Davon sind auch besonders Hotels betroffen. Im westindischen Pune, wo unter anderem VW
+
+
+---
+
+# Chunk 12
+Heading: Regierung plant Tankstellenreform
+Tokens: 475
+Words: 411
+Blocks: 118-123
+
+## Context before
+
+fast sämtliche seiner Energie importiert, hat die Regierung als Antwort auf die Versorgungskrise eine Vier-Tage-Woche verordnet. Damit soll der Energieverbrauch zwischen zehn und 20 Prozent gesenkt werden. Thailands Regierung hat alle Beamten angewiesen, von zu Hause aus zu arbeiten, und die Privatunternehmen ermutigt, das auch für ihre Angestellten zu ermöglichen.
+
+## Text
+
+Aus Indien melden Industrieverbände in den Wirtschaftszentren Mumbai, Bangaluru und Chennai akuten Gasmangel. Weil die Regierung die Versorgung der Privathaushalte mit Flüssiggaszylindern priorisiert hat, gehen in vielen Gegenden Restaurants die Behälter aus, woraufhin die Küche kalt bleibt. Davon sind auch besonders Hotels betroffen. Im westindischen Pune, wo unter anderem VW und Mercedes produzieren, haben die Behörden mitgeteilt, dass wegen des Gasmangels ein Großteil der Krematorien geschlossen worden ist.
+
+Auch Taiwan ist ein Land, das rasch an das Ende seiner Energiereserven gelangen könnte – mit weitreichenden Folgen für die Weltwirtschaft, werden in den taiwanischen Fabriken doch ein Großteil der Halbleiter für Elektronikkonzerne in aller Welt und fast alle besonders leistungsfähigen, für Anwendungen mit Künstlicher Intelligenz benötigten Chips produziert. Energieengpässe dort könnten rasch zu einer globalen Chipkrise führen. Die Hälfte der Stromversorgung der Insel hängt am Flüssiggas, ein Drittel davon stammte zuletzt aus Qatar. Da das Land nur Gasreserven für etwa elf Tage
+
+habe, bezeichnete die Strategieberatung Bower Group Asia die aktuelle Situation als "Live-Stresstest für Taiwans Energiesicherheit".
+
+Kazuto Suzuki, Geoökonom an der Tokyo University, warnt in einem Interview mit dem Newsletter PRO Weltwirtschaft vor allem vor den Folgen der Energiekrise für den Globalen Süden. Während große Industrienationen nun auf ihre Ölreserven zurückgreifen könnten, hätten Entwicklungs- und Schwellenländer solche Vorräte nicht. "Die Energiekrise könnte hier rasch zu Unrüben und Chaos führen mit unbekannten Konsequenzen", sagt Suzuki. Er erwartet, dass gerade diese Länder sich schnell wieder Russland zuwenden werden, um ihren Energiebedarf zu decken. Russland werde einer der großen Gewinner dieser Krise sein und zurück in die internationale Gemeinschaft aufgenommen werden.
+
+Die Europäische Kommission will zum EU-Gipfel Ende kommender Woche Vorschläge dazu vorlegen, wie die EU die Energiepreise senken kann. Zu den Optionen gehörten auch ein Gaspreisdeckel und Subventionen, sagte Kommissionspräsidentin Ursula von der Leyen am Mittwoch vor dem Europaparlament. Die ersten zehn Tage Krieg hätten die Europäer zusätzliche drei Milliarden Euro für die Einfuhr fossiler Brennstoffe gekostet, sagte von der Leyen. Deshalb auf fossile Brennstoffe aus Russland zurückzugreifen, wäre aber ein "strategischer Irrtum".
+
+Das gelte auch für Forderungen, die Klima- und Energiepolitik neu auszurichten. "Ohne den Emissionshandel würden wir 100 Milliarden Kubikmeter mehr Gas verbrauchen, was uns verwundbarer und abhängiger machen würde", betonte sie. Die hohen Energiepreise dürften ein Hauptthema des EU-Gipfels am Donnerstag kommender Woche werden. Das hat eine Videokonferenz von 21 Staats- und Regierungschefs und von der Leyen am Dienstagnachmittag ergeben. Eingeladen dazu hatten Deutschland, Italien und Belgien. Bundeskanzler Friedrich Merz hatte eine schnelle Überprüfung des CO2-Emissionshandels angemahnt.
+
+## Context after
+
+Für Deutschland bleiben die wirtschaftlichen Schäden der Energiekrise Stand jetzt noch überschaubar. Zu diesem Ergebnis kommt das Deutsche Institut für Wirtschaftsforschung (DIW) in seiner am Mittwoch veröffentlichten Frühjahrsprognose. "Unter der Annahme, dass der stärkste Preisschub schon erfolgt ist und sich Öl und Gaspreise nur noch moderat entwickeln, dürften sie die
+
+
+---
+
+# Chunk 13
+Heading: Regierung plant Tankstellenreform
+Tokens: 475
+Words: 408
+Blocks: 124-131
+
+## Context before
+
+machen würde", betonte sie. Die hohen Energiepreise dürften ein Hauptthema des EU-Gipfels am Donnerstag kommender Woche werden. Das hat eine Videokonferenz von 21 Staats- und Regierungschefs und von der Leyen am Dienstagnachmittag ergeben. Eingeladen dazu hatten Deutschland, Italien und Belgien. Bundeskanzler Friedrich Merz hatte eine schnelle Überprüfung des CO2-Emissionshandels angemahnt.
+
+## Text
+
+Für Deutschland bleiben die wirtschaftlichen Schäden der Energiekrise Stand jetzt noch überschaubar. Zu diesem Ergebnis kommt das Deutsche Institut für Wirtschaftsforschung (DIW) in seiner am Mittwoch veröffentlichten Frühjahrsprognose. "Unter der Annahme, dass der stärkste Preisschub schon erfolgt ist und sich Öl und Gaspreise nur noch moderat entwickeln, dürften sie die Inflation in diesem Jahr um 0,4 Prozentpunkte erhöhen und das Wachstum um 0,1 bis 0,2 Prozentpunkte dämpfen", heißt es darin. Für das Gesamtjahr erwarten die DIW-Ökonomen weiter ein Wachstum um ein Prozent der Wirtschaftsleistung. Allerdings bleiben weiter Unsicherheiten. Das DIW hat ein Negativszenario durchgerechnet, in dem der Irankrieg weiter eskaliert und die Energiepreise um gut die Hälfte binnen zwei Quartalen anziehen. Hier müsse die Europäische Zentralbank die Leitzinsen erhöhen, was die Konjunktur bremse. Unter dem Strich würde dann die Wirtschaftsleistung um 0,5 Prozentpunkte zum Basisszenario sinken.
+
+Benzin und Gas werden immer teurer. Regierung und Koalition reagieren mit Krisenstäben und Taskforces – was genau geplant ist, sagt CDU-Wirtschaftspolitiker Sepp Müller.
+
+Am Mittwoch sprang der Dieselpreis an deutschen Tankstellen über die Marke von zwei Euro. Am Donnerstag folgte E10-Benzin. Auch die Preise an den Gasbörsen kletterten zwischenzeitlich um satte zweistellige Prozentsätze. Die wirtschaftlichen Folgen des Irankrieges erreichen damit auch direkt deutsche Autofahrer und Verbraucherinnen.
+
+Die Nervosität der Politik ist entsprechend groß, vor den Landtagswahlen in Baden-Württemberg und Rheinland-Pfalz ohnehin. Das zeigen auch die Parallelen zur Hochzeit des Ukrainekrieges: In dieser Woche setzte das Bundeswirtschaftsministerium einen Krisenstab wieder ein, der erstmals 2022 nach dem Einmarsch Russlands getagt hatte, um eine drohende Gaskrise abzuwenden. Der Bundestag reagierte ebenfalls. Die Regierungsfraktionen setzten eine Taskforce ein. Zudem werden Forderungen nach einer Wiederauflage des "Tankrabatts" laut, wie es ihn bereits 2022 gab. Die Politik müsse eine "vorübergehende Absenkung der Energiesteuer auf Kraftstoffe prüfen", forderte etwa der ADAC.
+
+WirtschaftsWoche: Herr Müller, Sprit an der Tankstelle ist seit Wochenbeginn richtig teuer. Sind über zwei Euro je Liter ein Zeichen, dass Benzin und Diesel durch den Irankrieg knapp geworden sind? Oder nutzen Konzerne die Lage aus?
+
+Sepp Müller: Wir sehen, dass sich die Mineralölkonzerne auf steigende Preise einstellen, weil die wichtige Meerenge von Hormus geschlossen ist. Ich sage aber deutlich: Wir werden uns diese Preisentwicklung ganz kritisch anschauen. Gehen die Preise über das hinaus, was man sonst marktwirtschaftlich bei Knappheit erwarten müsste? Der Anstieg ist in seiner Deutlichkeit zumindest bemerkenswert. Das schauen wir uns nun auch in der Taskforce an, die wir als Koalitionsfraktionen im Bundestag am Freitag eingesetzt haben.
+
+## Context after
+
+Sepp Müller, Fraktionsvize der Union für Wirtschaft und Energie, ist einer der beiden Leiter der Koalitions-Taskforce. Im Interview spricht erüber seine Sicht auf die Lage – und mögliche Reaktionen der Bundesregierung. Auch im Bundeswirtschaftsministerium tagt eine solche Taskforce. Warum muss das doppelt beobachtet werden? Das wirkt wie Aktionismus. Der Bundestag
+
+
+---
+
+# Chunk 14
+Heading: Zur Person
+Tokens: 480
+Words: 409
+Blocks: 133-142
+
+## Context before
+
+Wir werden uns diese Preisentwicklung ganz kritisch anschauen. Gehen die Preise über das hinaus, was man sonst marktwirtschaftlich bei Knappheit erwarten müsste? Der Anstieg ist in seiner Deutlichkeit zumindest bemerkenswert. Das schauen wir uns nun auch in der Taskforce an, die wir als Koalitionsfraktionen im Bundestag am Freitag eingesetzt haben.
+
+## Text
+
+Sepp Müller, Fraktionsvize der Union für Wirtschaft und Energie, ist einer der beiden Leiter der Koalitions-Taskforce. Im Interview spricht erüber seine Sicht auf die Lage – und mögliche Reaktionen der Bundesregierung.
+
+Auch im Bundeswirtschaftsministerium tagt eine solche Taskforce. Warum muss das doppelt beobachtet werden? Das wirkt wie Aktionismus.
+
+Der Bundestag ist der Gesetzgeber, wir haben auch das Haushaltsrecht. Wir müssen nah dranbleiben an allen Informationen, die volkswirtschaftliche Folgen haben.
+
+Heißt das, dass Sie als Gesetzgeber eingreifen wollen? Zu Beginn des Ukrainekrieges mit teuren Energiepreisen hatte die Ampelkoalition eine Spritpreisbremse eingeführt.
+
+Ich will nicht spekulieren. Ein Blick auf die Vergangenheit zeigt aber, dass der sogenannte Tankrabatt den Menschen wenig bis gar nichts gebracht hat. Ich werde jetzt erstmal nicht über andere Instrumente spekulieren. Das würde nur Wetten gegen den Staat befeuern, die schon laufen. Wir werden mit kühlem Kopf agieren und gegebenenfalls reagieren. Der Ölpreis hat sich schon ein wenig stabilisiert. Beim Gaspreis zeigen sich leichte Rückgänge. Vielleicht kommen wir wieder auf ein Niveau wie vor dem Krieg im Iran.
+
+Der Tankrabatt während des Ukrainekrieges galt drei Monate lang – von Anfang Juni bis Ende August 2022. Die Steuersenkung auf Kraftstoffe kostete damals rund eine Milliarde Euro pro Monat und wurde nicht immer und überall vollumfänglich an die Autofahrer weitergereicht . Die Kritik war entsprechend groß.
+
+Die Debatte um ein Eingreifen der Politik ist dennoch bereits im vollen Gange. "Wir müssen denen auf die Finger schlagen, die der Meinung sind, sie könnten auf Kosten der Verbraucherinnen und Verbraucher und unserer Volkswirtschaft Zusatzgewinne machen", sagte Sachsens Ministerpräsident Michael Kretschmer. Von "Abzocke" sprach der SPD-Politiker Esra Limbacher. Und sein Parteifreund, Bremens Bürgermeister Andreas Bovenschulte, kritisierte: "Wenn man sieht, wie die Ölkonzerne in Windeseile die Preise erhöht haben, dann besteht schon der Verdacht, dass sie den Krieg ausnutzen, um sich die Taschen vollzumachen – zulasten der Autofahrerinnen."
+
+Herr Müller, in Baden-Württemberg und Rheinland-Pfalz sind Landtagswahlen. Dort sind viele aufs Auto angewiesen. Wollen Sie ihnen noch etwas versprechen?
+
+Wir schüren keine Erwartung, die wir nicht erfüllen können. Da müssen wir ganz klar sein. Vor allem werden wir keine Entscheidung aufgrund von Wahlen treffen. Ich kann mir schlecht vorstellen, dass sowohl Amerikaner als auch Chinesen weiter eine Schließung der Straße von Hormus zulassen. Dann fehlen 20 Prozent Gas und Öl am Weltmarkt – und auch in diesen Ländern steigen die Preise.
+
+Die Hoffnung auf Entspannung der Lage ist nachvollziehbar. Der Irankrieg legt eine der wichtigsten Logistikrouten der Weltwirtschaft für Öl, Gas, Lebens- und Düngemittel praktisch lahm.
+
+## Context after
+
+Allerdings nutzt die Bundesregierung auch eigene Möglichkeiten. Die Bundeswirtschaftsministerin hat das Bundeskartellamt beauftragt, die Preissprünge an den Tankstellen einer genauen Prüfung zu unterziehen. Möglichkeiten zum Eingriff gäbe es, sie sind allerdings komplex. Beim Gas sind die Preissprünge fast noch stärker als beim Sprit. Gas ist in Unternehmen ein wichtiger Brennstoff.
+
+
+---
+
+# Chunk 15
+Heading: Zur Person
+Tokens: 494
+Words: 373
+Blocks: 143-156
+
+## Context before
+
+eine Schließung der Straße von Hormus zulassen. Dann fehlen 20 Prozent Gas und Öl am Weltmarkt – und auch in diesen Ländern steigen die Preise. Die Hoffnung auf Entspannung der Lage ist nachvollziehbar. Der Irankrieg legt eine der wichtigsten Logistikrouten der Weltwirtschaft für Öl, Gas, Lebens- und Düngemittel praktisch lahm.
+
+## Text
+
+Allerdings nutzt die Bundesregierung auch eigene Möglichkeiten. Die Bundeswirtschaftsministerin hat das Bundeskartellamt beauftragt, die Preissprünge an den Tankstellen einer genauen Prüfung zu unterziehen. Möglichkeiten zum Eingriff gäbe es, sie sind allerdings komplex.
+
+Beim Gas sind die Preissprünge fast noch stärker als beim Sprit. Gas ist in Unternehmen ein wichtiger Brennstoff. Rechnen Sie damit, dass sich die Folgen wie beim Ukrainekrieg in einer steigenden Inflation niederschlagen?
+
+Ein steigender Gaspreis schlägt zunächst beim Strompreis durch, weil Gaskraftwerke Teil der Stromerzeugung sind. Wichtig ist aber auch, darauf hinzuweisen, dass wir keinen Engpass an Gas oder Öl haben. Bei Bäckereien, im Lebensmittelbereich insgesamt oder im Handwerk können sich höhere Einkaufspreise beim Gas auswirken. Die meisten Unternehmen werden längerfristige Lieferverträge haben. Alle werden auch erstmal schauen, wo noch klug gespart werden kann. Deswegen ist Alarmismus nicht angebracht.
+
+Haben die neuen Schocks bei Öl und Gas Einfluss aufs Heizungsgesetz der Koalition, die das Gesetz des vorigen Wirtschaftsministers Robert Habeck abschaffen will?
+
+Dieses Gesetz hatte keine Akzeptanz in der Bevölkerung. Im Gegenteil: Es wurden deutlich weniger Wärmepumpen installiert, als notwendig sind. Die Leute wollten sich nicht in die Heizungskeller reinregieren lassen. Wir werden Gas- und Brennwerttechnik und die Ölheizung weiter erlauben und dabei auch auf Biomethan und Bioöl setzen. Die Investitionskosten sind bei Gas- und Ölheizungen geringer als bei der Wärmepumpe, aber die Betriebskosten sind höher. Die Menschen werden selbst entscheiden.
+
+Das klingt, als ob die Wärmepumpe auf längere Frist die empfehlenswerte Heizung ist. Beabsichtigt die Koalition, die Förderung der Vorgängerregierung für den Einbau von Wärmepumpen aufrechtzuerhalten?
+
+Wir wollen es anders machen als die Vorgängerregierung, die über Nacht die Förderung der Elektroautos eingestellt hat. Wir haben deutlich formuliert, dass wir eine auskömmliche Förderung bis 2029 sicherstellen. Hier sind die Wärmepumpen gemeint. Gas- und Brennwerttechnik oder die Ölheizung werden wir nicht fördern.
+
+Wörter: 982 Autor/-in: Cordula Tutt Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 344.006 Unique Users (UUpD) <sup>2</sup> :
+
+Weblink: **https://www.wiwo.de/politik/deutschland/benzinpreise-der-tankrabatt-hat-den-menschen-wenig-bis-garnichts-gebracht/100206139.html**
+
+<sup>1</sup> von PMG gewichtet 10-2024
+
+**Abbildung:** Die Spritpreise in Deutschland sind infolge des Iran-Kriegs seit Ende Februar 2026 stark gestiegen. **Fotograf/-in:** IMAGO/Rolf Poss
+
+**Fotograf/-in:** PR
+
+## Context after
+
+<sup>2</sup>gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+ Bundeswirtschaftsministerin Reiche hat die Benzinpreisspielchen an der Tankstelle satt. Sie will es machen wie Österreich und die Mineralölkonzerne stärker kontrollieren – und das ist gut so! Das ist ein Ding. Bundeswirtschaftsministerin Katherina Reiche (CDU) schlägt sich auf die Seite der Verbraucher
+
+
+---
+
+# Chunk 16
+Heading: Die Leute wollten sich nicht in die Heizungskeller reinregieren lassen
+Tokens: 424
+Words: 356
+Blocks: 157-167
+
+## Context before
+
+982 Autor/-in: Cordula Tutt Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 344.006 Unique Users (UUpD) <sup>2</sup> : Weblink: **https://www.wiwo.de/politik/deutschland/benzinpreise-der-tankrabatt-hat-den-menschen-wenig-bis-garnichts-gebracht/100206139.html** <sup>1</sup> von PMG gewichtet 10-2024 **Abbildung:** Die Spritpreise in Deutschland sind infolge des Iran-Kriegs seit Ende Februar 2026 stark gestiegen. **Fotograf/-in:** IMAGO/Rolf Poss **Fotograf/-in:** PR
+
+## Text
+
+<sup>2</sup>gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
+
+Bundeswirtschaftsministerin Reiche hat die Benzinpreisspielchen an der Tankstelle satt. Sie will es machen wie Österreich und die Mineralölkonzerne stärker kontrollieren – und das ist gut so!
+
+Das ist ein Ding. Bundeswirtschaftsministerin Katherina Reiche (CDU) schlägt sich auf die Seite der Verbraucher und knöpft sich den Kraftstoffsektor vor. Den Tankstellen will sie künftig vorschreiben, dass sie ihre Preise nur noch einmal am Tag anheben dürfen. So macht esÖsterreich seit Jahren. Und tatsächlich liegen die Spritpreise dort weit unter den hiesigen, zuletzt bei 1,70 Euro während sie hierzulande auf über 2 Euro geklettert sind. Zur Wahrheit gehört aber auch, dass inÖsterreich niedrigere Steuern auf Benzin und Diesel gelten.
+
+Trotzdem: Der Plan der Ministerin ist vernünftig – und überfällig. Wer regelmäßig tankt, kennt das Theater mit den Spritpreisen. Sage und schreibe 22-mal ändert sich der Preis im Schnitt an einer Tankstelle – am Tag! An manchen Standorten wechseln die Spritpreise zu Stoßzeiten sogar alle 15 Minuten.
+
+Das Spielchen wird von der Markttransparenzstelle des Kartellamts zwar streng überwacht. Tankstellen müssen ihr binnen fünf Minuten melden, wenn sie bei den Kraftstoffsorten Super E5, Super E10 und Diesel die Preisanzeigen ändern. 15.000 Tankstellen tun das auch brav. Aber der kolossale Datensatz bringt nicht das, was die Wettbewerbshüter sich erhofft haben. Mehr Wettbewerb durch Transparenz und damit niedrigere Benzinpreise.
+
+Im Gegenteil die Markttransparenzstelle, eingeführt noch von der schwarzgelben Koalition, führt dazu, dass sich die Preise an den Tankstellen hochschaukeln. Denn mit dem Informationssystem arbeiten auch die Mineralölmultis Aral, Shell, Esso und Total, die die Tankstellen beliefern und im Hintergrund die Preise festlegen. Denn so können sie ausreizen, was der Markt hergibt. Bis Autofahrer eine als billig in der Tank-App angezeigte Zapfsäule erreichen, haben sie den Preis meist schon wieder hochgesetzt. Laut dem Portal Benzinpreis.de tricksen inzwischen vier von fünf deutschen Tankstellen mit Jo-Jo-Spritpreisen.
+
+Mit der Regel hofft Reiche zudem ein Muster zu durchbrechen, das Prinzip von "Rakete und Feder". Bei steigenden Rohölpreisen stiegen die Preise an den Tankstellen raketenartig an, sänken danach aber nur langsam. Die neue Preisregel soll nun schnell umgesetzt werden.
+
+## Context after
+
+Endlich handelt die Bundesregierung und greift ein, wenn es am Markt falsch läuft. Fast wichtiger ist deshalb auch Reiches zweiter Vorstoß. Sie prüft eine Verschärfung der kartellrechtlichen Missbrauchsaufsicht. Diese soll künftig auch für den Kraftstoffsektor gelten und damit die Ölkonzerne treffen, die hinter den kräftigen Preiserhöhungen der vergangenen Tage stecken.
+
+
+---
+
+# Chunk 17
+Heading: **Mehr zum Thema Rakete und Feder**
+Tokens: 461
+Words: 350
+Blocks: 168-180
+
+## Context before
+
+Benzinpreis.de tricksen inzwischen vier von fünf deutschen Tankstellen mit Jo-Jo-Spritpreisen. Mit der Regel hofft Reiche zudem ein Muster zu durchbrechen, das Prinzip von "Rakete und Feder". Bei steigenden Rohölpreisen stiegen die Preise an den Tankstellen raketenartig an, sänken danach aber nur langsam. Die neue Preisregel soll nun schnell umgesetzt werden.
+
+## Text
+
+Endlich handelt die Bundesregierung und greift ein, wenn es am Markt falsch läuft. Fast wichtiger ist deshalb auch Reiches zweiter Vorstoß. Sie prüft eine Verschärfung der kartellrechtlichen Missbrauchsaufsicht. Diese soll künftig auch für den Kraftstoffsektor gelten und damit die Ölkonzerne treffen, die hinter den kräftigen Preiserhöhungen der vergangenen Tage stecken. Da sei ein "sehr, sehr scharfes Schwert des Kartellamts". Bisher greife dieses Instrument lediglich im Energiesektor, sagt Reiche.
+
+Den Mineralölkonzernen Preisabsprachen nachzuweisen, dürfte dennoch schwierig sein, glaubt Kartellamtschef Andreas Mundt. Auch ein ungewöhnlich hoher Abstand zwischen der Entwicklung des Rohölpreises und den Preisen an der Tankstelle reiche nicht als Nachweis. Doch auffällig ist eben schon, wie sich die Spritpreise hierzulande entwickeln. Vorige Woche stiegen Benzin- und Dieselpreise hierzulande mehr als doppelt so hoch wie im EUweiten Durchschnitt.
+
+Wörter: 466 Autor/-in: Capital Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN
+
+Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 58.635 Unique Users (UUpD) <sup>2</sup> :
+
+Weblink: **https://www.capital.de/benzinpreise--endlich-handelt-wirtschaftsminsterin-reiche--37212454.html**
+
+<sup>1</sup> von PMG gewichtet 10-2024
+
+2gerundet agof ddf Ø-Tag 2023-01 vom 08.03.2023, Gesamtbevölkerung 16+
+
+Der Wettbewerbsökonom Justus Haucap über die Pläne der Bundesregierung, die Spritpreis-Explosion mit dem "österreichischen Modell" zu zähmen.
+
+WirtschaftsWoche: Herr Haucap, Bundeswirtschaftsministerin Katherina Reiche will gegen die massiv gestiegenen Spritpreise nach österreichischem Vorbild durchgreifen: Tankstellen sollen Preise künftig nur noch einmal am Tag erhöhen dürfen, danach sind bloß noch Senkungen erlaubt. Die Monopolkommission hat den Vorschlag begrüßt. Er klingt nach einer einfachen Lösung. Ist er das?
+
+Justus Haucap: Ganz ehrlich, nicht unbedingt. Das österreichische Modell besteht aus zwei Komponenten, und genau dieses "Einmal-am-Tag-hoch"-Prinzip hat in Studien keineswegs eindeutig preissenkend gewirkt. Die empirische Evidenz ist gemischt. Für Verbraucher wird es vielleicht etwas übersichtlicher. Aber es gibt gegenläufige Effekte: Wenn Mineralölkonzerne wissen, dass sie nur noch einmal täglich erhöhen dürfen, dann besteht die Gefahr, dass sie dann einen besonders großen Schluck aus der Pulle nehmen – also gleich kräftig erhöhen.
+
+Immerhin würden die wilden Preisschwankungen pro Tag abnehmen, oder? In Deutschland hatten wir zuletzt im Schnitt 22 Preisänderungen pro Tankstelle am Tag.
+
+## Context after
+
+Ja, der Tagesverlauf wird geglättet. InÖsterreich steigt der Preis um Punkt 12 Uhr einmal kräftig – danach geht es in kleinen Schritten nach unten. Aber: Billiger wird es dadurch nicht zwingend. Was passieren wird: Die Leute tanken künftig eher vor diesem Mittagspeak. Heute fährt man abends. Demnächst tankt man dann
+
+
+---
+
+# Chunk 18
+Heading: "Die clevere Idee steckt in den Apps, nicht in den Preisregeln"
+Tokens: 482
+Words: 411
+Blocks: 181-189
+
+## Context before
+
+dass sie nur noch einmal täglich erhöhen dürfen, dann besteht die Gefahr, dass sie dann einen besonders großen Schluck aus der Pulle nehmen – also gleich kräftig erhöhen. Immerhin würden die wilden Preisschwankungen pro Tag abnehmen, oder? In Deutschland hatten wir zuletzt im Schnitt 22 Preisänderungen pro Tankstelle am Tag.
+
+## Text
+
+Ja, der Tagesverlauf wird geglättet. InÖsterreich steigt der Preis um Punkt 12 Uhr einmal kräftig – danach geht es in kleinen Schritten nach unten. Aber: Billiger wird es dadurch nicht zwingend. Was passieren wird: Die Leute tanken künftig eher vor diesem Mittagspeak. Heute fährt man abends. Demnächst tankt man dann eben morgens auf dem Weg zur Arbeit. Um Viertel vor zwölf wird's jedenfalls voraussichtlich voll an der Tanke.
+
+Tankstellenpächter sagen, sie hätten ohnehin nichts zu melden – die Preise kämen direkt aus der Zentrale. Am Ende entscheiden doch ohnehin dieselben vier, fünf Konzerne?
+
+Für die großen Ketten stimmt das: Die betreiben auch Raffinerien und kontrollieren so zwei Drittel des Marktes. Die Preisimpulse kommen tatsächlich oft von dort. Aber das ist nur ein Teil der Wahrheit. Wir haben eben auch sehr viele freie Tankstellen und regionale Ketten, die rund ein Drittel des Marktes ausmachen und echte Wettbewerbsimpulse setzen – allerdings nur so weit, wie es der Raffineriepreis zulässt, zu dem sie selbst einkaufen müssen. Der wird letztlich in der Regel wieder von den großen Ketten bestimmt. Trotzdem bleibt den Freien ein Spielraum in der Marge, den sie vielfach nutzen.
+
+Justus Haucap, 49, ist Direktor des Düsseldorfer Instituts für Wettbewerbsökonomie (DICE). Er war Mitglied der Monopolkommission und gehört dem Wissenschaftlichen Arbeitskreis für Regulierungsfragen bei der Bundesnetzagentur an.
+
+Kritiker warnen nun aber, dass die Preisaggressoren – freie Tankstellen, Supermarkt-Tanken und Ähnliche – unter dem vorgeschlagenen Modell weniger Druck ausüben könnten. Wie sehen Sie das?
+
+Das Risiko gibt es. Heute können Markentankstellen mit 24-Stunden-Betrieb nachmittags oder gegen Abend, wenn viele Leute auf dem Heimweg tanken fahren und der Wettbewerb durch freie Tankstellen noch da ist, günstige Preise anbieten. Wenn die Freien dann später am Abend irgendwann geschlossen haben, setzen die Marken die Preise wieder hoch und sichern sich so die Nachtmarge. Sofern aber künftig nur noch Senkungen möglich sind, werden die Marken vermutlich nachmittags und abends nicht mehr so in den Preiswettbewerb gehen. In der Folge müssen dann auch die Freien nicht mehr so weit runter, um die Marken zu unterbieten. Das könnte das Preisniveau nach oben drücken. Ob es so kommt, bleibt abzuwarten. Die österreichischen Daten zeigen jedenfalls steuerbereinigt keine eindeutige Tendenz zu niedrigeren Durchschnittspreisen.
+
+Die heute bekannten "Rocket & Feather"-Effekte – Preise steigen raketenmäßig schnell und fallen dann wie eine sinkende Feder nur noch langsam – würde das "österreichische" Modell also eher nicht beeinflussen?
+
+Nein. Die Rakete startet eben nur noch einmal täglich um 12 Uhr, statt achtmal am Tag. Das Grundphänomen tendenziell hoher Preise bleibt.
+
+## Context after
+
+Die Bundesregierung plant parallel zu neuen Regeln für die Preisgestaltung der Tankstellen auch eine Freigabe nationaler Ölreserven. Erwarten sie da einen verstärkenden Preissenkungseffekt beider Maßnahmen? Eine Art "Doppelwumms" gegen die Preissprünge der vergangenen zwei Wochen? Nein. Das sind zwei komplett getrennte Baustellen. Die Ölreserven wirkten sofort an den Rohölmärkten. Wir
+
+
+---
+
+# Chunk 19
+Heading: Zur Person
+Tokens: 479
+Words: 342
+Blocks: 190-200
+
+## Context before
+
+bekannten "Rocket & Feather"-Effekte – Preise steigen raketenmäßig schnell und fallen dann wie eine sinkende Feder nur noch langsam – würde das "österreichische" Modell also eher nicht beeinflussen? Nein. Die Rakete startet eben nur noch einmal täglich um 12 Uhr, statt achtmal am Tag. Das Grundphänomen tendenziell hoher Preise bleibt.
+
+## Text
+
+Die Bundesregierung plant parallel zu neuen Regeln für die Preisgestaltung der Tankstellen auch eine Freigabe nationaler Ölreserven. Erwarten sie da einen verstärkenden Preissenkungseffekt beider Maßnahmen? Eine Art "Doppelwumms" gegen die Preissprünge der vergangenen zwei Wochen?
+
+Nein. Das sind zwei komplett getrennte Baustellen. Die Ölreserven wirkten sofort an den Rohölmärkten. Wir sehen das ja schon: Heute haben wir bereits geringere Preise und ich denke, das hat damit zu tun, dass der Ölpreis jetzt wieder bei gut 90 Dollar liegt und nicht mehr bei 120 Dollar. Die Regeln zur Preissetzung sind eine regulatorische Maßnahme, die erst mit zeitlichem Versatz wirkt, wenn der Vorschlag der Bundesregierung durchs Parlament ist.
+
+Sie sagten, das österreichische Modell hat zwei Elemente. Das erste – die "Einmal-am-Tag-Regel" – ist in ihrer Wirkung also fraglich. Was ist mit dem zweiten?
+
+Das ist der wirklich intelligente Teil: InÖsterreich zeigen die Preisvergleichs-Apps nur die günstigsten 50 Prozent der Tankstellen im Umkreis an. Die teurere Hälfte bleibt unsichtbar. Eine Studie des Wiener Ökonomen Simon Martin zeigt: Dadurch entsteht echter Preisdruck, weil die Tankstellenbetreiber zumindest sichtbar bleiben wollen – und dafür ihre Preise in die günstigere Hälfte drücken. Das aber ist eine dynamische Grenze, die mit jeder Preissenkung weiter absinkt.
+
+Solch eine Zusatzregel wäre also ein Hebel, der in Deutschland fehlt? Absolut. Wenn man das in Deutschland einführte, hätte man zusätzlichen Preisdruck, ohne starre Preismechanismen. Das könnte wirklich preisdämpfend wirken.
+
+Wörter: 833 Autor/-in: Thomas Kuhn Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 344.006 Unique Users (UUpD) <sup>2</sup> : 95.000
+
+Weblink: **https://www.wiwo.de/unternehmen/energie/spritpreisbremse-die-clevere-idee-steckt-in-den-apps-nicht-inden-preisregeln/100207910.html**
+
+<sup>1</sup> von PMG gewichtet 10-2024
+
+**Abbildung:** InÖsterreich gilt seit 2011 die Regel, dass Tankstellen nur einmal täglich die Preise anheben, aber beliebig oft senken können. Ist das ein Modell, das Preissprünge auch in Deutschland begrenzen könnte? **Fotograf/-in:** Harald Schneider/apa/dpa
+
+**Fotograf/-in:** dpa
+
+<sup>2</sup>gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
+
+## Context after
+
+Angesichts hoher Benzinpreise werden die Rufe nach staatlicher Intervention höher. Doch die könnte Innovation sogar hemmen, wie ein Blick in die siebziger Jahre zeigt. Sie tun es wieder. Kaum steigen die Preise für Benzin und Diesel, melden sich Politiker jeglicher Couleur, auch solche, die ansonsten die Marktwirtschaft hochhalten, und fordern
+
+
+---
+
+# Chunk 20
+Heading: Billiges Benzin
+Tokens: 454
+Words: 353
+Blocks: 203-214
+
+## Context before
+
+<sup>1</sup> von PMG gewichtet 10-2024 **Abbildung:** InÖsterreich gilt seit 2011 die Regel, dass Tankstellen nur einmal täglich die Preise anheben, aber beliebig oft senken können. Ist das ein Modell, das Preissprünge auch in Deutschland begrenzen könnte? **Fotograf/-in:** Harald Schneider/apa/dpa **Fotograf/-in:** dpa <sup>2</sup>gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
+
+## Text
+
+Angesichts hoher Benzinpreise werden die Rufe nach staatlicher Intervention höher. Doch die könnte Innovation sogar hemmen, wie ein Blick in die siebziger Jahre zeigt.
+
+Sie tun es wieder. Kaum steigen die Preise für Benzin und Diesel, melden sich Politiker jeglicher Couleur, auch solche, die ansonsten die Marktwirtschaft hochhalten, und fordern Tankrabatte oder andere Formen staatlicher Intervention. Man darf dahinter durchaus einen Selbsterhaltungstrieb vermuten, denn während anderorts Brotpreise schon zur Revolution führten, ruft der autoliebende Deutsche nach dem Staat, wenn die Preise an den Anzeigetafeln in die Höhe klettern.
+
+Doch ist Benzin überhaupt teuer, wenn der Liter zwei Euro kostet? Ein Blick zurück ins Jahr 1976, die erste große Ölkrise, ausgelöst durch den Jom-Kippur-Krieg, war zu diesem Zeitpunkt bewältigt. Der Liter Super kostete damals 95 Pfennig. In heutiger Kaufkraft gerechnet wären das ungefähr 1,50 Euro, also nur etwa zehn Prozent weniger als der durchschnittliche Preis für E10 im vergangenen Jahr und deutlich weniger als dieser Tage.
+
+Ganz so einfach ist es aber nicht: Die Ölpreisschocks in den siebziger Jahren führten zur Entwicklung deutlich sparsamerer Motoren, zweistellige Verbrauchswerte gehörten bald der Vergangenheit an. Die auf den Kilometer bezogenen Benzinkosten waren folglich im Jahr 2025 nicht höher als ein halbes Jahrhundert zuvor. Sollten sich die Preise nun bei zwei Euro einpendeln, wäre dies ein klares Signal an Hersteller und Verbraucher, stärker auf technische Innovation zu setzen. Die kann in der Entscheidung für einen batterieelektrischen Antrieb münden, muss es aber nicht.
+
+Die Herstellkosten für einen Liter synthetisches Benzin, produziert mit Hilfe von Sonnen- und Windstrom auf der Südhalbkugel, betragen langfristig deutlich weniger als zwei Euro. Solche "Freiheitsenergie", so eine Wortschöpfung des ehemaligen FDP-Chefs Christian Lindner, würde Autofahrer unabhängiger machen von wiederkehrenden Krisen im Nahen Osten. Und dem Klima diente derartige Innovation nebenbei.
+
+Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 1.679.100 Unique Users (UUpD) <sup>2</sup> :
+
+Weblink: **https://www.faz.net/aktuell/technik-motor/wie-teures-benzin-zu-innovation-fuehren-kann-110849032.html**
+
+<sup>1</sup> von PMG gewichtet 10-2024
+
+2gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
+
+## Context after
+
+BERLIN. Die Bundesregierung stößt mit ihrem Vorgehen gegen hohe Spritpreise bei den Menschen in Deutschland auf deutliche Kritik. In einer vom Meinungsforschungsinstitut Insa für die "Bild am Sonntag" erhobenen repräsentativen Umfrage sind 75 Prozent der Befragten der Ansicht, die Regierung unternehme nicht genug gegen die gestiegenen Preise für Benzin und
+
+
+---
+
+# Chunk 21
+Heading: Kritik in der Spritpreiskrise
+Tokens: 431
+Words: 377
+Blocks: 216-231
+
+## Context before
+
+unabhängiger machen von wiederkehrenden Krisen im Nahen Osten. Und dem Klima diente derartige Innovation nebenbei. Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 1.679.100 Unique Users (UUpD) <sup>2</sup> : Weblink: **https://www.faz.net/aktuell/technik-motor/wie-teures-benzin-zu-innovation-fuehren-kann-110849032.html** <sup>1</sup> von PMG gewichtet 10-2024 2gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
+
+## Text
+
+BERLIN. Die Bundesregierung stößt mit ihrem Vorgehen gegen hohe Spritpreise bei den Menschen in Deutschland auf deutliche Kritik. In einer vom Meinungsforschungsinstitut Insa für die "Bild am Sonntag" erhobenen repräsentativen Umfrage sind 75 Prozent der Befragten der Ansicht, die Regierung unternehme nicht genug gegen die gestiegenen Preise für Benzin und Diesel. Nur 13 Prozent der Befragten halten die bisherigen Maßnahmen für ausreichend. Auch die geplante Neuregelung für Tankstellen überzeugt die meisten Befragten nicht. 67 Prozent von ihnen glauben nicht, dass die Beschränkung auf nur eine Preiserhöhung pro Tag zu sinkenden Spritpreisen führen wird. Für Entlastungen an anderer Stelle gibt es dagegen klare Mehrheiten: 76 Prozent der Befragten sprechen sich für eine Senkung der Steuern und Abgaben auf Benzin und Diesel aus. 68 Prozent befürworten zudem, dass der Staat Übergewinne von Mineralölkonzernen abschöpfen sollte.
+
+Seit Beginn des Irankrieges sind die Spritpreise deutlich gestiegen. Angesichts dessen kündigte Bundeswirtschaftsministerin Katherina Reiche (CDU) neue Vorgaben für die Preissetzung an den Zapfsäulen, eine schärfere Marktbeobachtung durch das Kartellamt sowie die Freigabe von Ölreserven als Reaktion auf die stark gestiegenen Spritpreise an. Demnach sollen Tankstellen die Preise für Diesel und Benzin künftig nur noch einmal am Tag erhöhen dürfen und Mineralölkonzerne unter verschärfte Beobachtung gestellt werden. Am Sonntag wurden Eckpunkte eines Gesetzesentwurfs bekannt. Demnach will die Bundesregierung die Beweispflicht bei der Erhöhung der Benzinpreise umkehren. Künftig sollen die Mineralölkonzerne vorab begründen, warum sie ihre Preise erhöhen. Am Montag tagt eine von den Koalitionsfraktionen eingesetzte Taskforce. Dazu werden neben dem Präsidenten des Bundeskartellamts, Andreas Mundt, auch Vertreter von Mineralölkonzernen erwartet.
+
+*AFP/Reuters*
+
+<sup>1</sup> IVW 4/2025
+
+2AGMA ma 2025 Tageszeitungen
+
+167.327 (verkauft) 169.779 (verbreitet)
+
+Steigt der Ölpreis krisenbedingt, schießen die Benzinpreise raketengleich in die Höhe – um dann nach Krisenende nur langsam wie eine Feder zu sinken. Ein Tankrabatt würde diesen Mechanismus nicht durchbrechen – und am Ende nur der Ölindustrie helfen, fürchten Forscher.
+
+Die Preise für 1 Liter Benzin oder Diesel sind binnen kurzer Zeit kräftig gestiegen und haben mancherorts bereits die Marke von 2 Euro hinter sich gelassen. Damit folgen die Mineralölkonzerne einem üblichen Muster: Bei einer Verteuerung des Ölpreises aufgrund einer politischen Krise schießen die Preise an der Zapfsäule ohne Verzug raketengleich nach oben. Sinkt der Ölpreis wieder, lässt sich die Mehrheit der Unternehmen mit Preissenkungen deutlich mehr Zeit.
+
+## Context after
+
+Diesel war zuletzt mehr als 25 Cent teurer als vor Ausbruch des Iran -Kriegs, Superbenzin mehr als 15 Cent. Die Forderungen nach einer erneuten "Spritpreisbremse" werden angesichts des teuren Benzins wieder lauter. Wirtschaftswissenschaftler sehen eine mögliche Neuauflage des Tankrabatts jedoch kritisch. Dabei geht es nicht nur um die hohen Kosten,
+
+
+---
+
+# Chunk 22
+Heading: Wie sich die Ölindustrie am Tankrabatt bereichert
+Tokens: 491
+Words: 402
+Blocks: 232-241
+
+## Context before
+
+die Marke von 2 Euro hinter sich gelassen. Damit folgen die Mineralölkonzerne einem üblichen Muster: Bei einer Verteuerung des Ölpreises aufgrund einer politischen Krise schießen die Preise an der Zapfsäule ohne Verzug raketengleich nach oben. Sinkt der Ölpreis wieder, lässt sich die Mehrheit der Unternehmen mit Preissenkungen deutlich mehr Zeit.
+
+## Text
+
+Diesel war zuletzt mehr als 25 Cent teurer als vor Ausbruch des Iran -Kriegs, Superbenzin mehr als 15 Cent. Die Forderungen nach einer erneuten "Spritpreisbremse" werden angesichts des teuren Benzins wieder lauter. Wirtschaftswissenschaftler sehen eine mögliche Neuauflage des Tankrabatts jedoch kritisch. Dabei geht es nicht nur um die hohen Kosten, sondern auch darum, dass ein Rabatt ein falsches Signal senden würde, wie Anfragen bei Ifo, DIW und RWI ergaben.
+
+Wissenschaftler haben zudem den Tankrabatt aus dem Jahr 2022 untersucht. Damals hatte die Politik als Reaktion auf die zu Beginn des Ukrainekriegs gestiegenen Spritpreise die Mineralölsteuer gesenkt. Schon damals war die Maßnahme umstritten, unter anderem ging es dabei darum, ob der Rabatt bei den Verbrauchern wirklich ankommen würde. "Im ersten Monat wurde der Tankrabatt noch komplett weitergegeben", beschreibt der Energieexperte des RWI, **Manuel Frondel** , seine Erkenntnisse. "Als die Aufmerksamkeit nachließ, sank dann auch die Weitergabe. Zum Ende des Rabatts war es nach unseren Daten nur noch etwa die Hälfte." Anders gesagt: Ein steigender Anteil des Rabattes kam über die Zeit nicht bei den Verbrauchern an, sondern landete in den Taschen der Mineralölkonzerne.
+
+Eine Absenkung der Mineralölsteuer würde die Haushalte letztlich nicht entlasten, sagt Ifo-Chef Clemens Fuest. Schließlich müssten sie die Einnahmeausfälle beim Staat ja gegenfinanzieren. Die Politik könne die erhöhten Energiekosten nicht aus der Welt schaffen, sondern nur umverteilen.
+
+Derartige Maßnahmen hätten zudem den Nachteil, dass sie ein wichtiges Preisinstrument stören, betont der Ifo-Chef. Wenn Öl knapp und teuer sei, sollten die Verbraucher auch das Signal erhalten, davon etwas weniger zu verbrauchen. Dies sei eine der großen Stärken der Marktwirtschaft. Solche Signale auszuschalten, sei volkswirtschaftlich schädlich.
+
+DIW-Chef Marcel Fratzscher ist ähnlich kritisch: "Ein Tankrabatt, um höhere Spritpreise abzufedern, wäre ein teurer Fehler und die falsche Priorität der Bundesregierung", schreibt er auf dpa-Anfrage. "Die Bundesregierung kann die höheren Preise nicht verhindern, aber sie kann Bürger zielgenau entlasten."
+
+Priorität sollte für Fratzscher die Entlastung von Menschen mit geringen Einkommen haben. "Dies könnte beispielsweise über eine Senkung der Mehrwertsteuer auf Lebensmittel geschehen." Zudem plädiert er dafür, eine Übergewinnsteuer einzuführen, "um möglichen Missbrauch durch Mineralölkonzerne zu bekämpfen".
+
+RWI-Experte Frondel, nennt einen Tankrabatt "sowohl ökologisch als auch ökonomisch bedenklich". Er wäre "das Gegenteil einer Zukunftsinvestition", kritisiert er. Dabei geht es ihm unter anderem um die Kosten: "2022 hat die Spritpreisbremse pro Monat etwa eine Milliarde Euro gekostet. In Zeiten, in denen das Geld knapp ist, fehlt diese Milliarde an allen Ecken und Enden."
+
+## Context after
+
+Frondel hat aber auch ökologische Bedenken gegen einen Tankrabatt: "Nicht nur, weil dann nicht weniger gefahren würde, sondern weil er ein falsches Signal aussendet", sagt er. "Die Politik hat den CO2-Preis ja eingeführt, um fossile Kraftstoffe teurer und damit unattraktiver zu machen. Wenn man das aussetzt oder Maßnahmen dagegen ergreift,
+
+
+---
+
+# Chunk 23
+Heading: Tankrabatt ökologisch und ökonomisch bedenklich
+Tokens: 468
+Words: 346
+Blocks: 242-256
+
+## Context before
+
+"sowohl ökologisch als auch ökonomisch bedenklich". Er wäre "das Gegenteil einer Zukunftsinvestition", kritisiert er. Dabei geht es ihm unter anderem um die Kosten: "2022 hat die Spritpreisbremse pro Monat etwa eine Milliarde Euro gekostet. In Zeiten, in denen das Geld knapp ist, fehlt diese Milliarde an allen Ecken und Enden."
+
+## Text
+
+Frondel hat aber auch ökologische Bedenken gegen einen Tankrabatt: "Nicht nur, weil dann nicht weniger gefahren würde, sondern weil er ein falsches Signal aussendet", sagt er. "Die Politik hat den CO2-Preis ja eingeführt, um fossile Kraftstoffe teurer und damit unattraktiver zu machen. Wenn man das aussetzt oder Maßnahmen dagegen ergreift, sobald es Preiskapriolen gibt, unterwandert man den Plan."
+
+Wer beim Tanken sparen will, sollte die morgendliche Preisspitze meiden und die Preise verschiedener Tankstellen vergleichen, rät der ADAC. Gerade in Krisenzeiten mit viel Bewegung gebe es auch große Unterschiede. Diesen Rat befolgen offenbar viele Menschen. Am Sonntag hatten laut ADAC fünfmal so viele Menschen den Spritpreisvergleich des Verkehrsclubs genutzt, was ihn zwischenzeitlich überlastete. Auch am Montag sei es noch zu kürzeren Aussetzern gekommen. Inzwischen habe man aber die Serverkapazitäten angepasst, sagte ein Sprecher. *la/dpa, afp*
+
+Autor/-in: Kai Lange Rubrik: Politik/Weltwirtschaft Medienkanal: ONLINE Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 322.924 Unique Users 91.000
+
+Weblink: **https://www.manager-magazin.de/politik/weltwirtschaft/benzin-teuer-tankrabatt-fuellt-taschen-der-oelindustrie-a-39a86b3d-023b-4c23-b272-fae726435bac**
+
+(UUpD) <sup>2</sup> :
+
+<sup>1</sup> von PMG gewichtet 05-2020
+
+<sup>2</sup>gerundet agof ddf Ø-Tag 2020-05 vom 02.06.2020, Gesamtbevölkerung 16+
+
+Teures Benzin: Die Spritpreise sind seit Montag stark gestiegen – und dürften auch nach Ende der Iran-Krise nur langsam wieder sinken
+
+Autofahrer stöhnen, Politiker zeigen auf die Ölkonzerne, doch die Kasse des Finanzministers klingelt unaufhaltsam. Dabei gäbe es zwei wirksame Instrumente, um die Bürger zu entlasten.
+
+Kaum steigt der Liter Super E10 über die Zwei-Euro-Marke, beginnt das vertraute Schauspiel: Schuldige werden gesucht und mit Mineralölkonzernen und Tankstellen gefunden. Dabei ist einer der großen Profiteure längst bekannt: der Staat selbst. Dabei gibt es keinen plausiblen Grund, warum er am Iran-Krieg mitverdient und von der Preispolitik der Ölkonzerne profitieren sollte.
+
+Mehr als die Hälfte des Spritpreises besteht aus Steuern und Abgaben. Beim Diesel sind es rund 56 Prozent, bei Benzin sogar etwa zwei Drittel. Energiesteuer, CO2-Abgabe und Mehrwertsteuer treiben den Preis – und füllen gleichzeitig zuverlässig die Staatskassen.
+
+## Context after
+
+Eine Woche vor der Landtagswahl in Rheinland-Pfalz zeigen Union und SPD das klassische Wahlkampf-Klein-Klein: Ideen für Spritpreisentlastungen werden ausgetauscht, die Ministerinnen Katherina Reiche (CDU) und Stefanie Hubig (SPD) liefern sich ein mediales Wettrennen, während die Bürger sich ärgern und auf Entlastung warten. Der Staat beschließt gewaltige Bußgelder gegen Abzocke an
+
+
+---
+
+# Chunk 24
+Heading: Spritpreise über zwei Euro und der Staat verdient prächtig
+Tokens: 497
+Words: 394
+Blocks: 257-267
+
+## Context before
+
+er am Iran-Krieg mitverdient und von der Preispolitik der Ölkonzerne profitieren sollte. Mehr als die Hälfte des Spritpreises besteht aus Steuern und Abgaben. Beim Diesel sind es rund 56 Prozent, bei Benzin sogar etwa zwei Drittel. Energiesteuer, CO2-Abgabe und Mehrwertsteuer treiben den Preis – und füllen gleichzeitig zuverlässig die Staatskassen.
+
+## Text
+
+Eine Woche vor der Landtagswahl in Rheinland-Pfalz zeigen Union und SPD das klassische Wahlkampf-Klein-Klein: Ideen für Spritpreisentlastungen werden ausgetauscht, die Ministerinnen Katherina Reiche (CDU) und Stefanie Hubig (SPD) liefern sich ein mediales Wettrennen, während die Bürger sich ärgern und auf Entlastung warten.
+
+Der Staat beschließt gewaltige Bußgelder gegen Abzocke an den Tankstellen. Doch niemand weiß, ob sie am Ende wie gewünscht wirken. Dabei hätte er selbst zwei sofort wirksame Instrumente: Er könnte die CO2 Ausgabe für eine gewisse Zeit aussetzen und die Mehrwertsteuer senken. Geht nicht, gibt's hier nicht.
+
+Auf den Gesamtpreis für Benzin und Diesel werden 19 Prozent Umsatzsteuer erhoben. Bei rund fünf Milliarden Litern monatlichem Kraftstoffverbrauch und einem Preisanstieg von etwa 40 Cent profitiert der Staat mit rund 320 Millionen Euro monatlich. Auf das Jahr gerechnet läge das Plus damit bei knapp vier Milliarden Euro. Das Finanzministerium rechnet den Gewinn jetzt nach unten. Aber am Ende bleibt der Eindruck, der Staat möchte seinen Gewinn nicht mehr herausrücken. Die Summe wäre nicht die Welt für jeden Einzelnen, aber ein starkes Signal.
+
+Für ländliche Haushalte und Pendler ohne Alternative zum Auto sind hohe Spritpreise ohnehin kein Klimasignal, sondern eine finanzielle Belastung. Das gilt nicht nur für den Benzinpreis. Das versprochene Klimageld als Ausgleich für die CO2 Abgabe? Noch immer ein Phantom. Die Stromsteuer für alle? Kommt nicht.
+
+Die Debatte über Preistreiber an der Zapfsäule wirkt deshalb zunehmend wie politisches Theater, während die Kasse von Bundesfinanzminister Lars Klingbeil (SPD) unaufhaltsam klingelt. Am Ende bleibt die Erkenntnis: Solange der Staat zwei Drittel des Benzinpreises kassiert, ist jede Empörung bloß Inszenierung.
+
+Für ländliche Haushalte und Pendler ohne Alternative zum Auto sind hohe Spritpreise ohnehin kein Klimasignal, sondern eine finanzielle Belastung. Das gilt nicht nur für den Benzinpreis. Das versprochene Klimageld als Ausgleich für die CO2 Abgabe? Noch immer ein Phantom. Die Stromsteuer für alle? Kommt nicht.
+
+Die Debatte über Preistreiber an der Zapfsäule wirkt deshalb zunehmend wie politisches Theater, während die Kasse von Bundesfinanzminister Lars Klingbeil (SPD) unaufhaltsam klingelt. Am Ende bleibt die Erkenntnis: Solange der Staat zwei Drittel des Benzinpreises kassiert, ist jede Empörung bloß Inszenierung.
+
+Wörter: 474 Autor/-in: Thomas Sigmund Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN
+
+Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 807.013 Unique Users (UUpD) <sup>2</sup> :
+
+Weblink: **https://www.handelsblatt.com/meinung/kommentare/kommentar-spritpreise-ueber-zwei-euro-und-derstaat-verdient-praechtig/100208569.html**
+
+## Context after
+
+<sup>1</sup> von PMG gewichtet 10-2024 2gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+ **Abbildung:** Finanzminister Lars Klingbeil (l.), Bundeskanzler Friedrich Merz: Die Debatte über Preistreiber an der Zapfsäule wirkt zunehmend wie politisches Theater. **Fotograf/-in:** Michael Kappeler/dpa Seit dem Krieg gegen den Iran explodieren die Öl- und Benzinpreise – Autofahrer,
+
+
+---
+
+# Chunk 25
+Heading: **Versprochene Entlastungen kommen nicht**
+Tokens: 465
+Words: 384
+Blocks: 268-279
+
+## Context before
+
+Bundesfinanzminister Lars Klingbeil (SPD) unaufhaltsam klingelt. Am Ende bleibt die Erkenntnis: Solange der Staat zwei Drittel des Benzinpreises kassiert, ist jede Empörung bloß Inszenierung. Wörter: 474 Autor/-in: Thomas Sigmund Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 807.013 Unique Users (UUpD) <sup>2</sup> : Weblink: **https://www.handelsblatt.com/meinung/kommentare/kommentar-spritpreise-ueber-zwei-euro-und-derstaat-verdient-praechtig/100208569.html**
+
+## Text
+
+<sup>1</sup> von PMG gewichtet 10-2024
+
+2gerundet agma ddf Ø-Tag 2023-03 vom 21.04.2023, Gesamtbevölkerung 16+
+
+**Abbildung:** Finanzminister Lars Klingbeil (l.), Bundeskanzler Friedrich Merz: Die Debatte über Preistreiber an der Zapfsäule wirkt zunehmend wie politisches Theater.
+
+**Fotograf/-in:** Michael Kappeler/dpa
+
+Seit dem Krieg gegen den Iran explodieren die Öl- und Benzinpreise – Autofahrer, Firmen und Bauern schlagen Alarm. Sie fordern: Stoppt die "Abzocke". Was könnte der Staat tun?
+
+Die Zwei-Euro-Marke haben die Spritpreise an den Tankstellen längst hinter sich gelassen. Nicht nur Autofahrer, auch Unternehmen etwa aus der Logistikbranche und Landwirte leiden seit Beginn des Kriegs gegen den Iran unter hohen Mehrkosten – und rufen nach der Politik. Der Staat soll mutmaßliche "Abzocke" durch die Mineralölkonzerne unterbinden und Verbraucher wie Wirtschaft entlasten. In einer Forsa-Umfrage im Auftrag von RTL befürworten 77 Prozent der Bundesbürger ein Eingreifen der Bundesregierung. Die schwarz-rote Koalition hat bereits eine Arbeitsgruppe dazu eingesetzt. Welche Maßnahmen werden gefordert und was bringen sie? Ein Überblick:
+
+Diese Maßnahme hat die Bundesregierung 2022 schon einmal ergriffen. Auch jetzt taucht sie unter den Forderungen nach staatlichem Eingreifen wieder auf. Der Name Tankrabatt hat sich auf dem Höhepunkt der Energiekrise zu Beginn des Ukrainekriegs für eine befristete Steuersenkung auf Benzin und Diesel etabliert. Steuern und Abgaben wie die CO2-Steuer haben einen hohen Anteil am Spritpreis: Beim Benzin nimmt der Staat mehr als 1,10 Euro pro Liter ein, beim Diesel rund 20 Cent weniger. Um die Verbraucher zu entlasten, hatte die damalige Ampelkoalition für einen Zeitraum von drei Monaten die Energiesteuer für Benzin um knapp 30 Cent und für Diesel um gut 14 Cent pro Liter gesenkt.
+
+Der Tankrabatt war von Beginn an umstritten. Eine spätere Untersuchung des Kartellamtes zeigte, dass die Verbraucher entlastet wurden. Die Preise wären in dem Dreimonatszeitraum ohne die Steuersenkung wohl noch höher gewesen. Ein Teil der Steuersenkung verschwand allerdings auch in den Kassen der Mineralölkonzerne. Ökonomen kritisierten den Tankrabatt als ineffiziente Gießkannensubvention. Von den 3,4 Mrd. Euro, die die Maßnahme den Staat kostete, profitierten Besserverdienende sogar überproportional, da sie im Durchschnitt mehr Sprit verbrauchen als ärmere Bevölkerungsschichten.
+
+Bundeswirtschaftsministerin Katherina Reiche von der CDU hat einem Tankrabatt schon vergangene Woche kurz nach dem Beginn des Kriegs eine Absage erteilt. Die Forderungen danach, vor allem aus der mitregierenden SPD, reißen jedoch nicht ab.
+
+## Context after
+
+Geradezu einhellig sind die Rufe nach dem Bundeskartellamt: Häufig lautet die Argumentation, dass die Mineralölkonzerne ihre Preise bereits erhöht hätten, obwohl sie doch zunächst noch Sprit verkaufen, der vor Beginn der Krise noch vergleichsweise günstig hergestellt wurde. Folglich müsse "Abzocke" vorliegen. Das Wirtschaftsministerium kündigte bereits an, das Kartellamt deswegen einzuschalten.
+
+
+---
+
+# Chunk 26
+Heading: **Mehr zum Thema Kartellrecht**
+Tokens: 447
+Words: 381
+Blocks: 281-288
+
+## Context before
+
+Staat kostete, profitierten Besserverdienende sogar überproportional, da sie im Durchschnitt mehr Sprit verbrauchen als ärmere Bevölkerungsschichten. Bundeswirtschaftsministerin Katherina Reiche von der CDU hat einem Tankrabatt schon vergangene Woche kurz nach dem Beginn des Kriegs eine Absage erteilt. Die Forderungen danach, vor allem aus der mitregierenden SPD, reißen jedoch nicht ab.
+
+## Text
+
+Geradezu einhellig sind die Rufe nach dem Bundeskartellamt: Häufig lautet die Argumentation, dass die Mineralölkonzerne ihre Preise bereits erhöht hätten, obwohl sie doch zunächst noch Sprit verkaufen, der vor Beginn der Krise noch vergleichsweise günstig hergestellt wurde. Folglich müsse "Abzocke" vorliegen. Das Wirtschaftsministerium kündigte bereits an, das Kartellamt deswegen einzuschalten. Die Kartellwächter haben weitgehende Befugnisse, bei Missbrauch von Marktmacht oder illegalen Preisabsprachen einzuschreiten.
+
+"Sollten sich Hinweise auf kartellrechtswidriges Verhalten der Mineralölkonzerne zeigen, würden wir konsequent dagegen vorgehen", versprach Kartellamtspräsident Andreas Mundt. Allerdings gibt es solche Hinweise in der aktuellen Krise bislang nicht. Mundt wies darauf hin, dass seine Behörde Reaktionen auf geopolitische Entwicklungen nicht "auf Knopfdruck" abstellen könne.
+
+Preiserhöhungen allein sind nicht verboten und müssen auch nicht mit gestiegenen Kosten begründet werden. Nur wenn sich herausstellen sollte, dass die Unternehmen gegen das Wettbewerbsrecht verstoßen, könnte das Kartellamt Strafen verhängen. Seit fast zwei Jahrzehnten untersucht das Amt immer wieder die Preispolitik der Mineralölbranche. Dabei stießen die Experten zwar auf Strukturen, die den Wettbewerb bei den Raffinerien und im Großhandel einschränken, jedoch nie auf illegale Absprachen bei den Tankstellenpreisen.
+
+Die Idee ist simpel: Dank der Preiserhöhungen steigt – zumindest, solange sie noch günstig eingekaufte oder produzierte Kraftstoffe verkaufen – der Gewinn der Mineralölkonzerne, während die Kunden stark belastet werden. Dieser "Übergewinn" soll vom Staat abgeschöpft werden und Entlastungen etwa durch Steuersenkungen finanzieren. Auch dazu gibt es ein Vorbild: der sogenannte EU-Energiekrisenbetrag aus den Jahren 2022 und 2023. Unternehmen aus den Bereichen Öl, Kohle, Gas und Raffinerien mussten auf "Überschusserlöse", die den Durchschnittsgewinn der Vorjahre um mehr als 20 Prozent überstiegen, eine zusätzliche Steuer von 33 Prozent entrichten. Insgesamt kamen so Einnahmen von 2,5 Milliarden Euro für den Fiskus zusammen.
+
+Einige Ökonomen befürworten diesen Mechanismus, da so Zufallsgewinne abgeschöpft und zusätzliche Leistungen des Staates in der Krise finanziert werden können, ohne in die Preissetzung des Marktes einzugreifen. Andere Experten haben wirtschaftliche und auch rechtliche Bedenken, da die Übergewinnsteuer "willkürlich" für eine Branche erhoben werde, für andere aber nicht.
+
+Deutschland verfügt für Krisenzeiten über Reserven an Rohöl und Kraftstoffen, die den Bedarf für 90 Tage decken sollen. Aktuell sind es insgesamt etwa 25 Millionen Tonnen. Mehrere Politiker haben bereits einen Einsatz der Reserve ins Spiel gebracht, um den Anstieg der Kraftstoffpreise zu dämpfen. Die Regierungen der G7-Staaten beraten derzeit über eine mögliche gemeinsame Aktion.
+
+## Context after
+
+Die Reserve darf nur in Notlagen eingesetzt werden, wenn Lieferketten unterbrochen sind und Kraftstoff physisch knapp ist – nicht einfach zur Beeinflussung der Preise. Eine solche Knappheit bestand etwa 2018 in einigen Regionen infolge des extremen Niedrigwassers auf dem Rhein. Aber auch in globalen Krisen wurden die deutschen Ölreserven in
+
+
+---
+
+# Chunk 27
+Heading: **Freigabe der nationalen Öl- und Kraftstoffreserven**
+Tokens: 423
+Words: 339
+Blocks: 289-302
+
+## Context before
+
+Reserven an Rohöl und Kraftstoffen, die den Bedarf für 90 Tage decken sollen. Aktuell sind es insgesamt etwa 25 Millionen Tonnen. Mehrere Politiker haben bereits einen Einsatz der Reserve ins Spiel gebracht, um den Anstieg der Kraftstoffpreise zu dämpfen. Die Regierungen der G7-Staaten beraten derzeit über eine mögliche gemeinsame Aktion.
+
+## Text
+
+Die Reserve darf nur in Notlagen eingesetzt werden, wenn Lieferketten unterbrochen sind und Kraftstoff physisch knapp ist – nicht einfach zur Beeinflussung der Preise. Eine solche Knappheit bestand etwa 2018 in einigen Regionen infolge des extremen Niedrigwassers auf dem Rhein. Aber auch in globalen Krisen wurden die deutschen Ölreserven in der Vergangenheit schon mehrfach angezapft – im Rahmen internationaler Aktionen, koordiniert durch die Internationale Energieagentur. Das war beispielsweise 2005 nach dem Hurrikan "Katrina" in den USA und 2022 nach dem Angriff Russlands auf die Ukraine der Fall. Ein spürbarer Einfluss auf die Spritpreise an den deutschen Tankstellen war jedoch nicht zu beobachten.
+
+Das Spektrum der Ideen und Forderungen für Interventionen auf dem Energiemarkt und Entlastung ist damit noch lange nicht abgedeckt. Auch die Reaktivierung der Preisbremsen für Strom und Gas wurde bereits ins Spiel gebracht, obwohl sich die Neuvertragspreise für Privatkunden bisher kaum bewegt haben in Reaktion auf den Irankrieg. Die Senkung weiterer Steuern neben der Energiesteuer im Rahmen eines Tankrabatts wurde ebenfalls wiederholt gefordert, ebenso die Reduktion des CO2-Preises oder der Netzentgelte für Strom und Gas. Auch bei diesen Maßnahmen ist unklar, inwieweit die Entlastung an die Endkunden weitergegeben würde. Zielgerichteter als solche allgemeinen Steuersenkungen ist die Idee eines Sozialtarifs für Strom und Gas, mit dem ärmere Haushalte unterstützt werden könnten, die besonders unter steigenden Energiepreisen leiden – falls die Haushaltstarife in der nächsten Zeit erheblich teurer werden sollten.
+
+Der Beitrag ist zuerst bei ntv.de erschienen. Das Nachrichtenportal gehört wie Capital zu RTL Deutschland.
+
+Medienkanal: ONLINE Mediengattung: Online News Medientyp: ONLINEMEDIEN Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 58.635
+
+Weblink: **https://www.capital.de/geld-versicherungen/benzinpreis--so-kann-der-staat-die-energiepreise-beeinflussen-37208094.html**
+
+<sup>1</sup> von PMG gewichtet 10-2024
+
+<sup>2</sup>gerundet agof ddf Ø-Tag 2023-01 vom 08.03.2023, Gesamtbevölkerung 16+
+
+Die Preise für Diesel und Benzin sind noch einmal deutlich gestiegen. Am Morgen lagen sie im Schnitt deutlich über 2 Euro pro Liter. Die Tankstellenpächter, die den Frust der Kunden zu spüren bekommen, geben den Mineralölkonzernen die Schuld.
+
+## Context after
+
+Der Anstieg der Spritpreise setzt sich fort: Am Freitagmorgen kletterte der bundesweite Durchschnittspreis für Diesel auf 2,109 Euro pro Liter, gut zwei Cent mehr als am Donnerstagmorgen. Super E10 kostete nach Auswertung des ADAC 2,014 Euro und war damit etwas über einen Cent teurer als 24 Stunden zuvor. Der durch
+
+
+---
+
+# Chunk 28
+Heading: Tankstellenpächter geben Mineralölkonzernen die Schuld
+Tokens: 420
+Words: 349
+Blocks: 303-311
+
+## Context before
+
+PMG gewichtet 10-2024 <sup>2</sup>gerundet agof ddf Ø-Tag 2023-01 vom 08.03.2023, Gesamtbevölkerung 16+ Die Preise für Diesel und Benzin sind noch einmal deutlich gestiegen. Am Morgen lagen sie im Schnitt deutlich über 2 Euro pro Liter. Die Tankstellenpächter, die den Frust der Kunden zu spüren bekommen, geben den Mineralölkonzernen die Schuld.
+
+## Text
+
+Der Anstieg der Spritpreise setzt sich fort: Am Freitagmorgen kletterte der bundesweite Durchschnittspreis für Diesel auf 2,109 Euro pro Liter, gut zwei Cent mehr als am Donnerstagmorgen. Super E10 kostete nach Auswertung des ADAC 2,014 Euro und war damit etwas über einen Cent teurer als 24 Stunden zuvor. Der durch den Angriff der USA und Israels auf den Iran ausgelöste Preisanstieg hat sich jedoch mittlerweile verlangsamt. Zu Anfang der Woche hatte es von Montag auf Dienstag bei Diesel einen Preissprung von über 10 Cent gegeben.
+
+Die Benzinpreise sind üblicherweise am Morgen am höchsten und geben dann im Laufe des Vormittags wieder etwas nach. Der bundesweite Tagesdurchschnittspreis für Diesel kletterte laut ADAC am Donnerstag auf 2,042 Euro pro Liter, das war der höchste Wert seit November 2022. Super E10 kostete am Donnerstag im bundesweiten Tagesschnitt 1,949 Euro.
+
+Üblicherweise ist Diesel der billigere Kraftstoff, in dieser Woche seit Dienstag jedoch teurer als Super E10. Eine ähnliche Entwicklung hatte es Ende 2022 während der Coronapandemie gegeben, damals kostete Diesel zeitweise über 20 Cent pro Liter mehr als Super E10.
+
+Tankstellenbetreiber bekommen nach Angaben des ostdeutschen Branchenverbands den Frust über die gestiegenen Spritpreise zu spüren. "Die Kollegen an den Kassen kriegen natürlich schon sehr deutlich den Unmut der Leute mit", sagte **Hans-Joachim Rühlemann** , Vorsitzender des Verbands des Garagen- und Tankstellengewerbes (VTG) Nord-Ost.
+
+Die Tankstellenpächter nahm er mit Blick auf die Preisentwicklung in Schutz. "Die können dafür gar nichts." Die Preishoheit liege bei den Mineralölgesellschaften. "Die leiten die Preise weiter. Mittlerweile ist es so weit, dass das alles automatisch funktioniert. Häufig kriegt der Verkäufer an der Kasse oder die Kassiererin an der Kasse das gar nicht mit."
+
+Der VTG Nord-Ost ist zuständig für Berlin, Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt und Thüringen.
+
+In den vergangenen Tagen wurden Forderungen nach Entlastungen wegen der hohen Spritpreise lauter. Ein Tankrabatt dürfte am Ende nur der Ölindustrie helfen , fürchten Forscher. Auch eine Absenkung der Mineralölsteuer würde die Haushalte letztlich nicht entlasten, sagte Ifo-Chef **Clemens Fuest** . Bundeswirtschaftsministerin **Katherina Reiche** (52, CDU) lehnt eine Spritpreisbremse ab. Stattdessen will sie eine kartellrechtliche Prüfung.
+
+## Context after
+
+Das Bundeskartellamt dämpft jedoch die Erwartungen der Verbraucher. Die Behörde kann nach eigener Auskunft wenig gegen die stark steigenden Spritpreise tun. Angesichts von Forderungen zu genauer Kontrolle betonte Kartellamtspräsident **Andreas Mundt** : "Ich möchte aber auch deutlich machen, dass es kein Instrumentarium gibt, um geopolitisch getriebene Preissteigerungen quasi auf Knopfdruck
+
+
+---
+
+# Chunk 29
+Heading: Kartellamt dämpft Erwartungen zur Prüfung der Spritpreise
+Tokens: 267
+Words: 180
+Blocks: 312-320
+
+## Context before
+
+nach Entlastungen wegen der hohen Spritpreise lauter. Ein Tankrabatt dürfte am Ende nur der Ölindustrie helfen , fürchten Forscher. Auch eine Absenkung der Mineralölsteuer würde die Haushalte letztlich nicht entlasten, sagte Ifo-Chef **Clemens Fuest** . Bundeswirtschaftsministerin **Katherina Reiche** (52, CDU) lehnt eine Spritpreisbremse ab. Stattdessen will sie eine kartellrechtliche Prüfung.
+
+## Text
+
+Das Bundeskartellamt dämpft jedoch die Erwartungen der Verbraucher. Die Behörde kann nach eigener Auskunft wenig gegen die stark steigenden Spritpreise tun. Angesichts von Forderungen zu genauer Kontrolle betonte Kartellamtspräsident **Andreas Mundt** : "Ich möchte aber auch deutlich machen, dass es kein Instrumentarium gibt, um geopolitisch getriebene Preissteigerungen quasi auf Knopfdruck zu verhindern." Das Kartellamt analysiere die Preisentwicklung fortlaufend und stehe im engen Austausch mit dem Wirtschaftsministerium, sagt Mundt und versichert: "Sollten sich Hinweise auf kartellrechtswidriges Verhalten der Mineralölkonzerne zeigen, würden wir konsequent dagegen vorgehen." Doch die Hürden dafür sind hoch.
+
+*dri/dpa-afx, Reuters*
+
+Autor/-in: Anna Driftschröer Rubrik: Unternehmen Medienkanal: ONLINE Ausgabe: Einzelausgabe Visits (VpD) <sup>1</sup> : 322.924 Unique Users 91.000
+
+Weblink: **https://www.manager-magazin.de/unternehmen/spritpreis-diesel-und-benzinpreise-steigen-deutlich-ueber-zwei-euro-a-88206a22-66dd-4bb9-a49d-5dd6dd12a23c**
+
+<sup>1</sup> von PMG gewichtet 05-2020
+
+<sup>2</sup>gerundet agof ddf Ø-Tag 2020-05 vom 02.06.2020, Gesamtbevölkerung 16+
+
+Teures Tanken: Der Liter Super E10 kostete am Freitagmorgen in Siegen 2,03 Euro und Diesel sogar 2,15 Euro
 
 ## Context after
 

@@ -1,7 +1,10 @@
 from __future__ import annotations
+"""Zentrale Pfade und Standardwerte für die RAG-Pipeline."""
 
 from pathlib import Path
 
+# ROOT zeigt auf den Projektordner. Alle anderen Pfade werden relativ dazu
+# aufgebaut, damit das Projekt auf verschiedenen Rechnern läuft.
 ROOT = Path(__file__).resolve().parents[2]
 DATA = ROOT / "backend" / "data"
 PDFS = DATA / "pdfs"
@@ -10,6 +13,7 @@ CLEANED = DATA / "cleaned_text"
 STRUCTURED = DATA / "structured_blocks"
 CHUNKS = DATA / "chunks"
 EMBEDDINGS = DATA / "embeddings"
+GENERATED = ROOT / "backend" / "generated"
 
 DEFAULT_PDF = PDFS / "file.pdf"
 DEFAULT_EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
@@ -19,9 +23,13 @@ DEFAULT_OLLAMA_URL = "http://127.0.0.1:11434"
 
 
 def ensure_output_dirs() -> None:
-    for path in (PDFS, EXTRACTED, CLEANED, STRUCTURED, CHUNKS, EMBEDDINGS):
+    """Legt alle benötigten Ausgabeordner an, falls sie noch fehlen."""
+
+    for path in (PDFS, EXTRACTED, CLEANED, STRUCTURED, CHUNKS, EMBEDDINGS, GENERATED):
         path.mkdir(parents=True, exist_ok=True)
 
 
 def path_for(folder: Path, source: str | Path, suffix: str) -> Path:
+    """Erzeugt für eine Quelldatei den passenden Ausgabepfad."""
+
     return folder / f"{Path(source).stem}{suffix}"

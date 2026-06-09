@@ -1,13 +1,18 @@
 from __future__ import annotations
+"""Chunking: Aus strukturierten Textblöcken werden RAG-Einheiten gebaut."""
 
 from backend.pipeline.tokenization import count_tokens, count_words
 
 
 def join_blocks(blocks: list[dict]) -> str:
+    """Fügt mehrere Textblocke mit Leerzeilen zusammen."""
+
     return "\n\n".join(block["text"] for block in blocks if block["text"].strip())
 
 
 def take_words(text: str, count: int, end: bool = False) -> str:
+    """Nimmt eine feste Anzahl Worter vom Anfang oder Ende eines Textes."""
+
     parts = text.split()
     return " ".join(parts[-count:] if end else parts[:count])
 
@@ -18,10 +23,14 @@ def chunk_blocks(
     max_tokens: int = 500,
     context_words: int = 50,
 ) -> list[dict]:
+    """Erzeugt Chunks mit Zielgröße und etwas Kontext vor/nach dem Chunk."""
+
     content = [block for block in blocks if block["type"] != "heading"]
     chunks, current, current_tokens = [], [], 0
 
     def flush() -> None:
+        """Speichert den aktuellen Chunk und leert den Zwischenspeicher."""
+
         nonlocal current, current_tokens
         if not current:
             return
@@ -29,6 +38,8 @@ def chunk_blocks(
         first = content.index(current[0])
         last = content.index(current[-1])
         core = join_blocks(current)
+        # Kontext verbessert Retrieval, weil ein Chunk beim Embedding nicht völlig
+        # isoliert betrachtet wird.
         before = take_words(join_blocks(content[:first]), context_words, end=True)
         after = take_words(join_blocks(content[last + 1 :]), context_words)
         text_with_context = "\n\n".join(part for part in (before, core, after) if part)
@@ -63,6 +74,8 @@ def chunk_blocks(
 
 
 def chunks_to_markdown(chunks: list[dict]) -> str:
+    """Erstellt eine lesbare Markdown-Vorschau der erzeugten Chunks."""
+
     parts = []
     for item in chunks:
         parts.append(

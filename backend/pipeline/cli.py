@@ -1,4 +1,5 @@
 from __future__ import annotations
+"""Kommandozeilen-Interface zum Testen einzelner Pipeline-Schritte."""
 
 import argparse
 import os
@@ -18,6 +19,8 @@ from backend.pipeline.stages import run_all, run_chunk, run_clean, run_extract, 
 
 
 def parse_args() -> argparse.Namespace:
+    """Definiert alle CLI-Befehle wie extract, chunk, embed und generate."""
+
     parser = argparse.ArgumentParser(description="Minimal PDF ingestion and RAG pipeline.")
     sub = parser.add_subparsers(dest="command")
 
@@ -84,6 +87,8 @@ def parse_args() -> argparse.Namespace:
 
 
 def main() -> None:
+    """Führt je nach CLI-Befehl den passenden Pipeline-Schritt aus."""
+
     args = parse_args()
     ensure_output_dirs()
 

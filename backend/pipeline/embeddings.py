@@ -1,4 +1,5 @@
 from __future__ import annotations
+"""Embedding-Erzeugung für die gespeicherten Chunks."""
 
 import os
 from pathlib import Path
@@ -9,6 +10,12 @@ from backend.pipeline.io import read_json, write_json
 
 
 def local_model_path(model_name: str) -> str | None:
+    """Sucht ein Hugging-Face-Modell im lokalen Cache.
+
+    Das ist wichtig, damit Retrieval später auch offline funktionieren kann,
+    wenn das Modell bereits einmal heruntergeladen wurde.
+    """
+
     cache_root = Path.home() / ".cache" / "huggingface" / "hub"
     candidates = [model_name]
     if "/" not in model_name:
@@ -34,6 +41,8 @@ def load_embedding_model(
     model_name: str = DEFAULT_EMBEDDING_MODEL,
     local_files_only: bool = False,
 ):
+    """Lädt das Sentence-Transformer-Modell für Embeddings."""
+
     try:
         from sentence_transformers import SentenceTransformer
     except ImportError as exc:
@@ -50,16 +59,22 @@ def load_embedding_model(
 
 
 def embedding_paths(source: str | Path, output: str | Path | None = None) -> tuple[Path, Path]:
+    """Berechnet Pfade für Vektor-Datei und passende Metadaten-Datei."""
+
     vectors = Path(output) if output else path_for(EMBEDDINGS, source, ".npy")
     metadata = vectors.with_name(f"{vectors.stem}_metadata.json")
     return vectors, metadata
 
 
 def text_for_embedding(chunk: dict[str, Any]) -> str:
+    """Wählt den Text aus, der tatsächlich eingebettet werden soll."""
+
     return chunk.get("text_with_context") or chunk["text"]
 
 
 def metadata_for_chunk(chunk: dict[str, Any], source: str | Path, model_name: str) -> dict[str, Any]:
+    """Speichert Chunk-Informationen getrennt von den Numpy-Vektoren."""
+
     return {
         "id": chunk["id"],
         "source": str(source),
@@ -78,6 +93,8 @@ def embed_chunks(
     output: str | Path | None = None,
     model_name: str = DEFAULT_EMBEDDING_MODEL,
 ) -> None:
+    """Erzeugt normalisierte Embeddings für alle Chunks und speichert sie."""
+
     import numpy as np
 
     chunks = read_json(source)
@@ -85,6 +102,7 @@ def embed_chunks(
         raise SystemExit(f"No chunks found in: {source}")
 
     model = load_embedding_model(model_name)
+    # Normalisierte Vektoren erlauben später einfache Ähnlichkeit per Dot-Product.
     vectors = model.encode(
         [text_for_embedding(item) for item in chunks],
         normalize_embeddings=True,

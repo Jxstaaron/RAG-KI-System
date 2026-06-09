@@ -1,0 +1,2628 @@
+KI-Project-RAG - Code für die Bewertung durch Airbus
+Erstellt am: 2026-06-08T20:12:17.525Z
+Hinweis: Generierte Daten, Embeddings, node_modules, .venv und Build-Dateien sind nicht enthalten.
+
+
+==========================================================================================
+DATEI: README.md
+==========================================================================================
+
+# RAG-KI-System
+
+Dieses Projekt ist ein Lernassistent für PDF-Dateien. Man lädt eine PDF hoch und
+das System kann daraus zum Beispiel einen Spickzettel, eine Zusammenfassung, ein
+Quiz oder Karteikarten erstellen. Außerdem gibt es einen eigenen Frage-Modus, in
+dem man mit dem System über die PDF chatten kann.
+
+## Was Bedeutet RAG?
+
+RAG steht für `Retrieval Augmented Generation`.
+
+Ein normales Sprachmodell antwortet nur mit seinem allgemeinen Wissen. Unser
+System macht vorher noch einen extra Schritt:
+
+```text
+PDF
+-> Text extrahieren
+-> Text bereinigen
+-> Text in Abschnitte aufteilen
+-> Embeddings berechnen
+-> passende Abschnitte suchen
+-> Antwort mit LLM erzeugen
+```
+
+Das Sprachmodell bekommt also nicht einfach nur die Frage, sondern auch die
+passenden Textstellen aus der PDF. Dadurch soll die Antwort besser zur
+hochgeladenen Datei passen.
+
+## Projektstruktur
+
+```text
+backend/main.py       FastAPI-Backend für Upload, Generierung und Download
+backend/pipeline/     Eigentliche RAG-Pipeline
+frontend/             Webseite mit Next.js und TailwindCSS
+rag_pipeline.py       Startdatei für Tests über das Terminal
+```
+
+## Voraussetzungen Auf Einem Neuen Rechner
+
+Damit das Projekt auf einem neuen Rechner läuft, braucht man:
+
+- Python 3.10 oder 3.11
+- Node.js
+- Ollama
+- Git, falls man das Projekt aus GitHub klont
+
+Python 3.13 sollte man eher vermeiden, weil manche KI-/OCR-Bibliotheken damit
+Probleme machen können.
+
+Danach erstellt man im Projektordner eine Python-Umgebung:
+
+```bash
+python -m venv .venv
+```
+
+Aktivieren auf macOS oder Linux:
+
+```bash
+source .venv/bin/activate
+```
+
+Aktivieren auf Windows PowerShell:
+
+```powershell
+.venv\Scripts\Activate.ps1
+```
+
+Dann installiert man die Python-Abhängigkeiten:
+
+```bash
+pip install -r requirements.txt
+```
+
+Für das Frontend installiert man die Node-Abhängigkeiten:
+
+```bash
+cd frontend
+npm install
+```
+
+## Web-App Starten
+
+Zuerst muss Ollama mit dem lokalen Modell laufen:
+
+```bash
+ollama run llama3.2
+```
+
+Dann startet man das Backend im Projektordner:
+
+```bash
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+```
+
+In einem zweiten Terminal startet man das Frontend:
+
+```bash
+cd frontend
+npm install
+npm run dev -- --hostname 0.0.0.0
+```
+
+Auf dem gleichen Rechner öffnet man:
+
+```text
+http://localhost:3000
+```
+
+Auf einem anderen Gerät im gleichen Netzwerk benutzt man die Netzwerk-Adresse,
+die Next.js im Terminal anzeigt, zum Beispiel:
+
+```text
+Frontend: http://192.168.178.33:3000
+Backend:  http://192.168.178.33:8000
+```
+
+Zum Testen, ob das Backend erreichbar ist, kann man im Browser öffnen:
+
+```text
+http://192.168.178.33:8000/health
+```
+
+Wenn alles funktioniert, kommt zurück:
+
+```json
+{"ok":true}
+```
+
+## Bedienung Der Webseite
+
+1. Eine PDF unten in die Upload-Leiste ziehen oder anklicken.
+2. Warten, bis die Pipeline fertig ist.
+3. Rechts einen Modus auswählen.
+4. Auf `Generieren` klicken.
+5. Die Antwort erscheint in der Mitte als Chat-Nachricht.
+6. Mit `PDF herunterladen` kann die Antwort als PDF gespeichert werden.
+
+Es gibt diese Modi:
+
+```text
+Spickzettel
+Zusammenfassung
+Quiz
+Karteikarten
+Eigene Frage
+```
+
+Bei `Eigene Frage` kann man selbst Fragen zur PDF stellen. Die Antworten werden
+als Chat angezeigt. Links werden bis zu 10 Chat-Verläufe gespeichert.
+
+## Pipeline Über Das Terminal Testen
+
+Die komplette Pipeline kann man so starten:
+
+```bash
+python rag_pipeline.py run
+```
+
+Einzelne Schritte kann man auch getrennt testen:
+
+```bash
+python rag_pipeline.py extract backend/data/pdfs/file.pdf
+python rag_pipeline.py clean backend/data/extracted_text/file.md
+python rag_pipeline.py structure backend/data/cleaned_text/file.txt
+python rag_pipeline.py chunk backend/data/structured_blocks/file.json
+python rag_pipeline.py embed backend/data/chunks/file.json
+```
+
+Die Embeddings werden standardmäßig mit diesem Modell erstellt:
+
+```text
+paraphrase-multilingual-MiniLM-L12-v2
+```
+
+Das Modell funktioniert gut für deutsche Texte und läuft lokal auf dem Rechner.
+Die Embeddings werden hier gespeichert:
+
+```text
+backend/data/embeddings/file.npy
+backend/data/embeddings/file_metadata.json
+```
+
+## Retrieval Testen
+
+Mit Retrieval sucht das System die passendsten Chunks zu einer Frage:
+
+```bash
+python rag_pipeline.py retrieve "Welche ökologischen Probleme entstehen beim Bananenanbau?"
+```
+
+Eine Antwort kann man auch direkt über das Terminal erzeugen:
+
+```bash
+python rag_pipeline.py generate "Erstelle einen Spickzettel zu den ökologischen Problemen beim Bananenanbau" --mode cheatsheet --top-k 3
+```
+
+Standardmäßig wird lokal Ollama mit `llama3.2` benutzt. Wenn das Modell anders
+heißt, kann man den Namen angeben:
+
+```bash
+python rag_pipeline.py generate "Erstelle einen Spickzettel" --mode cheatsheet --llm-model llama3
+```
+
+## Wichtige Hinweise
+
+- Das Projekt braucht Python-Abhängigkeiten aus `requirements.txt`.
+- Das Frontend braucht Node.js und die Pakete aus `frontend/package.json`.
+- Ollama muss laufen, damit lokal Antworten generiert werden können.
+- Das Modell für Ollama muss vorhanden sein. Am einfachsten startet man einmal:
+  `ollama run llama3.2`.
+- Beim ersten Start kann `sentence-transformers` das Embedding-Modell
+  herunterladen. Das kann etwas dauern.
+- `marker-pdf` kann je nach Rechner etwas länger installieren, weil es für
+  PDF-Erkennung und OCR benutzt wird.
+- Die Ports `3000` und `8000` müssen frei sein.
+- Wenn ein Port schon benutzt wird, muss man den alten Prozess beenden oder
+  einen anderen Port verwenden.
+- Wenn man von einem anderen Gerät zugreifen will, müssen beide Geräte im
+  gleichen Netzwerk sein. Sonst braucht man z.B. Tailscale.
+- Die Chat-Verläufe werden nur im Browser gespeichert, nicht in einer Datenbank.
+- Generierte Dateien wie Chunks, Embeddings und PDFs liegen im Ordner `backend/data`.
+
+==========================================================================================
+DATEI: requirements.txt
+==========================================================================================
+
+annotated-types==0.7.0
+anthropic==0.46.0
+anyio==4.13.0
+beautifulsoup4==4.14.3
+brotli==1.2.0
+certifi==2026.4.22
+cffi==2.0.0
+cfgv==3.5.0
+charset-normalizer==3.4.7
+click==8.4.0
+cobble==0.1.4
+cryptography==48.0.0
+cssselect2==0.9.0
+distlib==0.4.0
+distro==1.9.0
+EbookLib==0.18
+einops==0.8.2
+et_xmlfile==2.0.0
+filelock==3.29.0
+filetype==1.2.0
+fastapi==0.124.0
+fonttools==4.63.0
+fsspec==2026.4.0
+ftfy==6.3.1
+google-auth==2.53.0
+google-genai==1.75.0
+h11==0.16.0
+hf-xet==1.5.0
+httpcore==1.0.9
+httpx==0.28.1
+huggingface_hub==0.36.2
+identify==2.6.19
+idna==3.15
+Jinja2==3.1.6
+jiter==0.14.0
+joblib==1.5.3
+lxml==6.1.0
+mammoth==1.12.0
+markdown2==2.5.5
+markdownify==1.2.2
+marker-pdf==1.10.2
+MarkupSafe==3.0.3
+mpmath==1.3.0
+networkx==3.6.1
+nodeenv==1.10.0
+numpy==2.4.5
+openai==1.109.1
+opencv-python-headless==4.11.0.86
+openpyxl==3.1.5
+packaging==26.2
+pdftext==0.6.3
+pillow==10.4.0
+platformdirs==4.9.6
+pre_commit==4.6.0
+pyasn1==0.6.3
+pyasn1_modules==0.4.2
+pycparser==3.0
+pydantic==2.13.4
+pydantic-settings==2.14.1
+pydantic_core==2.46.4
+pydyf==0.12.1
+PyMuPDF==1.27.2.3
+pypdfium2==4.30.0
+pyphen==0.17.2
+python-discovery==1.3.1
+python-dotenv==1.2.2
+python-multipart==0.0.20
+python-pptx==1.0.2
+PyYAML==6.0.3
+RapidFuzz==3.14.5
+reportlab==4.4.6
+regex==2024.11.6
+requests==2.34.2
+safetensors==0.7.0
+scikit-learn==1.8.0
+scipy==1.17.1
+sentence-transformers==5.1.2
+setuptools==81.0.0
+six==1.17.0
+sniffio==1.3.1
+soupsieve==2.8.3
+surya-ocr==0.17.1
+sympy==1.14.0
+tenacity==9.1.4
+threadpoolctl==3.6.0
+tinycss2==1.5.1
+tinyhtml5==2.1.0
+tokenizers==0.22.2
+torch==2.12.0
+tqdm==4.67.3
+transformers==4.57.6
+typing-inspection==0.4.2
+typing_extensions==4.15.0
+urllib3==2.7.0
+uvicorn==0.38.0
+virtualenv==21.3.3
+wcwidth==0.7.0
+weasyprint==63.1
+webencodings==0.5.1
+websockets==16.0
+xlsxwriter==3.2.9
+zopfli==0.4.1
+
+==========================================================================================
+DATEI: rag_pipeline.py
+==========================================================================================
+
+from __future__ import annotations
+"""Kleiner Einstiegspunkt für die RAG-Pipeline-CLI.
+
+Die eigentliche Logik liegt in backend.pipeline.cli. Diese Datei bleibt im
+Projektwurzelordner, damit Befehle wie `python rag_pipeline.py run` kurz sind.
+"""
+
+from backend.pipeline.cli import main
+
+
+if __name__ == "__main__":
+    # Nur ausführen, wenn die Datei direkt per Python gestartet wird.
+    main()
+
+==========================================================================================
+DATEI: backend/main.py
+==========================================================================================
+
+from __future__ import annotations
+"""FastAPI-Backend für die PDF-RAG-Webapp.
+
+Diese Datei verbindet die React-Oberfläche mit der eigentlichen Pipeline:
+PDF hochladen, Pipeline ausführen, Antwort generieren und Ergebnis als PDF
+herunterladen.
+"""
+
+import argparse
+import shutil
+from threading import Lock
+from pathlib import Path
+
+from fastapi import FastAPI, File, HTTPException, UploadFile
+from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
+from pydantic import BaseModel
+
+from backend.pdf_export import export_answer_pdf
+from backend.pipeline.config import (
+    DEFAULT_EMBEDDING_MODEL,
+    DEFAULT_OLLAMA_MODEL,
+    DEFAULT_OLLAMA_URL,
+    DEFAULT_PDF,
+    CHUNKS,
+    EMBEDDINGS,
+    GENERATED,
+    PDFS,
+    ensure_output_dirs,
+    path_for,
+)
+from backend.pipeline.generation import generate_answer, generate_from_chunks
+from backend.pipeline.io import read_json
+from backend.pipeline.stages import run_all
+
+app = FastAPI(title="PDF Learning Assistant")
+
+# CORS erlaubt dem Next.js-Frontend, das lokal oder über das Netzwerk läuft,
+# Requests an dieses Backend zu senden.
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
+    allow_origin_regex=(
+        r"http://("
+        r"localhost|"
+        r"127\.0\.0\.1|"
+        r"10\.\d+\.\d+\.\d+|"
+        r"192\.168\.\d+\.\d+|"
+        r"172\.(1[6-9]|2\d|3[0-1])\.\d+\.\d+"
+        r"):\d+"
+    ),
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
+class GenerateRequest(BaseModel):
+    """Datenmodell für eine Generierungsanfrage aus dem Frontend."""
+
+    mode: str
+    query: str | None = None
+    top_k: int = 5
+    min_score: float = 0.5
+    llm_model: str = DEFAULT_OLLAMA_MODEL
+
+
+LAST_ANSWER_PATH = GENERATED / "last_answer.txt"
+LAST_PDF_PATH = GENERATED / "output.pdf"
+PROGRESS_LOCK = Lock()
+# Der Fortschritt wird im Speicher gehalten, damit das Frontend während des
+# langen Upload-/OCR-Vorgangs regelmäßig /progress abfragen kann.
+PIPELINE_PROGRESS = {
+    "status": "idle",
+    "stage": "idle",
+    "label": "Bereit",
+    "progress": 0,
+}
+
+
+def set_pipeline_progress(status: str, stage: str, label: str, progress: int) -> None:
+    """Aktualisiert den globalen Pipeline-Fortschritt thread-sicher."""
+
+    with PROGRESS_LOCK:
+        PIPELINE_PROGRESS.update(
+            {
+                "status": status,
+                "stage": stage,
+                "label": label,
+                "progress": progress,
+            }
+        )
+
+
+def default_query(mode: str) -> str:
+    """Standard-Aufgabenstellung für die festen Modi ohne Custom-Frage."""
+
+    prompts = {
+        "cheatsheet": "Erstelle einen Spickzettel zu den wichtigsten Inhalten.",
+        "summary": "Fasse die wichtigsten Inhalte zusammen.",
+        "quiz": "Erstelle ein Quiz zu den wichtigsten Inhalten.",
+        "flashcards": "Erstelle Karteikarten zu den wichtigsten Inhalten.",
+        "explanation": "Erkläre die wichtigsten Inhalte einfach und verständlich.",
+    }
+    return prompts.get(mode, prompts["explanation"])
+
+
+def has_custom_query(query: str | None) -> bool:
+    """Prueft, ob der User wirklich eine eigene Frage eingegeben hat."""
+
+    return bool(query and query.strip())
+
+
+@app.get("/health")
+def health() -> dict[str, bool]:
+    return {"ok": True}
+
+
+@app.get("/progress")
+def progress() -> dict[str, str | int]:
+    with PROGRESS_LOCK:
+        return dict(PIPELINE_PROGRESS)
+
+
+@app.post("/upload")
+def upload_pdf(file: UploadFile = File(...)) -> dict[str, str]:
+    """Speichert die hochgeladene PDF und startet danach die komplette Pipeline."""
+
+    if file.content_type not in {"application/pdf", "application/octet-stream"}:
+        raise HTTPException(status_code=400, detail="Please upload a PDF file.")
+
+    ensure_output_dirs()
+    set_pipeline_progress("running", "uploading", "PDF hochladen", 5)
+    pdf_path = PDFS / "file.pdf"
+    with pdf_path.open("wb") as target:
+        shutil.copyfileobj(file.file, target)
+    set_pipeline_progress("running", "saved", "PDF gespeichert", 10)
+
+    # Die Pipeline-Funktionen werden auch von der CLI genutzt und erwarten ein
+    # argparse-Objekt. Hier erzeugen wir dasselbe Objekt manuell für die API.
+    args = argparse.Namespace(
+        extracted_output=None,
+        cleaned_output=None,
+        structured_output=None,
+        chunks_output=None,
+        chunks_markdown_output=None,
+        embeddings_output=None,
+        embedding_model=DEFAULT_EMBEDDING_MODEL,
+    )
+    try:
+        run_all(
+            pdf_path,
+            args,
+            progress_callback=lambda stage, label, progress: set_pipeline_progress(
+                "running" if stage != "done" else "done",
+                stage,
+                label,
+                progress,
+            ),
+        )
+    except ModuleNotFoundError as exc:
+        if exc.name == "marker":
+            set_pipeline_progress("error", "error", "Fehler: marker-pdf fehlt", 0)
+            raise HTTPException(
+                status_code=500,
+                detail=(
+                    "Missing dependency: marker-pdf. Install project requirements in the same "
+                    "environment that runs FastAPI with: pip install -r requirements.txt"
+                ),
+            ) from exc
+        raise
+    except Exception:
+        set_pipeline_progress("error", "error", "Pipeline fehlgeschlagen", 0)
+        raise
+    return {"status": "processed", "filename": file.filename or pdf_path.name}
+
+
+@app.post("/generate")
+def generate(request: GenerateRequest) -> dict[str, str]:
+    """Generiert eine Antwort aus den gespeicherten Chunks und Embeddings."""
+
+    ensure_output_dirs()
+    embeddings = path_for(EMBEDDINGS, DEFAULT_PDF, ".npy")
+    chunks_path = path_for(CHUNKS, DEFAULT_PDF, ".json")
+    if not Path(embeddings).exists():
+        raise HTTPException(status_code=400, detail="Upload and process a PDF first.")
+
+    if request.mode == "custom" and not has_custom_query(request.query):
+        raise HTTPException(status_code=400, detail="Custom mode needs a question.")
+
+    if has_custom_query(request.query):
+        # Custom-Fragen nutzen Retrieval: Nur die passendsten Chunks werden in
+        # den Prompt gegeben.
+        answer = generate_answer(
+            request.query or default_query(request.mode),
+            embeddings,
+            mode=request.mode,
+            top_k=request.top_k,
+            min_score=request.min_score,
+            provider="ollama",
+            llm_model=request.llm_model,
+            ollama_url=DEFAULT_OLLAMA_URL,
+        )
+    else:
+        # Feste Modi wie Spickzettel/Zusammenfassung verwenden alle Chunks,
+        # damit ein Gesamtüberblick über die PDF entsteht.
+        if not chunks_path.exists():
+            raise HTTPException(status_code=400, detail="Upload and process a PDF first.")
+        answer = generate_from_chunks(
+            default_query(request.mode),
+            read_json(chunks_path),
+            mode=request.mode,
+            provider="ollama",
+            llm_model=request.llm_model,
+            ollama_url=DEFAULT_OLLAMA_URL,
+        )
+
+    LAST_ANSWER_PATH.write_text(answer, encoding="utf-8")
+    export_answer_pdf(answer, LAST_PDF_PATH.name)
+    return {"answer": answer}
+
+
+@app.get("/download")
+def download_pdf() -> FileResponse:
+    """Gibt die zuletzt generierte Antwort als PDF-Datei zurück."""
+
+    if not LAST_PDF_PATH.exists():
+        raise HTTPException(status_code=404, detail="No generated PDF is available yet.")
+    return FileResponse(
+        LAST_PDF_PATH,
+        media_type="application/pdf",
+        filename="learning-material.pdf",
+    )
+
+==========================================================================================
+DATEI: backend/pdf_export.py
+==========================================================================================
+
+from __future__ import annotations
+"""PDF-Export für die zuletzt generierte Lernantwort."""
+
+from pathlib import Path
+
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.styles import getSampleStyleSheet
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer
+
+from backend.pipeline.config import GENERATED
+
+
+def export_answer_pdf(answer: str, filename: str = "output.pdf") -> Path:
+    """Schreibt die generierte Antwort mit ReportLab in eine PDF-Datei."""
+
+    GENERATED.mkdir(parents=True, exist_ok=True)
+    output = GENERATED / filename
+
+    styles = getSampleStyleSheet()
+    title = styles["Title"]
+    body = styles["BodyText"]
+    body.leading = 14
+
+    # ReportLab baut PDFs aus einzelnen Elementen wie Paragraph und Spacer.
+    story = [Paragraph("Generated Learning Material", title), Spacer(1, 18)]
+    for paragraph in answer.split("\n"):
+        text = paragraph.strip() or "&nbsp;"
+        story.append(Paragraph(text, body))
+        story.append(Spacer(1, 6))
+
+    document = SimpleDocTemplate(str(output), pagesize=A4)
+    document.build(story)
+    return output
+
+==========================================================================================
+DATEI: backend/__init__.py
+==========================================================================================
+
+"""RAG project backend package."""
+
+==========================================================================================
+DATEI: backend/pipeline/__init__.py
+==========================================================================================
+
+"""Pipeline modules for extraction, chunking, retrieval, and generation."""
+
+==========================================================================================
+DATEI: backend/pipeline/config.py
+==========================================================================================
+
+from __future__ import annotations
+"""Zentrale Pfade und Standardwerte für die RAG-Pipeline."""
+
+from pathlib import Path
+
+# ROOT zeigt auf den Projektordner. Alle anderen Pfade werden relativ dazu
+# aufgebaut, damit das Projekt auf verschiedenen Rechnern läuft.
+ROOT = Path(__file__).resolve().parents[2]
+DATA = ROOT / "backend" / "data"
+PDFS = DATA / "pdfs"
+EXTRACTED = DATA / "extracted_text"
+CLEANED = DATA / "cleaned_text"
+STRUCTURED = DATA / "structured_blocks"
+CHUNKS = DATA / "chunks"
+EMBEDDINGS = DATA / "embeddings"
+GENERATED = ROOT / "backend" / "generated"
+
+DEFAULT_PDF = PDFS / "file.pdf"
+DEFAULT_EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
+DEFAULT_LLM_MODEL = "gpt-4o-mini"
+DEFAULT_OLLAMA_MODEL = "llama3.2"
+DEFAULT_OLLAMA_URL = "http://127.0.0.1:11434"
+
+
+def ensure_output_dirs() -> None:
+    """Legt alle benötigten Ausgabeordner an, falls sie noch fehlen."""
+
+    for path in (PDFS, EXTRACTED, CLEANED, STRUCTURED, CHUNKS, EMBEDDINGS, GENERATED):
+        path.mkdir(parents=True, exist_ok=True)
+
+
+def path_for(folder: Path, source: str | Path, suffix: str) -> Path:
+    """Erzeugt für eine Quelldatei den passenden Ausgabepfad."""
+
+    return folder / f"{Path(source).stem}{suffix}"
+
+==========================================================================================
+DATEI: backend/pipeline/io.py
+==========================================================================================
+
+from __future__ import annotations
+"""Kleine Datei-Helfer für UTF-8-Text und JSON."""
+
+import json
+from pathlib import Path
+from typing import Any
+
+
+def read_text(path: str | Path) -> str:
+    """Liest eine Textdatei mit UTF-8-Encoding."""
+
+    return Path(path).read_text(encoding="utf-8")
+
+
+def write_text(path: str | Path, text: str) -> None:
+    """Schreibt Text und legt den Zielordner bei Bedarf an."""
+
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(text, encoding="utf-8")
+
+
+def read_json(path: str | Path) -> Any:
+    """Liest JSON über die zentrale UTF-8-Textfunktion."""
+
+    return json.loads(read_text(path))
+
+
+def write_json(path: str | Path, data: Any) -> None:
+    """Schreibt JSON lesbar eingerueckt und ohne ASCII-Zwang."""
+
+    write_text(path, json.dumps(data, ensure_ascii=False, indent=2))
+
+==========================================================================================
+DATEI: backend/pipeline/tokenization.py
+==========================================================================================
+
+from __future__ import annotations
+"""Einfache Token-/Wortzählung für Chunk-Größen."""
+
+import re
+
+
+def count_tokens(text: str) -> int:
+    """Zählt grob Wörter und Satzzeichen als Tokens."""
+
+    return len(re.findall(r"\w+|[^\w\s]", text, flags=re.UNICODE))
+
+
+def count_words(text: str) -> int:
+    """Zählt nur Wortbestandteile."""
+
+    return len(re.findall(r"\w+", text, flags=re.UNICODE))
+
+==========================================================================================
+DATEI: backend/pipeline/extraction.py
+==========================================================================================
+
+from __future__ import annotations
+"""PDF-Extraktion mit Marker.
+
+Marker erkennt Layout, Text und Tabellen und gibt das Ergebnis als Markdown
+zurück. Diese Stufe ist meistens die langsamste, weil OCR nötig sein kann.
+"""
+
+from pathlib import Path
+
+
+def extract_pdf(pdf: str | Path) -> str:
+    """Extrahiert eine PDF-Datei als Markdown-Text."""
+
+    from marker.converters.pdf import PdfConverter
+    from marker.models import create_model_dict
+
+    return PdfConverter(artifact_dict=create_model_dict())(str(pdf)).markdown
+
+==========================================================================================
+DATEI: backend/pipeline/text_processing.py
+==========================================================================================
+
+from __future__ import annotations
+"""Bereinigung und einfache Strukturierung des extrahierten PDF-Texts."""
+
+import re
+import unicodedata
+import warnings
+
+from backend.pipeline.tokenization import count_tokens
+
+
+def is_heading(line: str) -> bool:
+    """Heuristik: Erkennt Überschriften anhand von Markdown oder kurzer Zeile."""
+
+    line = line.strip()
+    return line.startswith("#") or (
+        len(line) < 80 and line[:1].isupper() and not line.endswith(".")
+    )
+
+
+def is_list_item(line: str) -> bool:
+    """Prüft, ob eine Zeile wie ein Listenpunkt aussieht."""
+
+    return bool(re.match(r"^([-*•]|\d+\.)\s+", line.strip()))
+
+
+def fix_encoding(text: str) -> str:
+    """Repariert typische OCR-/Encoding-Probleme bei Umlauten und Sonderzeichen."""
+
+    if re.search(r"\\u[0-9a-fA-F]{4}|\\U[0-9a-fA-F]{8}", text):
+        try:
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore", DeprecationWarning)
+                text = text.encode().decode("unicode_escape")
+        except Exception:
+            pass
+
+    try:
+        from ftfy import fix_text
+
+        text = fix_text(text)
+    except Exception:
+        for bad, good in {
+            "Ã¤": "ä",
+            "Ã¶": "ö",
+            "Ã¼": "ü",
+            "Ã„": "Ä",
+            "Ã–": "Ö",
+            "Ãœ": "Ü",
+            "ÃŸ": "ß",
+            "Â°": "°",
+            "Â": "",
+        }.items():
+            text = text.replace(bad, good)
+    return unicodedata.normalize("NFKC", text)
+
+
+def merge_lines(text: str) -> str:
+    """Fügt umgebrochene Fliesstextzeilen wieder zu Abschnitten zusammen."""
+
+    merged: list[str] = []
+    for line in text.splitlines():
+        line = line.strip()
+        if not line or is_heading(line) or is_list_item(line) or line.startswith("!["):
+            merged.append(line)
+        elif merged and merged[-1] and not is_heading(merged[-1]):
+            merged[-1] += f" {line}"
+        else:
+            merged.append(line)
+    return "\n".join(merged)
+
+
+def clean_text(text: str) -> str:
+    """Entfernt Störzeichen, Seitenzahlen, Bild-Platzhalter und OCR-Rauschen."""
+
+    text = fix_encoding(text)
+    text = re.sub(r"!\[\]\(.*?\)", "", text)
+    text = re.sub(r"(\w)-\n(\w)", r"\1\2", text)
+    text = re.sub(r"(\d+)\s*°\s*C", r"\1°C", text)
+    text = re.sub(r"\bM\d+\*?\b|Seite\s+\d+|Page\s+\d+", "", text, flags=re.I)
+    noise = r"^\s*[\d\s.,%$€-]+\s*$|©|WTO|EX|^\s*[A-Z0-9]{6,}\s*$"
+    text = "\n".join(line for line in text.splitlines() if not re.search(noise, line))
+    text = merge_lines(text)
+
+    for char in "äöüÄÖÜ":
+        text = re.sub(rf"\b([A-Za-z]{{1,2}})\s+{char}", rf"\1{char}", text)
+
+    text = re.sub(r"[ \t]+$", "", text, flags=re.M)
+    text = re.sub(r" {2,}", " ", text)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
+
+
+def structure_text(text: str) -> list[dict]:
+    """Teilt den Text in Blöcke und merkt sich die aktuelle Überschrift."""
+
+    blocks = []
+    current_heading = None
+    for paragraph in re.split(r"\n\s*\n", text):
+        paragraph = paragraph.strip()
+        if not paragraph:
+            continue
+
+        block_type = "heading" if is_heading(paragraph) else "paragraph"
+        if block_type == "heading":
+            current_heading = paragraph.lstrip("#").strip()
+        blocks.append(
+            {
+                "type": block_type,
+                "text": paragraph,
+                "index": len(blocks),
+                "heading": current_heading,
+                "token_count": count_tokens(paragraph),
+            }
+        )
+    return blocks
+
+==========================================================================================
+DATEI: backend/pipeline/chunking.py
+==========================================================================================
+
+from __future__ import annotations
+"""Chunking: Aus strukturierten Textblöcken werden RAG-Einheiten gebaut."""
+
+from backend.pipeline.tokenization import count_tokens, count_words
+
+
+def join_blocks(blocks: list[dict]) -> str:
+    """Fügt mehrere Textblocke mit Leerzeilen zusammen."""
+
+    return "\n\n".join(block["text"] for block in blocks if block["text"].strip())
+
+
+def take_words(text: str, count: int, end: bool = False) -> str:
+    """Nimmt eine feste Anzahl Worter vom Anfang oder Ende eines Textes."""
+
+    parts = text.split()
+    return " ".join(parts[-count:] if end else parts[:count])
+
+
+def chunk_blocks(
+    blocks: list[dict],
+    min_tokens: int = 200,
+    max_tokens: int = 500,
+    context_words: int = 50,
+) -> list[dict]:
+    """Erzeugt Chunks mit Zielgröße und etwas Kontext vor/nach dem Chunk."""
+
+    content = [block for block in blocks if block["type"] != "heading"]
+    chunks, current, current_tokens = [], [], 0
+
+    def flush() -> None:
+        """Speichert den aktuellen Chunk und leert den Zwischenspeicher."""
+
+        nonlocal current, current_tokens
+        if not current:
+            return
+
+        first = content.index(current[0])
+        last = content.index(current[-1])
+        core = join_blocks(current)
+        # Kontext verbessert Retrieval, weil ein Chunk beim Embedding nicht völlig
+        # isoliert betrachtet wird.
+        before = take_words(join_blocks(content[:first]), context_words, end=True)
+        after = take_words(join_blocks(content[last + 1 :]), context_words)
+        text_with_context = "\n\n".join(part for part in (before, core, after) if part)
+
+        chunks.append(
+            {
+                "id": len(chunks) + 1,
+                "heading": current[0].get("heading"),
+                "text": core,
+                "token_count": count_tokens(core),
+                "word_count": count_words(core),
+                "block_start": current[0]["index"],
+                "block_end": current[-1]["index"],
+                "context_before": before,
+                "context_after": after,
+                "text_with_context": text_with_context,
+            }
+        )
+        current, current_tokens = [], 0
+
+    for block in content:
+        block_tokens = block.get("token_count") or count_tokens(block["text"])
+        if current and current_tokens >= min_tokens and current_tokens + block_tokens > max_tokens:
+            flush()
+        current.append(block)
+        current_tokens += block_tokens
+        if current_tokens >= max_tokens:
+            flush()
+
+    flush()
+    return chunks
+
+
+def chunks_to_markdown(chunks: list[dict]) -> str:
+    """Erstellt eine lesbare Markdown-Vorschau der erzeugten Chunks."""
+
+    parts = []
+    for item in chunks:
+        parts.append(
+            f"# Chunk {item['id']}\n"
+            f"Heading: {item['heading'] or 'No heading'}\n"
+            f"Tokens: {item['token_count']}\n"
+            f"Words: {item['word_count']}\n"
+            f"Blocks: {item['block_start']}-{item['block_end']}\n\n"
+            f"## Context before\n\n{item['context_before']}\n\n"
+            f"## Text\n\n{item['text']}\n\n"
+            f"## Context after\n\n{item['context_after']}\n"
+        )
+    return "\n\n---\n\n".join(parts)
+
+==========================================================================================
+DATEI: backend/pipeline/embeddings.py
+==========================================================================================
+
+from __future__ import annotations
+"""Embedding-Erzeugung für die gespeicherten Chunks."""
+
+import os
+from pathlib import Path
+from typing import Any
+
+from backend.pipeline.config import DEFAULT_EMBEDDING_MODEL, EMBEDDINGS, path_for
+from backend.pipeline.io import read_json, write_json
+
+
+def local_model_path(model_name: str) -> str | None:
+    """Sucht ein Hugging-Face-Modell im lokalen Cache.
+
+    Das ist wichtig, damit Retrieval später auch offline funktionieren kann,
+    wenn das Modell bereits einmal heruntergeladen wurde.
+    """
+
+    cache_root = Path.home() / ".cache" / "huggingface" / "hub"
+    candidates = [model_name]
+    if "/" not in model_name:
+        candidates.append(f"sentence-transformers/{model_name}")
+
+    for candidate in candidates:
+        model_dir = cache_root / f"models--{candidate.replace('/', '--')}"
+        refs_main = model_dir / "refs" / "main"
+        if refs_main.exists():
+            snapshot = model_dir / "snapshots" / refs_main.read_text(encoding="utf-8").strip()
+            if snapshot.exists():
+                return str(snapshot)
+
+        snapshots = model_dir / "snapshots"
+        if snapshots.exists():
+            available = sorted(path for path in snapshots.iterdir() if path.is_dir())
+            if available:
+                return str(available[-1])
+    return None
+
+
+def load_embedding_model(
+    model_name: str = DEFAULT_EMBEDDING_MODEL,
+    local_files_only: bool = False,
+):
+    """Lädt das Sentence-Transformer-Modell für Embeddings."""
+
+    try:
+        from sentence_transformers import SentenceTransformer
+    except ImportError as exc:
+        raise SystemExit(
+            "Missing dependency: sentence-transformers. "
+            "Install it with `pip install sentence-transformers`."
+        ) from exc
+
+    if local_files_only:
+        os.environ.setdefault("HF_HUB_OFFLINE", "1")
+        os.environ.setdefault("TRANSFORMERS_OFFLINE", "1")
+        model_name = local_model_path(model_name) or model_name
+    return SentenceTransformer(model_name, local_files_only=local_files_only)
+
+
+def embedding_paths(source: str | Path, output: str | Path | None = None) -> tuple[Path, Path]:
+    """Berechnet Pfade für Vektor-Datei und passende Metadaten-Datei."""
+
+    vectors = Path(output) if output else path_for(EMBEDDINGS, source, ".npy")
+    metadata = vectors.with_name(f"{vectors.stem}_metadata.json")
+    return vectors, metadata
+
+
+def text_for_embedding(chunk: dict[str, Any]) -> str:
+    """Wählt den Text aus, der tatsächlich eingebettet werden soll."""
+
+    return chunk.get("text_with_context") or chunk["text"]
+
+
+def metadata_for_chunk(chunk: dict[str, Any], source: str | Path, model_name: str) -> dict[str, Any]:
+    """Speichert Chunk-Informationen getrennt von den Numpy-Vektoren."""
+
+    return {
+        "id": chunk["id"],
+        "source": str(source),
+        "embedding_model": model_name,
+        "heading": chunk.get("heading"),
+        "text": chunk["text"],
+        "token_count": chunk.get("token_count"),
+        "word_count": chunk.get("word_count"),
+        "block_start": chunk.get("block_start"),
+        "block_end": chunk.get("block_end"),
+    }
+
+
+def embed_chunks(
+    source: str | Path,
+    output: str | Path | None = None,
+    model_name: str = DEFAULT_EMBEDDING_MODEL,
+) -> None:
+    """Erzeugt normalisierte Embeddings für alle Chunks und speichert sie."""
+
+    import numpy as np
+
+    chunks = read_json(source)
+    if not chunks:
+        raise SystemExit(f"No chunks found in: {source}")
+
+    model = load_embedding_model(model_name)
+    # Normalisierte Vektoren erlauben später einfache Ähnlichkeit per Dot-Product.
+    vectors = model.encode(
+        [text_for_embedding(item) for item in chunks],
+        normalize_embeddings=True,
+        show_progress_bar=True,
+    )
+
+    vectors_path, metadata_path = embedding_paths(source, output)
+    vectors_path.parent.mkdir(parents=True, exist_ok=True)
+    np.save(vectors_path, vectors)
+    write_json(
+        metadata_path,
+        {
+            "model": model_name,
+            "source": str(source),
+            "count": len(chunks),
+            "dimensions": int(vectors.shape[1]),
+            "chunks": [metadata_for_chunk(item, source, model_name) for item in chunks],
+        },
+    )
+    print(f"Saved {len(chunks)} embeddings to: {vectors_path}")
+    print(f"Saved embedding metadata to: {metadata_path}")
+
+==========================================================================================
+DATEI: backend/pipeline/retrieval.py
+==========================================================================================
+
+from __future__ import annotations
+"""Retrieval: Findet zu einer Frage die ähnlichsten gespeicherten Chunks."""
+
+from pathlib import Path
+from typing import Any
+
+from backend.pipeline.config import DEFAULT_EMBEDDING_MODEL
+from backend.pipeline.embeddings import load_embedding_model
+from backend.pipeline.io import read_json
+
+
+def retrieve_chunks(
+    query: str,
+    embeddings_path: str | Path,
+    top_k: int = 5,
+    model_name: str | None = None,
+) -> list[dict[str, Any]]:
+    """Berechnet Query-Embedding und sortiert Chunks nach Ähnlichkeit."""
+
+    import numpy as np
+
+    embeddings_path = Path(embeddings_path)
+    metadata_path = embeddings_path.with_name(f"{embeddings_path.stem}_metadata.json")
+    metadata = read_json(metadata_path)
+    model_name = model_name or metadata.get("model") or DEFAULT_EMBEDDING_MODEL
+
+    model = load_embedding_model(model_name, local_files_only=True)
+    vectors = np.load(embeddings_path)
+    query_vector = model.encode(query, normalize_embeddings=True)
+    # Da die Embeddings normalisiert sind, entspricht das Dot-Product der
+    # Kosinus-Ähnlichkeit.
+    scores = vectors @ query_vector
+
+    results = []
+    for index in np.argsort(scores)[::-1][:top_k]:
+        chunk = metadata["chunks"][int(index)]
+        results.append({**chunk, "score": float(scores[index])})
+    return results
+
+
+def print_results(results: list[dict[str, Any]]) -> None:
+    """Gibt Retrieval-Ergebnisse lesbar in der Konsole aus."""
+
+    for result in results:
+        print(f"\nScore: {result['score']:.4f}")
+        print(f"Chunk: {result['id']}")
+        print(f"Heading: {result['heading'] or 'No heading'}")
+        print(result["text"])
+
+==========================================================================================
+DATEI: backend/pipeline/generation.py
+==========================================================================================
+
+from __future__ import annotations
+"""Antwortgenerierung mit Retrieval-Kontext und lokalem/externem LLM."""
+
+import json
+import os
+import urllib.error
+import urllib.request
+from pathlib import Path
+from typing import Any
+
+from backend.pipeline.config import (
+    DEFAULT_LLM_MODEL,
+    DEFAULT_OLLAMA_MODEL,
+    DEFAULT_OLLAMA_URL,
+)
+from backend.pipeline.io import write_text
+from backend.pipeline.retrieval import retrieve_chunks
+
+
+def mode_instruction(mode: str) -> str:
+    """Liefert die genaue Arbeitsanweisung für den gewählten Modus."""
+
+    instructions = {
+        "cheatsheet": (
+            "Erstelle einen kompakten Spickzettel mit den wichtigsten Begriffen, "
+            "Zusammenhängen und Fakten. Nutze kurze Überschriften und Stichpunkte."
+        ),
+        "summary": "Fasse die wichtigsten Inhalte knapp und verständlich zusammen.",
+        "quiz": (
+            "Erstelle Lernfragen mit kurzen Musterantworten. Mische Verständnisfragen "
+            "und Faktenfragen."
+        ),
+        "flashcards": "Erstelle Karteikarten im Format 'Frage: ...' und 'Antwort: ...'.",
+        "explanation": (
+            "Erkläre das Thema einfach und schülerfreundlich, aber sachlich korrekt."
+        ),
+        "custom": (
+            "Beantworte die User-Anfrage direkt und verständlich anhand der passenden "
+            "Kontext-Chunks."
+        ),
+    }
+    if mode not in instructions:
+        valid = ", ".join(sorted(instructions))
+        raise SystemExit(f"Unknown mode: {mode}. Choose one of: {valid}")
+    return instructions[mode]
+
+
+def build_prompt(query: str, chunks: list[dict[str, Any]], mode: str) -> str:
+    """Baut den finalen Prompt aus Aufgabe, User-Frage und RAG-Kontext."""
+
+    context_parts = []
+    for number, chunk in enumerate(chunks, start=1):
+        context_parts.append(
+            f"[Chunk {number} | id={chunk['id']} | score={chunk.get('score', 0.0):.4f}]\n"
+            f"Heading: {chunk.get('heading') or 'No heading'}\n"
+            f"{chunk['text']}"
+        )
+
+    # Der Prompt verbietet bewusst Allgemeinwissen, damit Antworten nur aus den
+    # gefundenen PDF-Chunks entstehen.
+    return (
+        "Du bist ein Lernassistent für ein Schulprojekt.\n"
+        "Nutze ausschließlich die bereitgestellten Kontext-Chunks.\n"
+        "Wenn die Chunks nicht genug Informationen enthalten, sage das klar.\n"
+        "Erfinde keine Fakten und antworte auf Deutsch.\n"
+        "Nutze kein Allgemeinwissen außerhalb der Chunks.\n"
+        "Erwähne nur Begriffe, Ursachen, Folgen und Beispiele, die in den Chunks vorkommen.\n"
+        "Wenn ein möglicher Punkt nicht direkt aus den Chunks belegbar ist, lasse ihn weg.\n\n"
+        f"Aufgabe:\n{mode_instruction(mode)}\n\n"
+        f"User-Anfrage:\n{query}\n\n"
+        f"Kontext-Chunks:\n{chr(10).join(context_parts)}\n"
+    )
+
+
+def call_openai(prompt: str, model_name: str = DEFAULT_LLM_MODEL) -> str:
+    """Optionaler OpenAI-Provider, falls ein API-Key gesetzt ist."""
+
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key:
+        raise SystemExit(
+            "Missing OPENAI_API_KEY. Set it before running generate, for example: "
+            "`export OPENAI_API_KEY=your_api_key_here`."
+        )
+
+    try:
+        from openai import OpenAI
+    except ImportError as exc:
+        raise SystemExit("Missing dependency: openai. Install it with `pip install openai`.") from exc
+
+    client = OpenAI(api_key=api_key)
+    response = client.chat.completions.create(
+        model=model_name,
+        messages=[
+            {
+                "role": "system",
+                "content": "Du beantwortest Aufgaben nur anhand des gegebenen RAG-Kontexts.",
+            },
+            {"role": "user", "content": prompt},
+        ],
+        temperature=0.2,
+    )
+    return response.choices[0].message.content or ""
+
+
+def call_ollama(
+    prompt: str,
+    model_name: str = DEFAULT_OLLAMA_MODEL,
+    base_url: str = DEFAULT_OLLAMA_URL,
+) -> str:
+    """Ruft ein lokal laufendes Ollama-Modell über dessen HTTP-API auf."""
+
+    payload = json.dumps(
+        {
+            "model": model_name,
+            "prompt": prompt,
+            "stream": False,
+            "options": {"temperature": 0.2},
+        }
+    ).encode("utf-8")
+    request = urllib.request.Request(
+        f"{base_url.rstrip('/')}/api/generate",
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+
+    try:
+        with urllib.request.urlopen(request, timeout=180) as response:
+            data = json.loads(response.read().decode("utf-8"))
+    except urllib.error.URLError as exc:
+        raise SystemExit(
+            "Could not connect to Ollama. Make sure the Ollama app/server is running, "
+            f"then try again. URL: {base_url}"
+        ) from exc
+
+    if "error" in data:
+        raise SystemExit(f"Ollama error: {data['error']}")
+    return data.get("response", "")
+
+
+def call_llm(prompt: str, provider: str, model_name: str, ollama_url: str) -> str:
+    """Wählt anhand des Provider-Namens das passende LLM-Backend."""
+
+    if provider == "ollama":
+        return call_ollama(prompt, model_name, ollama_url)
+    if provider == "openai":
+        return call_openai(prompt, model_name)
+    raise SystemExit("Unknown provider. Choose one of: ollama, openai")
+
+
+def generate_answer(
+    query: str,
+    embeddings_path: str | Path,
+    mode: str = "cheatsheet",
+    top_k: int = 5,
+    min_score: float = 0.5,
+    embedding_model: str | None = None,
+    provider: str = "ollama",
+    llm_model: str | None = None,
+    ollama_url: str = DEFAULT_OLLAMA_URL,
+    output: str | Path | None = None,
+) -> str:
+    """Generiert eine Antwort auf Basis der passendsten Chunks."""
+
+    chunks = retrieve_chunks(query, embeddings_path, top_k=top_k, model_name=embedding_model)
+    chunks = [chunk for chunk in chunks if chunk.get("score", 0.0) >= min_score]
+    if not chunks:
+        # Bei zu geringer Ähnlichkeit wird keine Antwort erfunden.
+        answer = (
+            "Die gespeicherten Chunks enthalten nicht genug passende Informationen "
+            f"für diese Anfrage. Hoechster Treffer liegt unter min_score={min_score}."
+        )
+    else:
+        model = llm_model or (DEFAULT_OLLAMA_MODEL if provider == "ollama" else DEFAULT_LLM_MODEL)
+        answer = call_llm(build_prompt(query, chunks, mode), provider, model, ollama_url)
+
+    if output:
+        write_text(output, answer)
+        print(f"Saved generated answer to: {output}")
+    else:
+        print(answer)
+    return answer
+
+
+def generate_from_chunks(
+    query: str,
+    chunks: list[dict[str, Any]],
+    mode: str = "cheatsheet",
+    provider: str = "ollama",
+    llm_model: str | None = None,
+    ollama_url: str = DEFAULT_OLLAMA_URL,
+    output: str | Path | None = None,
+) -> str:
+    """Generiert eine Antwort aus allen Chunks, z.B. für Zusammenfassung/Quiz."""
+
+    selected = [
+        {
+            **chunk,
+            "score": 1.0,
+            "text": chunk.get("text_with_context") or chunk["text"],
+        }
+        for chunk in chunks
+    ]
+    if not selected:
+        answer = "Es wurden keine Chunks gefunden. Bitte lade zuerst ein PDF hoch."
+    else:
+        model = llm_model or (DEFAULT_OLLAMA_MODEL if provider == "ollama" else DEFAULT_LLM_MODEL)
+        answer = call_llm(build_prompt(query, selected, mode), provider, model, ollama_url)
+
+    if output:
+        write_text(output, answer)
+        print(f"Saved generated answer to: {output}")
+    else:
+        print(answer)
+    return answer
+
+==========================================================================================
+DATEI: backend/pipeline/stages.py
+==========================================================================================
+
+from __future__ import annotations
+"""Einzelne Pipeline-Stufen und Orchestrierung der kompletten Verarbeitung."""
+
+import argparse
+from pathlib import Path
+from typing import Callable
+
+from backend.pipeline.chunking import chunk_blocks, chunks_to_markdown
+from backend.pipeline.config import (
+    CHUNKS,
+    CLEANED,
+    DEFAULT_EMBEDDING_MODEL,
+    EMBEDDINGS,
+    EXTRACTED,
+    STRUCTURED,
+    path_for,
+)
+from backend.pipeline.embeddings import embed_chunks
+from backend.pipeline.extraction import extract_pdf
+from backend.pipeline.io import read_json, read_text, write_json, write_text
+from backend.pipeline.text_processing import clean_text, structure_text
+
+
+def run_extract(pdf: str | Path, output: str | Path | None = None) -> str:
+    """Extrahiert Text und Layoutinformationen aus einer PDF-Datei."""
+
+    output = output or path_for(EXTRACTED, pdf, ".md")
+    print(f"Extracting PDF: {pdf}")
+    text = extract_pdf(pdf)
+    write_text(output, text)
+    print(f"Saved extracted text to: {output}")
+    return text
+
+
+def run_clean(source: str | Path, output: str | Path | None = None) -> str:
+    """Bereinigt den extrahierten Markdown-/OCR-Text."""
+
+    output = output or path_for(CLEANED, source, ".txt")
+    text = clean_text(read_text(source))
+    write_text(output, text)
+    print(f"Saved cleaned text to: {output}")
+    return text
+
+
+def run_structure(source: str | Path, output: str | Path | None = None) -> list[dict]:
+    """Wandelt den bereinigten Text in strukturierte Textblöcke um."""
+
+    output = output or path_for(STRUCTURED, source, ".json")
+    blocks = structure_text(read_text(source))
+    write_json(output, blocks)
+    print(f"Saved {len(blocks)} structured blocks to: {output}")
+    return blocks
+
+
+def run_chunk(
+    source: str | Path,
+    output: str | Path | None = None,
+    markdown: str | Path | None = None,
+) -> list[dict]:
+    """Erstellt aus strukturierten Blöcken größere RAG-Chunks."""
+
+    output = output or path_for(CHUNKS, source, ".json")
+    markdown = markdown or path_for(CHUNKS, source, ".md")
+    chunks = chunk_blocks(read_json(source))
+    write_json(output, chunks)
+    write_text(markdown, chunks_to_markdown(chunks))
+    print(f"Saved {len(chunks)} chunks to: {output}")
+    print(f"Saved chunk preview to: {markdown}")
+    return chunks
+
+
+ProgressCallback = Callable[[str, str, int], None]
+
+
+def run_all(
+    pdf: str | Path,
+    args: argparse.Namespace,
+    progress_callback: ProgressCallback | None = None,
+) -> None:
+    """Führt die komplette Pipeline von PDF bis Embeddings aus."""
+
+    extracted = getattr(args, "extracted_output", None) or path_for(EXTRACTED, pdf, ".md")
+    cleaned = getattr(args, "cleaned_output", None) or path_for(CLEANED, pdf, ".txt")
+    structured = getattr(args, "structured_output", None) or path_for(STRUCTURED, cleaned, ".json")
+    chunks = getattr(args, "chunks_output", None) or path_for(CHUNKS, structured, ".json")
+    chunks_markdown = getattr(args, "chunks_markdown_output", None) or path_for(CHUNKS, structured, ".md")
+    embeddings = getattr(args, "embeddings_output", None) or path_for(EMBEDDINGS, chunks, ".npy")
+    embedding_model = getattr(args, "embedding_model", DEFAULT_EMBEDDING_MODEL)
+
+    def update(stage: str, label: str, progress: int) -> None:
+        # Der Callback ist optional, weil die CLI keinen Live-Fortschritt
+        # braucht, das Web-Frontend aber schon.
+        if progress_callback:
+            progress_callback(stage, label, progress)
+
+    update("extracting", "Text extrahieren", 15)
+    run_extract(pdf, extracted)
+    update("cleaning", "Text bereinigen", 55)
+    run_clean(extracted, cleaned)
+    update("structuring", "Struktur erkennen", 65)
+    run_structure(cleaned, structured)
+    update("chunking", "Chunks erstellen", 75)
+    run_chunk(structured, chunks, chunks_markdown)
+    update("embedding", "Embeddings berechnen", 90)
+    embed_chunks(chunks, embeddings, embedding_model)
+    update("done", "Fertig", 100)
+
+==========================================================================================
+DATEI: backend/pipeline/cli.py
+==========================================================================================
+
+from __future__ import annotations
+"""Kommandozeilen-Interface zum Testen einzelner Pipeline-Schritte."""
+
+import argparse
+import os
+
+from backend.pipeline.config import (
+    DEFAULT_EMBEDDING_MODEL,
+    DEFAULT_OLLAMA_URL,
+    DEFAULT_PDF,
+    EMBEDDINGS,
+    ensure_output_dirs,
+    path_for,
+)
+from backend.pipeline.embeddings import embed_chunks
+from backend.pipeline.generation import generate_answer
+from backend.pipeline.retrieval import print_results, retrieve_chunks
+from backend.pipeline.stages import run_all, run_chunk, run_clean, run_extract, run_structure
+
+
+def parse_args() -> argparse.Namespace:
+    """Definiert alle CLI-Befehle wie extract, chunk, embed und generate."""
+
+    parser = argparse.ArgumentParser(description="Minimal PDF ingestion and RAG pipeline.")
+    sub = parser.add_subparsers(dest="command")
+
+    run = sub.add_parser("run")
+    run.add_argument("pdf", nargs="?", default=DEFAULT_PDF)
+    for name in ("extracted", "cleaned", "structured", "chunks", "chunks-markdown"):
+        run.add_argument(f"--{name}-output", default=None)
+    run.add_argument("--embeddings-output", default=None)
+    run.add_argument("--embedding-model", default=DEFAULT_EMBEDDING_MODEL)
+
+    extract_cmd = sub.add_parser("extract")
+    extract_cmd.add_argument("pdf", nargs="?", default=DEFAULT_PDF)
+    extract_cmd.add_argument("--output")
+
+    clean_cmd = sub.add_parser("clean")
+    clean_cmd.add_argument("source")
+    clean_cmd.add_argument("--output")
+
+    structure_cmd = sub.add_parser("structure")
+    structure_cmd.add_argument("source")
+    structure_cmd.add_argument("--output")
+
+    chunk_cmd = sub.add_parser("chunk")
+    chunk_cmd.add_argument("source")
+    chunk_cmd.add_argument("--output")
+    chunk_cmd.add_argument("--markdown-output")
+
+    embed_cmd = sub.add_parser("embed")
+    embed_cmd.add_argument("source", help="Path to a chunks JSON file.")
+    embed_cmd.add_argument("--output")
+    embed_cmd.add_argument("--model", default=DEFAULT_EMBEDDING_MODEL)
+
+    retrieve_cmd = sub.add_parser("retrieve")
+    retrieve_cmd.add_argument("query")
+    retrieve_cmd.add_argument(
+        "--embeddings",
+        default=path_for(EMBEDDINGS, DEFAULT_PDF, ".npy"),
+        help="Path to an embeddings .npy file.",
+    )
+    retrieve_cmd.add_argument("--top-k", type=int, default=5)
+    retrieve_cmd.add_argument("--model", default=None)
+
+    generate_cmd = sub.add_parser("generate")
+    generate_cmd.add_argument("query")
+    generate_cmd.add_argument("--mode", default="cheatsheet")
+    generate_cmd.add_argument("--top-k", type=int, default=5)
+    generate_cmd.add_argument("--min-score", type=float, default=0.5)
+    generate_cmd.add_argument(
+        "--embeddings",
+        default=path_for(EMBEDDINGS, DEFAULT_PDF, ".npy"),
+        help="Path to an embeddings .npy file.",
+    )
+    generate_cmd.add_argument("--embedding-model", default=None)
+    generate_cmd.add_argument(
+        "--provider",
+        choices=("ollama", "openai"),
+        default=os.environ.get("RAG_LLM_PROVIDER", "ollama"),
+    )
+    generate_cmd.add_argument("--llm-model", default=os.environ.get("RAG_LLM_MODEL"))
+    generate_cmd.add_argument("--ollama-url", default=os.environ.get("OLLAMA_URL", DEFAULT_OLLAMA_URL))
+    generate_cmd.add_argument("--output", default=None)
+
+    return parser.parse_args()
+
+
+def main() -> None:
+    """Führt je nach CLI-Befehl den passenden Pipeline-Schritt aus."""
+
+    args = parse_args()
+    ensure_output_dirs()
+
+    if args.command == "extract":
+        run_extract(args.pdf, args.output)
+    elif args.command == "clean":
+        run_clean(args.source, args.output)
+    elif args.command == "structure":
+        run_structure(args.source, args.output)
+    elif args.command == "chunk":
+        run_chunk(args.source, args.output, args.markdown_output)
+    elif args.command == "embed":
+        embed_chunks(args.source, args.output, args.model)
+    elif args.command == "retrieve":
+        print_results(retrieve_chunks(args.query, args.embeddings, args.top_k, args.model))
+    elif args.command == "generate":
+        generate_answer(
+            args.query,
+            args.embeddings,
+            mode=args.mode,
+            top_k=args.top_k,
+            min_score=args.min_score,
+            embedding_model=args.embedding_model,
+            provider=args.provider,
+            llm_model=args.llm_model,
+            ollama_url=args.ollama_url,
+            output=args.output,
+        )
+    else:
+        run_all(getattr(args, "pdf", DEFAULT_PDF), args)
+
+==========================================================================================
+DATEI: frontend/package.json
+==========================================================================================
+
+{
+  "name": "pdf-learning-assistant",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "^16.2.7",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.10.2",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.2",
+    "autoprefixer": "10.4.20",
+    "postcss": "^8.5.10",
+    "tailwindcss": "3.4.17",
+    "typescript": "5.7.2"
+  }
+}
+
+==========================================================================================
+DATEI: frontend/app/layout.tsx
+==========================================================================================
+
+import type { Metadata } from "next";
+import "./globals.css";
+
+// Metadaten, die Next.js in den HTML-Head schreibt.
+export const metadata: Metadata = {
+  title: "PDF Lernassistent",
+  description: "RAG-basierter Lernassistent für PDF-Dateien",
+};
+
+// RootLayout ist der äußere Rahmen der gesamten Next.js-App.
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="de">
+      <body>{children}</body>
+    </html>
+  );
+}
+
+==========================================================================================
+DATEI: frontend/app/page.tsx
+==========================================================================================
+
+"use client";
+
+import { DragEvent, useEffect, useMemo, useRef, useState } from "react";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+
+const CONFIGURED_API_URL = process.env.NEXT_PUBLIC_API_URL;
+
+// Wenn keine API-URL gesetzt ist, wird automatisch derselbe Host wie im Browser
+// verwendet. Dadurch funktioniert die App lokal und auch im Netzwerk.
+function getBrowserApiUrl() {
+  if (typeof window === "undefined") {
+    return "http://127.0.0.1:8000";
+  }
+
+  return `${window.location.protocol}//${window.location.hostname}:8000`;
+}
+
+const modes = [
+  { id: "cheatsheet", label: "Spickzettel" },
+  { id: "summary", label: "Zusammenfassung" },
+  { id: "quiz", label: "Quiz" },
+  { id: "flashcards", label: "Karteikarten" },
+  { id: "custom", label: "Eigene Frage" },
+];
+
+const CHAT_HISTORY_KEY = "rag-learning-assistant-chats";
+const MAX_CHATS = 10;
+
+type Status = "idle" | "uploading" | "ready" | "generating" | "error";
+
+type PipelineProgress = {
+  status: string;
+  stage: string;
+  label: string;
+  progress: number;
+};
+
+type ChatMessage = {
+  // "thinking" ist eine temporäre Nachricht, solange das LLM noch antwortet.
+  id: string;
+  role: "user" | "assistant" | "thinking";
+  content: string;
+  mode?: string;
+  createdAt: number;
+};
+
+type ChatSession = {
+  id: string;
+  title: string;
+  createdAt: number;
+  updatedAt: number;
+  messages: ChatMessage[];
+};
+
+async function parseApiError(response: Response, fallback: string) {
+  // FastAPI liefert Fehler meistens als JSON mit detail/message zurück.
+  const error = await response.json().catch(() => ({}));
+  return error.detail ?? error.message ?? fallback;
+}
+
+function networkErrorMessage(error: unknown, apiUrl: string) {
+  if (error instanceof TypeError) {
+    return `Backend nicht erreichbar unter ${apiUrl}. Starte FastAPI mit: uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000`;
+  }
+  return error instanceof Error ? error.message : "Anfrage fehlgeschlagen.";
+}
+
+function isPdfFile(file: File) {
+  return file.type === "application/pdf" || file.name.toLowerCase().endsWith(".pdf");
+}
+
+function createId(prefix: string) {
+  // Einfache eindeutige ID für Chats und Nachrichten im Frontend.
+  return `${prefix}-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+}
+
+function createChatSession(title = "Neuer Chat"): ChatSession {
+  const now = Date.now();
+  return {
+    id: createId("chat"),
+    title,
+    createdAt: now,
+    updatedAt: now,
+    messages: [],
+  };
+}
+
+function modeLabel(modeId: string) {
+  return modes.find((mode) => mode.id === modeId)?.label ?? modeId;
+}
+
+function truncateTitle(text: string) {
+  const clean = text.trim().replace(/\s+/g, " ");
+  return clean.length > 34 ? `${clean.slice(0, 31)}...` : clean || "Neuer Chat";
+}
+
+function thinkingText(step: number) {
+  // Erzeugt die animierten Punkte: ".", "..", "...".
+  return `Llama denkt nach${".".repeat((step % 3) + 1)}`;
+}
+
+export default function Home() {
+  const [selectedMode, setSelectedMode] = useState("cheatsheet");
+  const [fileName, setFileName] = useState("");
+  const [query, setQuery] = useState("");
+  const [sessions, setSessions] = useState<ChatSession[]>(() => [createChatSession()]);
+  const [activeChatId, setActiveChatId] = useState(() => sessions[0].id);
+  const [status, setStatus] = useState<Status>("idle");
+  const [message, setMessage] = useState("PDF ablegen, um zu starten.");
+  const [isDragging, setIsDragging] = useState(false);
+  const [apiUrl, setApiUrl] = useState(CONFIGURED_API_URL ?? "http://127.0.0.1:8000");
+  const [uploadProgress, setUploadProgress] = useState(0);
+  const [uploadStageLabel, setUploadStageLabel] = useState("Bereit");
+  const [copiedMessageId, setCopiedMessageId] = useState<string | null>(null);
+  // fileInputRef erlaubt es, den unsichtbaren Datei-Input über die Upload-Leiste zu öffnen.
+  const fileInputRef = useRef<HTMLInputElement>(null);
+  // outputScrollRef wird genutzt, um den Chat automatisch nach unten zu scrollen.
+  const outputScrollRef = useRef<HTMLDivElement>(null);
+  // Verhindert, dass der leere Startzustand direkt den gespeicherten Verlauf überschreibt.
+  const hasLoadedChatsRef = useRef(false);
+
+  const canGenerate = useMemo(() => status === "ready" || Boolean(fileName), [fileName, status]);
+  const isCustomMode = selectedMode === "custom";
+  const activeChat = useMemo(
+    () => sessions.find((session) => session.id === activeChatId) ?? sessions[0],
+    [activeChatId, sessions],
+  );
+  const hasGeneratedAnswer = useMemo(
+    () => Boolean(activeChat?.messages.some((chatMessage) => chatMessage.role === "assistant")),
+    [activeChat],
+  );
+
+  useEffect(() => {
+    // API-URL nach dem ersten Render im Browser bestimmen.
+    if (!CONFIGURED_API_URL) {
+      setApiUrl(getBrowserApiUrl());
+    }
+  }, []);
+
+  useEffect(() => {
+    // Chat-Verläufe aus localStorage laden. Das ist einfach und braucht keine Datenbank.
+    const stored = window.localStorage.getItem(CHAT_HISTORY_KEY);
+    if (!stored) {
+      hasLoadedChatsRef.current = true;
+      return;
+    }
+
+    try {
+      const parsed = JSON.parse(stored) as ChatSession[];
+      if (!Array.isArray(parsed) || parsed.length === 0) {
+        hasLoadedChatsRef.current = true;
+        return;
+      }
+      const validSessions = parsed
+        .filter((session) => session.id && Array.isArray(session.messages))
+        .slice(0, MAX_CHATS);
+      if (validSessions.length === 0) {
+        hasLoadedChatsRef.current = true;
+        return;
+      }
+      setSessions(validSessions);
+      setActiveChatId(validSessions[0].id);
+    } catch {
+      window.localStorage.removeItem(CHAT_HISTORY_KEY);
+    } finally {
+      hasLoadedChatsRef.current = true;
+    }
+  }, []);
+
+  useEffect(() => {
+    // Jede Änderung an den Chats wird lokal im Browser gespeichert.
+    if (!hasLoadedChatsRef.current) return;
+    window.localStorage.setItem(CHAT_HISTORY_KEY, JSON.stringify(sessions.slice(0, MAX_CHATS)));
+  }, [sessions]);
+
+  useEffect(() => {
+    // Während die PDF verarbeitet wird, fragt das Frontend regelmäßig den echten
+    // Pipeline-Status vom Backend ab.
+    if (status !== "uploading") return;
+
+    let isActive = true;
+
+    async function loadProgress() {
+      try {
+        const response = await fetch(`${apiUrl}/progress`);
+        if (!response.ok) return;
+        const progress = (await response.json()) as PipelineProgress;
+        if (!isActive) return;
+
+        setUploadProgress(progress.progress);
+        setUploadStageLabel(progress.label);
+        setMessage(`Pipeline: ${progress.label}`);
+      } catch {
+        // Der Upload-Request selbst meldet Verbindungsfehler; Polling ist nur eine Statushilfe.
+      }
+    }
+
+    void loadProgress();
+    const timer = window.setInterval(loadProgress, 750);
+
+    return () => {
+      isActive = false;
+      window.clearInterval(timer);
+    };
+  }, [apiUrl, status]);
+
+  useEffect(() => {
+    // Wenn eine neue Nachricht erscheint oder die Antwort weitergeschrieben wird,
+    // bleibt der Chat automatisch am unteren Ende.
+    if (!activeChat?.messages.length) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      const output = outputScrollRef.current;
+      if (!output) return;
+
+      output.scrollTo({
+        top: output.scrollHeight,
+        behavior: "smooth",
+      });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [activeChat?.messages]);
+
+  function updateChat(chatId: string, updater: (session: ChatSession) => ChatSession) {
+    // Hilfsfunktion, um genau einen Chat-Verlauf zu verändern.
+    setSessions((currentSessions) =>
+      currentSessions.map((session) =>
+        session.id === chatId ? updater(session) : session,
+      ),
+    );
+  }
+
+  function updateActiveChat(updater: (session: ChatSession) => ChatSession) {
+    updateChat(activeChatId, updater);
+  }
+
+  function appendMessage(chatMessage: ChatMessage, chatId = activeChatId) {
+    // Fügt eine Nachricht an und benennt neue Chats automatisch nach der ersten Nachricht.
+    updateChat(chatId, (session) => {
+      const shouldRename = session.messages.length === 0;
+      return {
+        ...session,
+        title: shouldRename
+          ? truncateTitle(chatMessage.role === "user" ? chatMessage.content : modeLabel(chatMessage.mode ?? "custom"))
+          : session.title,
+        updatedAt: Date.now(),
+        messages: [...session.messages, chatMessage],
+      };
+    });
+  }
+
+  function updateMessage(messageId: string, content: string, chatId = activeChatId) {
+    // Wird für den Typewriter-Effekt und die "Llama denkt nach"-Animation genutzt.
+    updateChat(chatId, (session) => ({
+      ...session,
+      updatedAt: Date.now(),
+      messages: session.messages.map((chatMessage) =>
+        chatMessage.id === messageId ? { ...chatMessage, content } : chatMessage,
+      ),
+    }));
+  }
+
+  function removeMessage(messageId: string, chatId = activeChatId) {
+    updateChat(chatId, (session) => ({
+      ...session,
+      updatedAt: Date.now(),
+      messages: session.messages.filter((chatMessage) => chatMessage.id !== messageId),
+    }));
+  }
+
+  function startNewChat(title = "Neuer Chat") {
+    // Es werden maximal 10 Chats behalten, damit die linke Liste übersichtlich bleibt.
+    const session = createChatSession(title);
+    setSessions((currentSessions) => [session, ...currentSessions].slice(0, MAX_CHATS));
+    setActiveChatId(session.id);
+    setQuery("");
+  }
+
+  function deleteChat(chatId: string) {
+    // Der letzte Chat darf nicht komplett verschwinden; dann wird ein leerer neuer Chat angelegt.
+    setSessions((currentSessions) => {
+      const remaining = currentSessions.filter((session) => session.id !== chatId);
+      if (remaining.length === 0) {
+        const freshSession = createChatSession();
+        setActiveChatId(freshSession.id);
+        return [freshSession];
+      }
+      if (chatId === activeChatId) {
+        setActiveChatId(remaining[0].id);
+      }
+      return remaining;
+    });
+  }
+
+  function appendAssistantWithTypewriter(answerText: string, mode: string, chatId = activeChatId) {
+    // Die Antwort wird nicht sofort komplett angezeigt, sondern Stück für Stück geschrieben.
+    const assistantMessage: ChatMessage = {
+      id: createId("assistant"),
+      role: "assistant",
+      content: "",
+      mode,
+      createdAt: Date.now(),
+    };
+
+    appendMessage(assistantMessage, chatId);
+
+    let index = 0;
+    const timer = window.setInterval(() => {
+      index += 4;
+      updateMessage(assistantMessage.id, answerText.slice(0, index), chatId);
+      if (index >= answerText.length) {
+        window.clearInterval(timer);
+      }
+    }, 18);
+  }
+
+  async function copyAssistantMessage(chatMessage: ChatMessage) {
+    // Kopiert nur echte LLM-Antworten, keine Nutzerfragen oder Lade-Nachrichten.
+    if (chatMessage.role !== "assistant" || !chatMessage.content.trim()) return;
+
+    try {
+      await navigator.clipboard.writeText(chatMessage.content);
+      setCopiedMessageId(chatMessage.id);
+      setMessage("Antwort wurde in die Zwischenablage kopiert.");
+      window.setTimeout(() => {
+        setCopiedMessageId((currentId) =>
+          currentId === chatMessage.id ? null : currentId,
+        );
+      }, 1600);
+    } catch {
+      setStatus("error");
+      setMessage("Antwort konnte nicht kopiert werden.");
+    }
+  }
+
+  async function uploadFile(file: File) {
+    // Upload startet die komplette Backend-Pipeline: Extraktion, Cleaning, Chunking, Embeddings.
+    if (!isPdfFile(file)) {
+      setStatus("error");
+      setMessage("Bitte lade eine PDF-Datei hoch.");
+      setUploadProgress(0);
+      setUploadStageLabel("Bereit");
+      return;
+    }
+
+    setStatus("uploading");
+    setMessage("PDF wird durch die RAG-Pipeline verarbeitet...");
+    setUploadProgress(5);
+    setUploadStageLabel("PDF hochladen");
+
+    const data = new FormData();
+    data.append("file", file);
+
+    const response = await fetch(`${apiUrl}/upload`, {
+      method: "POST",
+      body: data,
+    });
+
+    if (!response.ok) {
+      throw new Error(await parseApiError(response, "Upload fehlgeschlagen."));
+    }
+
+    setFileName(file.name);
+    setUploadProgress(100);
+    setUploadStageLabel("Fertig");
+    setStatus("ready");
+    setMessage("PDF verarbeitet. Wähle einen Modus und generiere eine Antwort.");
+    if ((activeChat?.messages.length ?? 0) > 0) {
+      startNewChat(file.name);
+    }
+  }
+
+  function handleDragOver(event: DragEvent<HTMLElement>) {
+    event.preventDefault();
+    event.stopPropagation();
+    event.dataTransfer.dropEffect = "copy";
+    setIsDragging(true);
+  }
+
+  function handleDragLeave(event: DragEvent<HTMLElement>) {
+    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
+      setIsDragging(false);
+    }
+  }
+
+  async function handleDrop(event: DragEvent<HTMLElement>) {
+    // Drag-and-drop liest die erste abgelegte Datei und behandelt sie wie einen normalen Upload.
+    setIsDragging(false);
+    event.preventDefault();
+    event.stopPropagation();
+    const file = event.dataTransfer.files?.[0];
+    if (!file) return;
+
+    try {
+      await uploadFile(file);
+    } catch (error) {
+      setStatus("error");
+      setUploadProgress(0);
+      setUploadStageLabel("Fehler");
+      setMessage(networkErrorMessage(error, apiUrl));
+    }
+  }
+
+  async function handleGenerate() {
+    // Feste Modi nutzen eine Standard-Aufgabe. Der Modus "Eigene Frage" nutzt den User-Text.
+    if (isCustomMode && !query.trim()) {
+      setStatus("error");
+      setMessage("Bitte gib eine Frage für den Modus Eigene Frage ein.");
+      return;
+    }
+
+    setStatus("generating");
+    setMessage("Lokales Ollama generiert eine Antwort...");
+    const trimmedQuery = query.trim();
+    const activeMode = selectedMode;
+    const targetChatId = activeChatId;
+
+    if (isCustomMode) {
+      appendMessage({
+        id: createId("user"),
+        role: "user",
+        content: trimmedQuery,
+        mode: activeMode,
+        createdAt: Date.now(),
+      }, targetChatId);
+      setQuery("");
+    }
+
+    const thinkingMessageId = createId("thinking");
+    // Solange das Backend rechnet, sieht der User eine temporäre Denk-Nachricht.
+    appendMessage({
+      id: thinkingMessageId,
+      role: "thinking",
+      content: thinkingText(0),
+      mode: activeMode,
+      createdAt: Date.now(),
+    }, targetChatId);
+
+    let thinkingStep = 0;
+    const thinkingTimer = window.setInterval(() => {
+      thinkingStep += 1;
+      updateMessage(thinkingMessageId, thinkingText(thinkingStep), targetChatId);
+    }, 450);
+
+    try {
+      const response = await fetch(`${apiUrl}/generate`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          mode: activeMode,
+          query: isCustomMode ? trimmedQuery : undefined,
+          top_k: 5,
+          min_score: 0.25,
+          llm_model: "llama3.2:latest",
+        }),
+      });
+
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.detail ?? data.message ?? "Generierung fehlgeschlagen.");
+      }
+
+      window.clearInterval(thinkingTimer);
+      removeMessage(thinkingMessageId, targetChatId);
+      appendAssistantWithTypewriter(data.answer, activeMode, targetChatId);
+      setStatus("ready");
+      setMessage("Antwort ist fertig.");
+    } catch (error) {
+      window.clearInterval(thinkingTimer);
+      removeMessage(thinkingMessageId, targetChatId);
+      setStatus("error");
+      setMessage(networkErrorMessage(error, apiUrl));
+    }
+  }
+
+  async function handleFileSelect(file?: File) {
+    if (!file) return;
+
+    try {
+      await uploadFile(file);
+    } catch (error) {
+      setStatus("error");
+      setUploadProgress(0);
+      setUploadStageLabel("Fehler");
+      setMessage(networkErrorMessage(error, apiUrl));
+    }
+  }
+
+  return (
+    <main className="grid h-screen grid-rows-[auto_minmax(0,1fr)] overflow-hidden bg-ink text-slate-100">
+      <header className="border-b border-line bg-panel px-5 py-4 shadow-xl shadow-black/20">
+        <div className="flex w-full flex-col gap-3 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-violetSoft">
+              KI Projekt RAG
+            </p>
+            <h1 className="mt-1 text-2xl font-bold tracking-normal text-white md:text-3xl">
+              KI-gestützer Lernassistent
+            </h1>
+          </div>
+          <div className="max-w-xl rounded-md border border-line bg-panelSoft px-4 py-3 text-sm text-slate-200">
+            <span className="mr-2 inline-block h-2 w-2 rounded-full bg-violet" />
+            {message}
+          </div>
+        </div>
+      </header>
+
+      <section
+        onDragEnter={handleDragOver}
+        onDragOver={handleDragOver}
+        onDragLeave={handleDragLeave}
+        onDrop={handleDrop}
+        className="grid min-h-0 w-full grid-rows-[minmax(0,1fr)_auto] overflow-hidden border-t border-line"
+      >
+        <div className="grid min-h-0 w-full grid-cols-1 gap-0 overflow-hidden lg:grid-cols-[280px_minmax(0,1fr)_320px]">
+          <aside className="flex min-h-0 flex-col overflow-hidden border-b border-line bg-panel lg:border-b-0 lg:border-r">
+            <div className="border-b border-line px-4 py-4">
+              <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-slate-300">
+                Verläufe
+              </h2>
+              <button
+                type="button"
+                onClick={() => startNewChat()}
+                className="mt-3 w-full rounded-md border border-line bg-panelSoft px-3 py-2 text-left text-sm font-bold text-slate-100 transition hover:border-violet"
+              >
+                Neuer Chat
+              </button>
+            </div>
+
+            <div className="flex-1 space-y-2 overflow-y-auto p-3">
+              {[...sessions].sort((a, b) => b.updatedAt - a.updatedAt).map((session) => (
+                <div
+                  key={session.id}
+                  className={[
+                    "group grid grid-cols-[1fr_auto] items-start gap-2 rounded-md border p-2 transition",
+                    session.id === activeChatId
+                      ? "border-violet/60 bg-violet/15"
+                      : "border-line bg-panelSoft",
+                  ].join(" ")}
+                >
+                  <button
+                    type="button"
+                    onClick={() => setActiveChatId(session.id)}
+                    className="min-w-0 text-left"
+                  >
+                    <span className="block truncate text-sm font-bold text-white">
+                      {session.title}
+                    </span>
+                    <span className="mt-1 block text-xs text-slate-500">
+                      {session.messages.length} Nachrichten
+                    </span>
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => deleteChat(session.id)}
+                    className="rounded px-2 py-1 text-xs font-bold text-slate-400 transition hover:bg-ink hover:text-white"
+                    aria-label={`${session.title} löschen`}
+                  >
+                    x
+                  </button>
+                </div>
+              ))}
+            </div>
+
+          </aside>
+
+          <section className="flex min-h-0 flex-col overflow-hidden bg-panel">
+            <div className="border-b border-line px-5 py-4">
+              <h2 className="text-lg font-bold text-white">Ausgabe</h2>
+              <p className="mt-1 text-sm text-slate-400">
+                Lade eine PDF hoch, wähle einen Modus und generiere dein Lernmaterial.
+              </p>
+            </div>
+
+            <div ref={outputScrollRef} className="min-h-0 flex-1 overflow-y-auto">
+              <div className="mx-auto flex min-h-full w-full max-w-5xl flex-col gap-4 px-4 py-4">
+                <div className="flex min-h-0 flex-1 flex-col gap-3">
+                  {activeChat?.messages.length ? (
+                    activeChat.messages.map((chatMessage) => (
+                      <div
+                        key={chatMessage.id}
+                        className={[
+                          "flex",
+                          chatMessage.role === "user" ? "justify-end" : "justify-start",
+                        ].join(" ")}
+                      >
+                        <div
+                          className={[
+                            "max-w-[78%] rounded-lg px-4 py-3 text-sm leading-7 shadow-lg shadow-black/10",
+                            chatMessage.role === "user"
+                              ? "bg-violet text-white"
+                              : chatMessage.role === "thinking"
+                                ? "border border-line bg-panelSoft/80 text-slate-300"
+                                : "border border-line bg-panelSoft text-slate-100",
+                          ].join(" ")}
+                        >
+                          {chatMessage.role !== "user" && (
+                            <div className="mb-2 flex items-center justify-between gap-3">
+                              {chatMessage.mode ? (
+                                <div className="text-xs font-bold uppercase tracking-[0.12em] text-violetSoft">
+                                  {modeLabel(chatMessage.mode)}
+                                </div>
+                              ) : (
+                                <span />
+                              )}
+                              {chatMessage.role === "assistant" && chatMessage.content.trim() && (
+                                <button
+                                  type="button"
+                                  onClick={() => void copyAssistantMessage(chatMessage)}
+                                  className="rounded border border-line px-2 py-1 text-xs font-bold text-slate-300 transition hover:border-violet hover:text-white"
+                                >
+                                  {copiedMessageId === chatMessage.id ? "Kopiert" : "Kopieren"}
+                                </button>
+                              )}
+                            </div>
+                          )}
+                          {chatMessage.role === "thinking" ? (
+                            <p className="font-bold text-slate-300">{chatMessage.content}</p>
+                          ) : chatMessage.role === "assistant" ? (
+                            <ReactMarkdown
+                              // remark-gfm macht GitHub-Markdown möglich, z.B. Tabellen.
+                              remarkPlugins={[remarkGfm]}
+                              components={{
+                                h1: ({ children }) => (
+                                  <h1 className="mb-3 mt-5 text-2xl font-bold text-white">{children}</h1>
+                                ),
+                                h2: ({ children }) => (
+                                  <h2 className="mb-2 mt-4 text-xl font-bold text-white">{children}</h2>
+                                ),
+                                h3: ({ children }) => (
+                                  <h3 className="mb-2 mt-3 text-lg font-bold text-white">{children}</h3>
+                                ),
+                                p: ({ children }) => <p className="mb-3 text-slate-100 last:mb-0">{children}</p>,
+                                strong: ({ children }) => (
+                                  <strong className="font-bold text-white">{children}</strong>
+                                ),
+                                ul: ({ children }) => (
+                                  <ul className="mb-4 list-disc space-y-1 pl-6">{children}</ul>
+                                ),
+                                ol: ({ children }) => (
+                                  <ol className="mb-4 list-decimal space-y-1 pl-6">{children}</ol>
+                                ),
+                                li: ({ children }) => <li className="pl-1">{children}</li>,
+                                table: ({ children }) => (
+                                  <div className="my-4 overflow-x-auto rounded-md border border-line">
+                                    <table className="w-full border-collapse text-left text-sm">
+                                      {children}
+                                    </table>
+                                  </div>
+                                ),
+                                thead: ({ children }) => (
+                                  <thead className="bg-ink text-slate-100">{children}</thead>
+                                ),
+                                tbody: ({ children }) => <tbody>{children}</tbody>,
+                                tr: ({ children }) => (
+                                  <tr className="border-b border-line last:border-b-0">{children}</tr>
+                                ),
+                                th: ({ children }) => (
+                                  <th className="border-r border-line px-3 py-2 font-bold last:border-r-0">
+                                    {children}
+                                  </th>
+                                ),
+                                td: ({ children }) => (
+                                  <td className="border-r border-line px-3 py-2 align-top last:border-r-0">
+                                    {children}
+                                  </td>
+                                ),
+                              }}
+                            >
+                              {chatMessage.content || "..."}
+                            </ReactMarkdown>
+                          ) : (
+                            <p className="whitespace-pre-wrap">{chatMessage.content}</p>
+                          )}
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <p className="text-slate-400">
+                      Die generierte Antwort erscheint hier.
+                    </p>
+                  )}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <aside className="flex min-h-0 flex-col overflow-hidden border-t border-line bg-panel p-3 lg:border-l lg:border-t-0">
+            <div>
+              <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-slate-300">
+                Modus
+              </h2>
+              <div className="mt-3 grid gap-2">
+                {modes.map((mode) => (
+                  <button
+                    key={mode.id}
+                    onClick={() => setSelectedMode(mode.id)}
+                    className={[
+                      "rounded-md border px-3 py-2.5 text-left text-sm font-bold transition",
+                      selectedMode === mode.id
+                        ? "border-violet bg-violet text-white"
+                        : "border-line bg-panelSoft text-slate-200 hover:border-violet/80",
+                    ].join(" ")}
+                  >
+                    {mode.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {isCustomMode && (
+              <div className="mt-4 border-t border-line pt-4">
+                <h2 className="text-sm font-bold uppercase tracking-[0.16em] text-slate-300">
+                  Frage
+                </h2>
+                <textarea
+                  value={query}
+                  onChange={(event) => setQuery(event.target.value)}
+                  placeholder="Stelle eine eigene Frage zur PDF..."
+                  className="mt-3 h-24 w-full resize-none rounded-md border border-line bg-panelSoft px-4 py-3 text-sm text-slate-100 placeholder:text-slate-500"
+                />
+              </div>
+            )}
+
+            <input
+              ref={fileInputRef}
+              type="file"
+              accept="application/pdf"
+              className="sr-only"
+              onChange={(event) => {
+                void handleFileSelect(event.target.files?.[0]);
+                event.target.value = "";
+              }}
+            />
+
+            <button
+              onClick={handleGenerate}
+              disabled={!canGenerate || status === "uploading" || status === "generating"}
+              className="mt-4 rounded-md bg-violet px-4 py-2.5 text-sm font-bold text-white transition hover:bg-violetSoft disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {status === "generating" ? "Generiert..." : "Generieren"}
+            </button>
+            <a
+              href={`${apiUrl}/download`}
+              className={[
+                "mt-2 rounded-md border border-line px-4 py-2.5 text-center text-sm font-bold text-slate-100 transition hover:border-violet",
+                hasGeneratedAnswer ? "" : "pointer-events-none opacity-50",
+              ].join(" ")}
+            >
+              PDF herunterladen
+            </a>
+          </aside>
+        </div>
+
+        <div className="border-t border-line bg-panel px-4 py-3">
+          <button
+            type="button"
+            onClick={() => fileInputRef.current?.click()}
+            className={[
+              "flex h-20 w-full cursor-pointer flex-col gap-2 rounded-md border-2 border-dashed px-4 py-3 text-left transition md:flex-row md:items-center md:justify-between",
+              isDragging
+                ? "border-violet bg-violet/15"
+                : "border-line bg-panelSoft hover:border-violet/70",
+            ].join(" ")}
+          >
+            <div className="flex min-w-0 items-center gap-3">
+              <div className="grid h-10 w-10 shrink-0 place-items-center rounded-md bg-violet text-xl font-black text-white">
+                +
+              </div>
+              <div className="min-w-0">
+                <h2 className="text-sm font-bold text-white">PDF hier ablegen</h2>
+                <p className="mt-0.5 text-xs leading-5 text-slate-400">
+                  Oder klicken zum Hochladen. Der Pipeline-Fortschritt erscheint hier.
+                </p>
+                {fileName && (
+                  <p className="mt-2 truncate text-xs text-violetSoft">{fileName}</p>
+                )}
+              </div>
+            </div>
+
+            <div className="w-full md:max-w-md">
+              <div className="mb-2 flex h-4 items-center justify-between gap-3 text-xs text-slate-300">
+                <span>{uploadProgress > 0 ? uploadStageLabel : "Bereit"}</span>
+                <span>{uploadProgress > 0 ? `${uploadProgress}%` : ""}</span>
+              </div>
+              <div className="h-2 overflow-hidden rounded-full bg-ink">
+                <div
+                  className="h-full rounded-full bg-violet transition-all duration-700"
+                  style={{ width: `${uploadProgress}%` }}
+                />
+              </div>
+            </div>
+          </button>
+        </div>
+      </section>
+    </main>
+  );
+}
+
+==========================================================================================
+DATEI: frontend/app/globals.css
+==========================================================================================
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Die App ist dunkel gestaltet und soll sich wie eine feste Anwendung anfühlen. */
+:root {
+  color-scheme: dark;
+}
+
+/* Border-box macht Größenberechnungen im Layout berechenbarer. */
+* {
+  box-sizing: border-box;
+}
+
+/* Das Browserfenster selbst scrollt nicht; nur die inneren Panels scrollen. */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  /* Hintergrund im Discord-ähnlichen dunklen Stil mit leichtem violetten Akzent. */
+  background:
+    radial-gradient(circle at 20% 12%, rgba(139, 92, 246, 0.22), transparent 28rem),
+    linear-gradient(135deg, #0f1117 0%, #171923 48%, #11131a 100%);
+  color: #f4f5fb;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+button,
+input,
+textarea {
+  /* Formularelemente sollen dieselbe Schrift wie der Rest der App nutzen. */
+  font: inherit;
+}
+
+/* Sichtbarer Fokus ist wichtig, wenn man die App mit Tastatur bedient. */
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgba(167, 139, 250, 0.45);
+  outline-offset: 2px;
+}
+
+==========================================================================================
+DATEI: frontend/next.config.ts
+==========================================================================================
+
+import type { NextConfig } from "next";
+
+const nextConfig: NextConfig = {
+  // Erlaubt den Zugriff auf den Next.js-Dev-Server über lokale Netzwerk-IPs.
+  allowedDevOrigins: ["10.11.117.110", "192.168.178.33"],
+};
+
+export default nextConfig;
+
+==========================================================================================
+DATEI: frontend/tailwind.config.ts
+==========================================================================================
+
+import type { Config } from "tailwindcss";
+
+const config: Config = {
+  // Tailwind durchsucht diese Dateien nach Klassen, die im CSS landen sollen.
+  content: ["./app/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      // Eigene Farbnamen für das dunkle Discord-ähnliche Design.
+      colors: {
+        ink: "#0f1117",
+        panel: "#1e2029",
+        panelSoft: "#2b2d38",
+        line: "#3b3e4b",
+        violet: "#8b5cf6",
+        violetSoft: "#a78bfa",
+      },
+    },
+  },
+  plugins: [],
+};
+
+export default config;
+
+==========================================================================================
+DATEI: frontend/postcss.config.js
+==========================================================================================
+
+module.exports = {
+  // PostCSS verarbeitet TailwindCSS und ergänzt Browser-Prefixes automatisch.
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
+};
+
+==========================================================================================
+DATEI: frontend/tsconfig.json
+==========================================================================================
+
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
